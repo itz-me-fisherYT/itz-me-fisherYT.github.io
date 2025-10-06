@@ -120,20 +120,6 @@ section h2 {
   gap: 20px;
 }
 
-/* Projects Grid */
-.evercore project-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-/* Projects Grid */
-.LifeDupey project-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
 .project {
   background: url('images/stone.png') repeat;
   padding: 15px;
