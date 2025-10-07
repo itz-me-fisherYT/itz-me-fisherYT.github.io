@@ -4,8 +4,8 @@
 ![CSS3](https://img.shields.io/badge/CSS3-%231572B6?style=flat&logo=css3&logoColor=white)
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-2025--10--06-brightgreen)
 
-![Portfolio Preview](preview.png)  
-*A clean and minimal portfolio template for Fisher.*
+![Portfolio]
+- Discord: [Itzfisher.org](https://www.itzfisher.org/)
 
 ## 🚀 Overview
 
@@ -52,3 +52,4 @@ is sufficient.
 ## 📜 License
 
 This project is free for personal or educational use. Commercial use requires explicit permission from the author.
+
