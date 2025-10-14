@@ -45,7 +45,7 @@ This is a simple, easy-to-edit portfolio website showcasing your bio, projects, 
 
 If you use or adapt this template, **you must give credit to Fisher**. A simple line like:
 
-> "Portfolio template by Fisher"  
+> "Portfolio template by ItzRealFisher"  
 
 is sufficient.
 
