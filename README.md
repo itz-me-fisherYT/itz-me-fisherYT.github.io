@@ -132,6 +132,3 @@ This project is free for **personal or educational use**. Commercial use require
 
 ---
 
-If you want, I can also **add visual GitHub badges for each project, bot, and skill** so it looks even more polished and “Minecraft-style” on your profile.
-
-Do you want me to do that?
