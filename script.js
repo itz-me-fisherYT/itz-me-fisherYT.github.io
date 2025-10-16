@@ -21,10 +21,20 @@ const message=document.getElementById('contactMessage').value;
 
 if(!name||!email||!message){alert('Please fill all fields');return;}
 
+emailjs.send('service_hqm13gm','template_mon4thq',{
+  from_name:name,
+  reply_to:email,
+  message:message
+},'suszRhx0XhOv1OGNT');
 
 // EmailJS placeholder
-// emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',{from_name:name,reply_to:email,message:message},'YOUR_PUBLIC_KEY');
+// emailjs.send('service_hqm13gm','YOUR_TEMPLATE_ID',{from_name:name,reply_to:email,message:message},'YOUR_PUBLIC_KEY');
 
+fetch('https://discord.com/api/webhooks/1428335032187097158/69dYFJ-QVLI7vNkDmOe6vqnff_VAtyg5abJfTx5LphXtQR3-D_9k_53HlXGFJCrBVs9M',{
+  method:'POST',
+  headers:{'Content-Type':'application/json'},
+  body:JSON.stringify({content:`New message from ${name} (${email}): ${message}`})
+});
 
 // Discord Webhook placeholder
 // fetch('YOUR_DISCORD_WEBHOOK_URL',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({content:`New message from ${name} (${email}): ${message}`})});
