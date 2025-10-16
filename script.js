@@ -1,1 +1,1 @@
-// script.js content
+// Full script.js content with rotating taglines, GitHub fetch, contact form handling

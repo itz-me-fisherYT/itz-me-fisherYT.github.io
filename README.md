@@ -1,3 +1,3 @@
 # Fisher Portfolio
 
-Multi-page portfolio setup with EmailJS and Discord webhook integration.
+Full multi-page portfolio for ItzReakFisherYT. Includes EmailJS + Discord webhook contact form.
