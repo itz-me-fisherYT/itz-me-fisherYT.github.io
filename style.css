@@ -1,20 +1,15 @@
-/* Shared dark Minecraft theme */
-:root {
---bg:#0b0f13;
---card:#0f1720;
---muted:#9aa4b2;
---accent:#6ee7b7;
---accent-2:#7c3aed;
---glass: rgba(255,255,255,0.04);
---pixel:6px;
-color-scheme: dark;
-font-family: Inter, system-ui, sans-serif;
-}
-body{margin:0;padding:20px;background:var(--bg);color:#d6e3ee;}
-header,footer,nav{background:var(--card);border-radius:12px;padding:12px;margin-bottom:12px;}
-nav a{color:var(--accent);margin-right:12px;text-decoration:none;font-weight:600;}
-nav a:hover{color:var(--accent-2);}
-button{background:var(--glass);border:1px solid rgba(255,255,255,0.03);color:var(--accent);padding:8px 12px;border-radius:8px;cursor:pointer;}
-.card{background:var(--card);border-radius:12px;padding:16px;margin-bottom:12px;}
-.badge{display:inline-block;background:rgba(255,255,255,0.02);padding:4px 8px;border-radius:8px;margin-right:4px;font-weight:600;}
-input,textarea{width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);margin-bottom:8px;background:#0f1720;color:#fff;}
+:root { --bg: #0b0f13; --card: #0f1720; --accent: #6ee7b7; --accent2: #7c3aed; --muted: #9aa4b2; --glass: rgba(255,255,255,0.04); font-family: 'Inter', sans-serif; }
+body { margin:0; padding:0; background: var(--bg); color:#d6e3ee; overflow-x:hidden; }
+nav { background:var(--card); padding:12px 24px; border-radius:12px; display:flex; gap:12px; justify-content:center; position:sticky; top:0; z-index:100; }
+nav a { color:var(--accent); text-decoration:none; font-weight:600; transition:0.3s; }
+nav a:hover { color:var(--accent2); }
+.card { background:var(--card); border-radius:12px; padding:20px; margin:20px auto; max-width:1000px; box-shadow:0 0 20px rgba(0,0,0,0.5); transition:0.3s; }
+.card:hover { transform: translateY(-5px); box-shadow:0 0 30px var(--accent); }
+button { background:var(--glass); border:none; color:var(--accent); padding:10px 16px; border-radius:8px; cursor:pointer; font-weight:600; transition:0.3s; }
+button:hover { color:var(--accent2); box-shadow:0 0 15px var(--accent); }
+#tagRotator span { display:none; opacity:0; transition:opacity 1s; font-size:1.5em; font-weight:600; }
+#tagRotator span.show { display:inline-block; opacity:1; }
+input,textarea { width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:#0f1720; color:#fff; }
+.message-box { background:#1e293b; padding:12px; border-radius:8px; color:#fff; }
+.badge { display:inline-block; background:rgba(255,255,255,0.02); padding:4px 10px; border-radius:8px; margin:4px; font-weight:600; }
+@media(max-width:768px){.card{padding:16px;margin:12px;} nav{flex-wrap:wrap;}}
