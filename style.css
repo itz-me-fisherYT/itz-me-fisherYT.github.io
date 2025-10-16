@@ -27,3 +27,8 @@
 .project-card .repo-link:hover {
   text-decoration:underline;
 }
+.project-card .explanation {
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: 8px;
+}

@@ -1,36 +1,50 @@
+// Manually defined GitHub projects
+const projects = [
+  {
+    name: "itz-me-fisherYT.github.io",
+    description: "Personal portfolio website hosted on GitHub Pages.",
+    url: "https://github.com/itz-me-fisherYT/itz-me-fisherYT.github.io",
+    stars: 1,
+    forks: 0,
+    language: "HTML/CSS/JS",
+    explanation: "A modern, dark-themed portfolio inspired by asktheman.xyz, featuring multi-page layout and dark theme."
+  },
+  {
+    name: "TicketForge",
+    description: "Modern Discord ticket bot built with discord.js v14.",
+    url: "https://github.com/itz-me-fisherYT/TicketForge",
+    stars: 0,
+    forks: 0,
+    language: "JavaScript",
+    explanation: "Provides topic-based ticket creation, per-topic categories, local transcript logging, and staff channel logs."
+  },
+  {
+    name: "Goose-Discord-Bot",
+    description: "Discord bot with various features to enhance the server experience.",
+    url: "https://github.com/itz-me-fisherYT/Goose-Discord-Bot",
+    stars: 0,
+    forks: 0,
+    language: "Python",
+    explanation: "Features include Quote System, Moderation, YouTube Notifications to enhance the Discord experience."
+  }
+];
+
+// Populate the projects grid
 const reposGrid = document.getElementById('reposGrid');
 
-if (reposGrid) {
-  fetch('https://api.github.com/users/itz-me-fisherYT/repos?sort=updated&per_page=20')
-    .then(res => {
-      if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
-      return res.json();
-    })
-    .then(data => {
-      if (data.length === 0) {
-        reposGrid.innerHTML = '<p>No projects found.</p>';
-        return;
-      }
-
-      reposGrid.innerHTML = '';
-      data.forEach(repo => {
-        const card = document.createElement('div');
-        card.className = 'card project-card';
-        card.innerHTML = `
-          <h3>${repo.name}</h3>
-          <p>${repo.description || 'No description'}</p>
-          <div class="badges">
-            <span class="badge">⭐ ${repo.stargazers_count}</span>
-            <span class="badge">🍴 ${repo.forks_count}</span>
-            <span class="badge">${repo.language || 'Unknown'}</span>
-          </div>
-          <a href="${repo.html_url}" target="_blank" class="repo-link">View Repo</a>
-        `;
-        reposGrid.appendChild(card);
-      });
-    })
-    .catch(err => {
-      console.error(err);
-      reposGrid.innerHTML = '<p>Failed to load projects. Check console for errors.</p>';
-    });
-}
+projects.forEach(project => {
+  const card = document.createElement('div');
+  card.className = 'card project-card';
+  card.innerHTML = `
+    <h3>${project.name}</h3>
+    <p>${project.description}</p>
+    <div class="badges">
+      <span class="badge">⭐ ${project.stars}</span>
+      <span class="badge">🍴 ${project.forks}</span>
+      <span class="badge">${project.language}</span>
+    </div>
+    <a href="${project.url}" target="_blank" class="repo-link">View Repo</a>
+    <p class="explanation"><em>${project.explanation}</em></p>
+  `;
+  reposGrid.appendChild(card);
+});
