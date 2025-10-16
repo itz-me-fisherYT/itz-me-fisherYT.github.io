@@ -1,4 +1,3 @@
-// Manually defined GitHub projects
 const projects = [
   {
     name: "itz-me-fisherYT.github.io",
@@ -25,11 +24,10 @@ const projects = [
     stars: 0,
     forks: 0,
     language: "Python",
-    explanation: "Features include Quote System, Moderation, YouTube Notifications to enhance the Discord experience."
+    explanation: "Features include reaction roles, birthdays, and playing music to enhance the Discord experience."
   }
 ];
 
-// Populate the projects grid
 const reposGrid = document.getElementById('reposGrid');
 
 projects.forEach(project => {
