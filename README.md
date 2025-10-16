@@ -1,16 +1,15 @@
-# Fisher Portfolio WOW Edition
+# ItzFisher Portfolio
 
-Multi-page portfolio for ItzReakFisherYT. Dark neon theme with Minecraft vibes, GitHub auto-fetch, and animated interactive elements.
+Modern, dark-themed portfolio inspired by [asktheman.xyz](https://asktheman.xyz/).
 
 ## Features
-- Home page with rotating taglines and animated hero
-- Projects page: GitHub repos with badges and hover effects
-- About page: Bio & skills badges
-- Stats page: GitHub stats placeholder (add chart library for visualization)
-- Contact page: EmailJS + Discord webhook support
-- Responsive, interactive, and modern dark theme
+- Multi-page layout: Home, Projects, About, Stats, Contact
+- GitHub API auto-fetch for projects
+- Rotating tagline animations
+- Contact form with EmailJS + Discord webhook
+- Dark theme with subtle Minecraft-inspired accents
 
-## Setup
-1. Upload all files to GitHub Pages
-2. EmailJS and Discord webhook are pre-configured in script.js
-3. Enjoy your new WOW portfolio!
+## Usage
+1. Place all files on your GitHub Pages repository.
+2. Update EmailJS and Discord webhook info in `script.js`.
+3. Customize content, avatar, and project links as desired.
