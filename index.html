@@ -1,36 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ItzFisher — Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luke Fisher Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="projects.html">Projects</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <header>
+    <h1>Luke Fisher</h1>
+    <p>Developer | Creator | Innovator</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header class="hero">
-  <img src="https://avatars.githubusercontent.com/itz-me-fisherYT?s=400" class="avatar">
-  <h1>ItzReakFisherYT (Lycan.fish.er)</h1>
-  <div id="tagRotator"></div>
-  <div class="cta-buttons">
-    <button onclick="location.href='projects.html'">View Projects</button>
-    <button onclick="location.href='contact.html'">Contact Me</button>
-  </div>
-</header>
-
-<main>
-  <section class="intro card">
-    <h2>Welcome to my portfolio!</h2>
-    <p>Building bots, websites, and Minecraft experiences with passion and creativity.</p>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Luke, a web developer passionate about building modern, clean websites.</p>
   </section>
-</main>
 
-<script src="script.js"></script>
+  <section id="projects">
+    <h2>My Work</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Short description</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Short description</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Follow me on <a href="#">GitHub</a> | <a href="#">Twitter</a></p>
+  </footer>
 </body>
 </html>
