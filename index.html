@@ -1,40 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luke Fisher / ItzRealFisher</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ItzRealFisher — Portfolio</title>
+  <meta name="description" content="Hi I am ItzRealFisher (Fisher for short)">
+  
+  <!-- Pixel / Minecraft-style font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <button id="mode-toggle">🌙</button>
-</header>
 
-<main>
-    <section id="hero">
-        <img src="assets/images/profile.jpg" alt="Luke Fisher" />
-        <h1>Luke Fisher / ItzRealFisher</h1>
-        <p>Discord Bot Maker | Website Developer | Minecraft Staff</p>
+  <div class="container">
+
+    <header>
+      <div class="logo">IRF</div>
+      <div>
+        <h1>ItzRealFisher <span class="sub">(Fisher)</span></h1>
+        <div class="subtitle">Hi I am ItzRealFisher — developer, creator, Minecraft enthusiast</div>
+      </div>
+
+      <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </header>
+
+    <section id="about" class="hero">
+      <div class="card about">
+        <h2>About</h2>
+        <p>Hey — I'm Fisher (ItzRealFisher). I create Minecraft-related projects, bots, and web stuff. I enjoy building things that help servers and communities grow.</p>
+
+        <strong>Top skills</strong>
+        <div class="skills">
+          <div class="chip">Minecraft</div>
+          <div class="chip">Node.js</div>
+          <div class="chip">Discord Bots</div>
+          <div class="chip">Web Dev</div>
+        </div>
+
+        <a class="btn" href="#projects">See projects</a>
+      </div>
+
+      <aside class="card">
+        <h3>Contact</h3>
+        <div class="contact-grid">
+          <div class="chip">Lfish94ll@gmail.com</div>
+          <div class="chip">Lifedupey@gmil.com</div>
+          <div class="chip">Itz.me.fisherYT@gmail.com</div>
+          <div class="chip">Discord: Lycan.fish.er</div>
+        </div>
+
+        <strong>Social</strong>
+        <div class="socials">
+          <a class="chip" href="https://github.com/itz-me-fisherYT" target="_blank">Main GitHub</a>
+          <a class="chip" href="https://github.com/itzmefisheryt-2" target="_blank">Other GitHub</a>
+        </div>
+
+        <div class="domain">Domain: ItzFisher.org</div>
+      </aside>
     </section>
 
-    <section id="fun-facts">
-        <h2>Fun Facts</h2>
-        <p id="fun-fact">Loading...</p>
+    <section id="projects">
+      <h2>Top Projects</h2>
+
+      <div class="projects">
+
+        <article class="card project">
+          <img src="project1.png" alt="Project 1">
+          <h3>Realm Bases Builder</h3>
+          <p>Base templates and tools to create and share realm bases.</p>
+          <a href="https://happyrealm.xyz" target="_blank">Visit Site</a>
+        </article>
+
+        <article class="card project">
+          <img src="project2.png" alt="Project 2">
+          <h3>Minecraft ↔ Discord Bridge</h3>
+          <p>A bot that syncs Minecraft chat and player status to Discord.</p>
+          <a href="https://github.com/itz-me-fisherYT" target="_blank">GitHub Repo</a>
+        </article>
+
+        <article class="card project">
+          <img src="project3.png" alt="Project 3">
+          <h3>Gearify</h3>
+          <p>Dropshipping storefront concept and early development.</p>
+          <a href="#contact">Contact for details</a>
+        </article>
+
+      </div>
     </section>
-</main>
 
-<footer>
-    <p>Contact: <a href="mailto:Lfish94ll@gmail.com">Lfish94ll@gmail.com</a> | Discord: Lycan.fish.er (itzrealfisherYT)</p>
-</footer>
+    <footer id="contact">
+      <p>Made for <strong>ItzRealFisher</strong> — ItzFisher.org</p>
+      <p class="copyright">© <span id="year"></span> ItzRealFisher</p>
+    </footer>
 
-<script src="analytics.js"></script>
-<script src="assets/js/script.js"></script>
+  </div>
+
+<script>
+  // set current year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // smooth scrolling
+  document.querySelectorAll("nav a").forEach(a => {
+    a.addEventListener("click", e => {
+      e.preventDefault();
+      document.querySelector(a.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>
+
 </body>
 </html>

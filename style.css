@@ -1,0 +1,145 @@
+:root {
+  --bg:#0b1020;
+  --card:#0f1724;
+  --accent:#3ad1a5;
+  --muted:#9aa4b2;
+  --glass:rgba(255,255,255,0.03);
+}
+
+* { box-sizing:border-box; }
+
+html, body {
+  margin:0;
+  font-family:'Press Start 2P', monospace;
+  color:#e6eef6;
+  background:linear-gradient(180deg,var(--bg),#08101a);
+}
+
+a { color:var(--accent); text-decoration:none; }
+
+.container { max-width:1100px; margin:30px auto; padding:20px; }
+
+/* Header */
+header {
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin-bottom:25px;
+}
+
+.logo {
+  width:72px;
+  height:72px;
+  background:linear-gradient(135deg,#68D391,#3AD1A5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#062018;
+  border-radius:12px;
+  font-size:20px;
+}
+
+.sub { font-size:10px; color:var(--muted); }
+.subtitle { font-size:10px; color:var(--muted); }
+
+nav a {
+  font-size:10px;
+  margin-left:12px;
+  color:var(--muted);
+}
+
+/* Layout */
+.hero {
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:20px;
+}
+
+/* Cards */
+.card {
+  background:var(--card);
+  padding:18px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.03);
+  box-shadow:0 6px 18px rgba(0,0,0,0.6);
+}
+
+.about p { font-size:12px; line-height:1.35; }
+.about strong { font-size:10px; }
+
+/* Chips */
+.chip {
+  background:var(--glass);
+  padding:10px 12px;
+  border-radius:10px;
+  font-size:11px;
+  color:#dff7ef;
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+.skills, .socials {
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:8px 0 14px 0;
+}
+
+/* Projects */
+.projects {
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:16px;
+}
+
+.project img {
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+  background:linear-gradient(90deg,#0d2230,#1b2f3a);
+}
+
+.project h3 { margin:8px 0 0 0; font-size:12px; }
+.project p { margin:4px 0; font-size:10px; color:var(--muted); }
+.project a { font-size:10px; }
+
+/* Buttons */
+.btn {
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:8px;
+  background:linear-gradient(180deg,#2ed3a0,#10b07a);
+  color:#052018;
+  font-size:11px;
+  margin-top:12px;
+}
+
+/* Footer */
+footer {
+  margin-top:28px;
+  text-align:center;
+  font-size:11px;
+  color:var(--muted);
+}
+
+.domain { margin-top:12px; font-size:10px; color:var(--muted); }
+
+/* Pixel grid background */
+body::before {
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image:
+     linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px),
+     linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px);
+  background-size:24px 24px;
+  pointer-events:none;
+  opacity:0.6;
+}
+
+/* Responsive */
+@media (max-width:860px) {
+  .hero { grid-template-columns:1fr; }
+  nav { margin-left:0; margin-top:10px; }
+}
