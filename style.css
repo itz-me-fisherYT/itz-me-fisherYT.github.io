@@ -107,6 +107,26 @@ nav a {
   margin:8px 0 14px 0;
 }
 
+/* Social Logos */
+.social-logos {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:12px;
+  justify-content:center;
+}
+
+.social-logos a img {
+  width:30px;
+  height:30px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s;
+}
+
+.social-logos a img:hover {
+  transform: scale(1.2);
+}
+
 /* Projects */
 .projects {
   margin-top:18px;
@@ -165,4 +185,5 @@ body::before {
 @media (max-width:860px) {
   .hero { grid-template-columns:1fr; }
   nav { margin-left:0; margin-top:10px; }
+  .social-logos { justify-content:flex-start; }
 }
