@@ -62,18 +62,10 @@
 
         <div class="domain">Domain: ItzFisher.org</div>
 
-        <!-- Discord Profile (Working) -->
+        <!-- Discord Live Profile -->
         <h3 style="margin-top:20px;">Discord Profile</h3>
-        <div id="discord-card" style="text-align:center;">
-          <img 
-            id="discord-avatar"
-            src="https://api.lanyard.rest/v1/users/1319567972335091773?format=png"
-            alt="Discord Profile"
-            style="border-radius:12px; width:100%; max-width:320px; margin-top:8px;"
-          >
-          <div id="discord-username" style="margin-top: 8px; font-size: 12px; color:#aaa;">
-            Loading Discord…
-          </div>
+        <div id="discord-card" class="card" style="text-align:center; padding:15px;">
+          <p>Loading Discord profile...</p>
         </div>
 
       </aside>
@@ -91,13 +83,12 @@
           <a href="https://github.com/itz-me-fisherYT/TicketForge" target="_blank">View on GitHub</a>
         </article>
 
-
         <article class="card project">
           <img src="project1.png" alt="Help Bot 2.0">
           <h3>Help Bot 2.0</h3>
-           <p>
-           A powerful Discord bot with quotes, moderation tools, YouTube upload alerts, 
-          video/shorts/stream pings, and custom help commands — built for smooth server management.
+          <p>
+            A powerful Discord bot with quotes, moderation tools, YouTube upload alerts,
+            video/shorts/stream pings, and custom help commands — built for smooth server management.
           </p>
           <a href="https://github.com/itz-me-fisherYT/Goose-Discord-Bot" target="_blank">View on GitHub</a>
         </article>
@@ -124,18 +115,34 @@
     });
   });
 
-  // Load Discord data
-  fetch("https://api.lanyard.rest/v1/users/1319567972335091773")
-    .then(r => r.json())
-    .then(d => {
-      if (!d.success) return;
-      const user = d.data.discord_user;
-      document.getElementById("discord-username").textContent =
-        user.username + "#" + user.discriminator;
-    })
-    .catch(() => {
-      document.getElementById("discord-username").textContent = "Unable to load Discord.";
-    });
+  // -----------------------------
+  // Live Discord Profile Fetcher
+  // -----------------------------
+  async function loadDiscordProfile() {
+    try {
+      const res = await fetch("https://discord-profile-api-ru01.onrender.com/profile.json");
+      const data = await res.json();
+
+      document.getElementById("discord-card").innerHTML = `
+        <img 
+          src="${data.avatar}" 
+          style="width:120px; height:120px; border-radius:50%; border:4px solid #3b3b3b;"
+        >
+        <h3 style="margin-top:10px; font-family: 'Press Start 2P', cursive;">
+          ${data.username}
+        </h3>
+        <p style="opacity:0.7; font-size:12px;">
+          Updated: ${new Date(data.updated).toLocaleTimeString()}
+        </p>
+      `;
+    } catch (err) {
+      document.getElementById("discord-card").innerHTML =
+        "<p>Failed to load Discord profile 😭</p>";
+    }
+  }
+
+  loadDiscordProfile();
+  setInterval(loadDiscordProfile, 10000);
 </script>
 
 </body>
