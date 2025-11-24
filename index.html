@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ItzRealFisher</title>
   <meta name="description" content="Hi I am ItzRealFisher (Fisher for short)">
-  
-  <!-- Pixel / Minecraft-style font -->
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +18,6 @@
         <h1>ItzRealFisher <span class="sub">(Fisher)</span></h1>
         <div class="subtitle">Hi I am ItzRealFisher — developer, creator, Minecraft enthusiast</div>
       </div>
-
       <nav>
         <a href="#about">ABOUT</a>
         <a href="#projects">PROJECTS</a>
@@ -62,20 +58,17 @@
 
         <div class="domain">Domain: ItzFisher.org</div>
 
-        <!-- Discord Live Profile -->
+        <!-- Discord Card -->
         <h3 style="margin-top:20px;">Discord Profile</h3>
         <div id="discord-card" class="card" style="text-align:center; padding:15px;">
           <p>Loading Discord profile...</p>
         </div>
-
       </aside>
     </section>
 
     <section id="projects">
       <h2>Top Projects</h2>
-
       <div class="projects">
-
         <article class="card project">
           <img src="ticketforge.png" alt="TicketForge Bot">
           <h3>TicketForge – Discord Ticket Bot</h3>
@@ -92,7 +85,6 @@
           </p>
           <a href="https://github.com/itz-me-fisherYT/Goose-Discord-Bot" target="_blank">View on GitHub</a>
         </article>
-
       </div>
     </section>
 
@@ -104,10 +96,8 @@
   </div>
 
 <script>
-  // set current year
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  // smooth scrolling
   document.querySelectorAll("nav a").forEach(a => {
     a.addEventListener("click", e => {
       e.preventDefault();
@@ -115,29 +105,41 @@
     });
   });
 
-  // -----------------------------
-  // Live Discord Profile Fetcher
-  // -----------------------------
   async function loadDiscordProfile() {
     try {
       const res = await fetch("https://discord-profile-api-ru01.onrender.com/profile.json");
       const data = await res.json();
 
+      const statusColors = { online:"green", idle:"orange", dnd:"red", offline:"gray" };
+
       document.getElementById("discord-card").innerHTML = `
-        <img 
-          src="${data.avatar}" 
-          style="width:120px; height:120px; border-radius:50%; border:4px solid #3b3b3b;"
-        >
+        <div style="position: relative; display: inline-block;">
+            <img 
+                src="${data.avatar}" 
+                style="width:120px; height:120px; border-radius:50%; border:4px solid #3b3b3b;"
+            >
+            <span style="
+                position: absolute;
+                bottom: 8px;
+                right: 8px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: ${statusColors[data.status]};
+                border: 2px solid #3b3b3b;
+            "></span>
+        </div>
         <h3 style="margin-top:10px; font-family: 'Press Start 2P', cursive;">
-          ${data.username}
+            ${data.username}
         </h3>
         <p style="opacity:0.7; font-size:12px;">
-          Updated: ${new Date(data.updated).toLocaleTimeString()}
+            Status: ${data.status.toUpperCase()} <br>
+            Activity: ${data.activity} <br>
+            Updated: ${new Date(data.updated).toLocaleTimeString()}
         </p>
       `;
-    } catch (err) {
-      document.getElementById("discord-card").innerHTML =
-        "<p>Failed to load Discord profile 😭</p>";
+    } catch {
+      document.getElementById("discord-card").innerHTML = "<p>Failed to load Discord profile 😭</p>";
     }
   }
 
