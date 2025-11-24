@@ -62,14 +62,18 @@
 
         <div class="domain">Domain: ItzFisher.org</div>
 
-        <!-- Discord Profile -->
+        <!-- Discord Profile (Working) -->
         <h3 style="margin-top:20px;">Discord Profile</h3>
-        <div style="text-align:center;">
+        <div id="discord-card" style="text-align:center;">
           <img 
-            src="https://lanyard.cnrad.dev/api/1319567972335091773"
+            id="discord-avatar"
+            src="https://api.lanyard.rest/v1/users/1319567972335091773?format=png"
             alt="Discord Profile"
             style="border-radius:12px; width:100%; max-width:320px; margin-top:8px;"
           >
+          <div id="discord-username" style="margin-top: 8px; font-size: 12px; color:#aaa;">
+            Loading Discord…
+          </div>
         </div>
 
       </aside>
@@ -119,6 +123,19 @@
       document.querySelector(a.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
     });
   });
+
+  // Load Discord data
+  fetch("https://api.lanyard.rest/v1/users/1319567972335091773")
+    .then(r => r.json())
+    .then(d => {
+      if (!d.success) return;
+      const user = d.data.discord_user;
+      document.getElementById("discord-username").textContent =
+        user.username + "#" + user.discriminator;
+    })
+    .catch(() => {
+      document.getElementById("discord-username").textContent = "Unable to load Discord.";
+    });
 </script>
 
 </body>
