@@ -214,3 +214,74 @@ body::before {
   nav { margin-left:0; margin-top:10px; }
   .social-logos { justify-content:flex-start; }
 }
+/* MODAL BACKDROP */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+/* MODAL BOX */
+.modal-content {
+  background: #111;
+  border-radius: 14px;
+  padding: 22px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  color: white;
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.modal-content p {
+  font-size: 15px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* BUTTON ROW */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* BUTTON COLORS */
+#cancel-btn {
+  background: #333;
+  color: white;
+}
+
+#continue-btn {
+  background: #5865F2;
+  color: white;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
