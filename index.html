@@ -45,16 +45,41 @@
 
       <a class="btn" href="#projects">See projects</a>
 
-      <!-- Social Logos -->
+      <!-- Social Logos WITH TOOLTIP + CONFIRM -->
       <div class="social-logos">
-        <a href="https://youtube.com/@ItzRealFisherYT" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
-        <a href="https://tiktok.com/@itzrealfisher" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
-        <a href="https://snapchat.com/add/lfish94ll" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/snapchat.svg" alt="Snapchat"></a>
-        <a href="https://ko-fi.com/itzrealfisheryt" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kofi.svg" alt="Ko-fi"></a>
-        <a href="https://github.com/itz-me-fisherYT" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
-        <a href="https://guns.lol/itzrealfisher" target="_blank"><img src="https://images.guns.lol/nSOvz.png" alt="Guns.lol"></a>
-        <a href="https://slat.cc/ItzRealFisher" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/slack.svg" alt="Slat.cc"></a>
-        <a href="https://feds.lol/ItzRealFisher" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/fedora.svg" alt="Feds.lol"></a>
+
+        <a href="https://youtube.com/@ItzRealFisherYT" data-tooltip="YouTube">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
+        </a>
+
+        <a href="https://tiktok.com/@itzrealfisher" data-tooltip="TikTok">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+        </a>
+
+        <a href="https://snapchat.com/add/lfish94ll" data-tooltip="Snapchat">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/snapchat.svg" alt="Snapchat">
+        </a>
+
+        <a href="https://ko-fi.com/itzfisher" data-tooltip="Ko-fi">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kofi.svg" alt="Ko-fi">
+        </a>
+
+        <a href="https://github.com/itz-me-fisherYT" data-tooltip="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+        </a>
+
+        <a href="https://guns.lol/itzrealfisher" data-tooltip="Guns.lol">
+          <img src="https://images.guns.lol/nSOvz.png" alt="Guns.lol">
+        </a>
+
+        <a href="https://slat.cc/ItzRealFisher" data-tooltip="Slat.cc">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/slack.svg" alt="Slat.cc">
+        </a>
+
+        <a href="https://feds.lol/ItzRealFisher" data-tooltip="Feds.lol">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/slack.svg" alt="Feds.lol">
+        </a>
+
       </div>
     </div>
 
@@ -69,7 +94,6 @@
 
       <div class="domain">Domain: ItzFisher.org</div>
 
-      <!-- Discord Card -->
       <h3 style="margin-top:20px;">Discord Profile</h3>
       <div id="discord-card" class="card" style="text-align:center; padding:15px;">
         <p>Loading Discord profile...</p>
@@ -115,6 +139,24 @@ document.querySelectorAll("nav a").forEach(a => {
   });
 });
 
+// Confirmation popup for social icons
+document.querySelectorAll(".social-logos a").forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const url = this.href;
+
+    const confirmLeave = confirm(
+      "You are about to leave ItzFisher.org.\n\nDo you want to continue?"
+    );
+
+    if (confirmLeave) {
+      window.open(url, "_blank");
+    }
+  });
+});
+
+// Discord profile loader
 async function loadDiscordProfile() {
   try {
     const res = await fetch("https://discord-profile-api-ru01.onrender.com/profile.json");
