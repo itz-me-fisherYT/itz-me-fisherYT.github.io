@@ -154,25 +154,69 @@ nav a {
   transform: translateX(-50%) translateY(3px);
 }
 
-/* Projects */
-.projects {
-  margin-top:18px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  gap:16px;
+/* Project Section */
+.projects-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--accent);
 }
 
-.project img {
-  width:100%;
-  height:150px;
-  object-fit:cover;
-  border-radius:10px;
-  background:linear-gradient(90deg,#0d2230,#1b2f3a);
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
 }
 
-.project h3 { margin:8px 0 0 0; font-size:12px; }
-.project p { margin:4px 0; font-size:10px; color:var(--muted); }
-.project a { font-size:10px; }
+/* Project Card */
+.project {
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Project Image Wrapper */
+.project-img-wrapper {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(90deg,#0d2230,#1b2f3a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.project:hover img {
+  transform: scale(1.07);
+}
+
+/* Project Button */
+.project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 11px;
+  background: var(--accent);
+  color: #062018;
+  transition: 0.2s;
+}
+
+.project-btn:hover {
+  opacity: 0.85;
+}
 
 /* Buttons */
 .btn {
