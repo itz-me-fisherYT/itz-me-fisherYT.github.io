@@ -127,6 +127,33 @@ nav a {
   transform: scale(1.2);
 }
 
+/* Tooltip */
+.social-logos a {
+  position: relative;
+}
+
+.social-logos a::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.social-logos a:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(3px);
+}
+
 /* Projects */
 .projects {
   margin-top:18px;
