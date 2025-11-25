@@ -200,4 +200,54 @@ setInterval(loadDiscordProfile, 10000);
 </script>
 
 </body>
+<!-- Exit Confirmation Modal -->
+<div id="exit-modal" class="modal">
+  <div class="modal-content">
+    <h2>Leaving ItzFisher.org</h2>
+    <p id="modal-text">You are about to visit another website.</p>
+
+    <div class="modal-buttons">
+      <button id="cancel-btn">Cancel</button>
+      <button id="continue-btn">Continue</button>
+    </div>
+  </div>
+</div>
 </html>
+<script>
+  const modal = document.getElementById("exit-modal");
+  const modalText = document.getElementById("modal-text");
+  const continueBtn = document.getElementById("continue-btn");
+  const cancelBtn = document.getElementById("cancel-btn");
+
+  let pendingUrl = null;
+
+  // Attach modal to ALL social icons
+  document.querySelectorAll(".social-logos a").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // prevent auto redirect
+      pendingUrl = link.href;
+
+      modalText.textContent = `You are about to visit: ${link.href}`;
+      modal.style.display = "flex";
+    });
+  });
+
+  cancelBtn.onclick = () => {
+    modal.style.display = "none";
+    pendingUrl = null;
+  };
+
+  continueBtn.onclick = () => {
+    if (pendingUrl) window.open(pendingUrl, "_blank");
+    modal.style.display = "none";
+  };
+
+  // Close modal by clicking outside
+  window.onclick = (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      pendingUrl = null;
+    }
+  };
+</script>
+
