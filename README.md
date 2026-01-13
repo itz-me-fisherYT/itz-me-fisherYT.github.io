@@ -1,8 +1,10 @@
-<h1 align="center">🌐 ItzFisher.org — Gamer & Live Profile Portfolio</h1>
-<p align="center">A retro-Minecraft themed personal site showcasing my projects, live Discord & Roblox profiles, bots, socials, and more.</p>
+<h1 align="center">🌐 ItzFisher.org — Portfolio Website</h1>
+<p align="center">A retro-pixel themed personal site built to showcase my projects, bots, and socials.</p>
 
 <div align="center">
-  <img src="https://i.imgur.com/9QOQK5F.png" alt="Preview Image" width="600">
+
+![Preview Image](A_digital_graphic_design_features_the_word_"TICKET.png)
+
 </div>
 
 ---
@@ -12,8 +14,7 @@
 <p align="left">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Made%20With-HTML%2FCSS%2FJS-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Design-Minecraft%20Pixel%20Theme-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Dynamic-Profiles-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Design-Cyber%20Pixel%20Theme-purple?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
 </p>
 
@@ -21,71 +22,55 @@
 
 ## 🚀 Overview
 
-**ItzFisher.org** is my official gamer portfolio website with a dark Minecraft-style pixel aesthetic.  
-It now includes **live dynamic profiles** for Discord and Roblox (main + alt accounts), along with my work on **TicketForge**, **Help Bot 2.0**, and future projects.
+**ItzFisher.org** is my official portfolio website designed in a modern retro pixel style.  
+It highlights my best work — including **TicketForge**, **Help Bot 2.0**, future bots, and more.
 
-The site is fully built from scratch using **HTML, CSS, and JavaScript** with interactive animations, particles, music, and API integrations.
+The site is built completely from scratch with custom HTML, CSS, and lightweight JavaScript.
 
 ---
 
 ## ✨ Features
 
-### 🎮 Gamer & Minecraft Vibes
-- Minecraft block textures as background  
-- Floating particle effects  
-- Custom cat cursor that follows your mouse  
-- Pixel retro/terminal-inspired font  
-
-### ⏳ Loading Screen
-- “Loading World…” animation before the site fully loads  
-- Smooth transition into main site  
-
-### 🔗 Dynamic Profiles
-- **Discord Profile** loads live from API  
-- **Roblox Profiles** (main + alt) dynamically fetch avatar, display name, join date, friends  
-- Status indicators and hover animations  
+### 🎨 Pixel-Retro Aesthetic
+- Soft neon gradients  
+- Blueprint-style pixel grid  
+- Monospaced UI inspired by classic terminal games  
 
 ### 🔗 Interactive Social Icons
-- Hover effects & scale animations  
-- Links to YouTube, TikTok, GitHub, Snapchat  
+- Hover tooltips  
+- Confirmation modal before leaving the site  
+- Mobile-friendly UI popup system  
 
 ### 🧱 Modular Layout
-- Hero section with gamer title and slogan  
-- Project showcase cards  
-- Discord & Roblox dynamic profile cards  
-- YouTube embedded videos  
-- Contact form with email integration  
+- Hero section  
+- Project cards  
+- Skill chips  
+- Clean glass panels  
+- Footer with domain + credit  
 
-### 🎵 Background Music
-- Auto-play Minecraft-inspired background track  
-- Loops continuously  
+### 📁 Project Showcases
+Featured projects include:
+- **TicketForge** — Advanced ticketing bot  
+- **Help Bot 2.0** — Mod tools + alerts + utilities  
+
+Each card includes:
+✔ Image  
+✔ Description  
+✔ GitHub link  
 
 ### 📱 Fully Responsive
-- Works on mobile, tablet, and desktop  
-- Flexible stacked layout and grid for sections  
-
----
-
-## 📁 Project Showcases
-
-Featured projects include:
-
-- **TicketForge** — Advanced ticketing bot  
-- **Help Bot 2.0** — Mod tools, alerts, and utilities  
-
-Each project card includes:
-✔ Project title  
-✔ Description  
-✔ GitHub or project link  
+- Adjusts to all screen sizes  
+- Stacked layout on mobile  
+- Flexible grid for projects  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5**  
-- **CSS3** (Custom pixel/Minecraft theme, animations)  
-- **JavaScript** (Particles, loader, Discord & Roblox API, cursor effects)  
-- Assets hosted via **ItzFisher.org CDN**  
+- **HTML5**
+- **CSS3** (Custom theme, gradients, animations)
+- **JavaScript** (Modal logic, UI interactions)
+- Assets hosted via **ItzFisher.org CDN**
 
 ---
 
