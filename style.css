@@ -1,91 +1,69 @@
-/* Body */
-body {
+* {
   margin: 0;
-  font-family: 'Press Start 2P', cursive;
-  background: url("https://i.imgur.com/9QOQK5F.png");
-  background-size: 128px 128px;
-  color: #e5ffe5;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Animated background */
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("https://r2.guns.lol/5ea54c55-fe93-4555-9f12-490f703ca997.gif") center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+/* Main card */
+.card {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 80px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 15px;
+  padding: 25px;
   text-align: center;
-  overflow-x: hidden;
-  cursor: none;
+  box-shadow: 0 0 20px red;
 }
 
-/* Loader */
-#loader {
-  position: fixed;
-  inset: 0;
-  background: #050805;
-  color: #00ff88;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  z-index: 99999;
+/* Profile pic */
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px red;
 }
 
-/* Navbar */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #050805;
-  padding: 10px;
-  z-index: 9999;
-}
-nav a {
-  color: #00ff88;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 10px;
-}
-nav a:hover { text-decoration: underline; }
-
-/* Header */
-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgba(0,0,0,0.6);
-}
-.slogan { color: #7cffb2; }
-
-/* Sections */
-section {
-  padding: 80px 20px;
-  background: rgba(0,0,0,0.6);
-  margin: 40px;
-  border-radius: 12px;
+/* Username */
+h1 {
+  margin-top: 15px;
+  font-size: 28px;
+  text-shadow: 0 0 10px red;
 }
 
-/* Cards */
-.cards { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-.card { background: #101810; padding: 30px; border-radius: 10px; width: 220px; border: 2px solid #00ff88; }
+/* Bio */
+p {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
 
-/* Social Logos */
-.social-logos img { width: 40px; margin: 15px; filter: invert(1); transition: 0.2s; }
-.social-logos img:hover { transform: scale(1.3); }
-
-/* Form */
-form { max-width: 400px; margin: auto; }
-input, textarea {
-  width: 100%;
-  padding: 12px;
+/* Buttons */
+.links a {
+  display: block;
   margin: 10px 0;
-  background: #050805;
-  color: #00ff88;
-  border: 1px solid #00ff88;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255,0,0,0.2);
+  text-decoration: none;
+  transition: 0.3s;
 }
-button { padding: 12px 25px; background: #00ff88; border: none; cursor: pointer; font-weight: bold; }
-button:hover { transform: scale(1.1); }
 
-/* Video */
-.video-grid iframe { width: 90%; height: 300px; border: 3px solid #00ff88; }
-
-/* Cursor */
-.cursor-cat { position: fixed; pointer-events: none; font-size: 24px; transform: translate(-50%, -50%); z-index: 99999; }
-
-/* Particles */
-#particles { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+.links a:hover {
+  background: red;
+  box-shadow: 0 0 10px red;
+}
