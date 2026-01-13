@@ -2,108 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ItzRealFisher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ItzRealFisher - Gamer, Minecraft Server Creator, Roblox Player">
-
-  <!-- Minecraft-style Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>ItzRealFisherYT | Profile</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- LOADER -->
-<div id="loader"><h1>Loading World...</h1></div>
+<div class="profile-container">
 
-<!-- PARTICLE BACKGROUND -->
-<canvas id="particles"></canvas>
-
-<!-- CAT CURSOR -->
-<div class="cursor-cat" id="cat">🐱</div>
-
-<!-- NAVBAR -->
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#socials">Socials</a>
-  <a href="#discord">Discord</a>
-  <a href="#videos">YouTube</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<!-- HEADER -->
-<header id="home">
-  <h1>ItzRealFisher</h1>
-  <p>Gamer • Minecraft Server Creator • Roblox Player</p>
-  <p class="slogan">"If it works, DON'T TOUCH IT."</p>
-</header>
-
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I'm Fisher, also known as ItzRealFisher or Luke IRL. I play Minecraft and Roblox, and I create Minecraft servers for fun.
-  </p>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>What I Do</h2>
-  <div class="cards">
-    <div class="card">Minecraft Server Setup</div>
-    <div class="card">Roblox Gaming</div>
-    <div class="card">Online Communities</div>
+  <!-- Discord Profile Section -->
+  <div class="card" id="discordCard">
+    <h2>Discord Profile</h2>
+    <img src="" alt="Discord Avatar" id="discordAvatar">
+    <h3 id="discordUsername"></h3>
+    <p id="discordTag"></p>
+    <p id="discordStatus"></p>
+    <p id="discordActivity"></p>
   </div>
-</section>
 
-<!-- SOCIALS -->
-<section id="socials">
-  <h2>Socials</h2>
-  <div class="social-logos">
-    <a href="https://youtube.com/@ItzRealFisherYT"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
-    <a href="https://tiktok.com/@itzrealfisher"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
-    <a href="https://snapchat.com/add/lfish94ll"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/snapchat.svg"></a>
-    <a href="https://github.com/itz-me-fisherYT"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"></a>
+  <!-- Roblox Profiles Section -->
+  <div class="card">
+    <h2>Roblox Profiles</h2>
+    <div class="roblox-profiles" id="robloxProfiles"></div>
   </div>
-</section>
 
-<!-- DISCORD -->
-<section id="discord">
-  <h2>My Discord</h2>
-  <div id="discord-card">Loading Discord profile...</div>
-</section>
-
-<!-- YOUTUBE -->
-<section id="videos">
-  <h2>YouTube</h2>
-  <div class="video-grid">
-    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=ItzRealFisherYT" allowfullscreen></iframe>
+  <!-- Links Section -->
+  <div class="card">
+    <h2>Links</h2>
+    <a href="#" class="link-btn">Copy Discord</a>
+    <a href="#" class="link-btn">Image Host</a>
+    <a href="#" class="link-btn">Premium</a>
+    <a href="#" class="link-btn">The MillionHone.gg</a>
   </div>
-</section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form action="https://formsubmit.co/contact@itzfisher.org" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  <p>Discord: Lycan.fish.er</p>
-</section>
+</div>
 
-<footer>
-  <p>© 2026 ItzRealFisher</p>
-</footer>
+<script>
+/* ---------------- Discord ---------------- */
+fetch('https://discord-profile-api-ru01.onrender.com/profile.json')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('discordAvatar').src = data.avatar;
+    document.getElementById('discordUsername').textContent = data.username;
+    document.getElementById('discordTag').textContent = `Tag: ${data.tag}`;
+    document.getElementById('discordStatus').textContent = `Status: ${data.status}`;
+    document.getElementById('discordActivity').textContent = `Activity: ${data.activity}`;
+  })
+  .catch(err => console.error('Error fetching Discord profile:', err));
 
-<!-- BACKGROUND MUSIC -->
-<audio id="bg-music" autoplay loop>
-  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7c9bfae5d6.mp3" type="audio/mpeg">
-</audio>
+/* ---------------- Roblox ---------------- */
+const robloxAccounts = [
+  { id: 8942431123, label: "Main" },
+  { id: 2892254285, label: "Alt" }
+];
 
-<!-- SCRIPT -->
-<script src="script.js"></script>
+const robloxContainer = document.getElementById('robloxProfiles');
+
+robloxAccounts.forEach(acc => {
+  const container = document.createElement('div');
+  container.classList.add('roblox-account');
+  container.innerHTML = `<h3>${acc.label} Loading...</h3>`;
+  robloxContainer.appendChild(container);
+
+  // Fetch user info
+  fetch(`https://users.roblox.com/v1/users/${acc.id}`)
+    .then(res => res.json())
+    .then(user => {
+      const joinDate = new Date(user.created);
+      
+      // Fetch avatar
+      fetch(`https://thumbnails.roblox.com/v1/users/avatar?userIds=${acc.id}&size=420x420&format=Png&isCircular=false`)
+        .then(res => res.json())
+        .then(thumb => {
+          container.innerHTML = `
+            <img src="${thumb.data[0].imageUrl}" alt="${user.displayName}" class="avatar">
+            <h3>${acc.label}: ${user.displayName}</h3>
+            <p>Joined: ${joinDate.toDateString()}</p>
+          `;
+        });
+    });
+
+  // Fetch friends count
+  fetch(`https://friends.roblox.com/v1/users/${acc.id}/friends/count`)
+    .then(res => res.json())
+    .then(data => {
+      const p = document.createElement('p');
+      p.textContent = `Friends: ${data.count}`;
+      container.appendChild(p);
+    });
+});
+</script>
+
 </body>
 </html>
