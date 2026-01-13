@@ -1,5 +1,5 @@
-<h1 align="center">🌐 ItzFisher.org — Gamer Portfolio Website</h1>
-<p align="center">A retro-Minecraft themed personal site built to showcase my projects, bots, socials, and more.</p>
+<h1 align="center">🌐 ItzFisher.org — Gamer & Live Profile Portfolio</h1>
+<p align="center">A retro-Minecraft themed personal site showcasing my projects, live Discord & Roblox profiles, bots, socials, and more.</p>
 
 <div align="center">
   <img src="https://i.imgur.com/9QOQK5F.png" alt="Preview Image" width="600">
@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Made%20With-HTML%2FCSS%2FJS-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Design-Minecraft%20Pixel%20Theme-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Dynamic-Profiles-green?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
 </p>
 
@@ -21,9 +22,9 @@
 ## 🚀 Overview
 
 **ItzFisher.org** is my official gamer portfolio website with a dark Minecraft-style pixel aesthetic.  
-It highlights my work including **TicketForge**, **Help Bot 2.0**, future bots, and showcases my gaming presence.
+It now includes **live dynamic profiles** for Discord and Roblox (main + alt accounts), along with my work on **TicketForge**, **Help Bot 2.0**, and future projects.
 
-The site is fully built from scratch using **HTML, CSS, and JavaScript** with interactive animations, particles, Discord integration, and YouTube embeds.
+The site is fully built from scratch using **HTML, CSS, and JavaScript** with interactive animations, particles, music, and API integrations.
 
 ---
 
@@ -39,6 +40,11 @@ The site is fully built from scratch using **HTML, CSS, and JavaScript** with in
 - “Loading World…” animation before the site fully loads  
 - Smooth transition into main site  
 
+### 🔗 Dynamic Profiles
+- **Discord Profile** loads live from API  
+- **Roblox Profiles** (main + alt) dynamically fetch avatar, display name, join date, friends  
+- Status indicators and hover animations  
+
 ### 🔗 Interactive Social Icons
 - Hover effects & scale animations  
 - Links to YouTube, TikTok, GitHub, Snapchat  
@@ -46,7 +52,7 @@ The site is fully built from scratch using **HTML, CSS, and JavaScript** with in
 ### 🧱 Modular Layout
 - Hero section with gamer title and slogan  
 - Project showcase cards  
-- Discord profile card dynamically loaded  
+- Discord & Roblox dynamic profile cards  
 - YouTube embedded videos  
 - Contact form with email integration  
 
@@ -78,7 +84,7 @@ Each project card includes:
 
 - **HTML5**  
 - **CSS3** (Custom pixel/Minecraft theme, animations)  
-- **JavaScript** (Particles, loader, Discord API, cursor effects)  
+- **JavaScript** (Particles, loader, Discord & Roblox API, cursor effects)  
 - Assets hosted via **ItzFisher.org CDN**  
 
 ---
