@@ -5,29 +5,47 @@
   <title>ItzRealFisher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ItzRealFisher - Gamer, Minecraft Server Creator, Roblox Player">
+
+  <!-- Minecraft Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Loading Screen -->
+<div id="loader">
+  <h1>Loading World...</h1>
+</div>
+
+<!-- Particle Background -->
+<canvas id="particles"></canvas>
+
+<!-- Cat Cursor -->
 <div class="cursor-cat" id="cat">🐱</div>
 
-<header>
+<!-- Navbar -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#socials">Socials</a>
+  <a href="#discord">Discord</a>
+  <a href="#videos">YouTube</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
   <h1>ItzRealFisher</h1>
   <p>Gamer • Minecraft Server Creator • Roblox Player</p>
   <p class="slogan">"If it works, DON'T TOUCH IT."</p>
-
-  <div class="buttons">
-    <a href="#about" class="btn">About</a>
-    <a href="#projects" class="btn">Projects</a>
-    <a href="#contact" class="btn">Contact</a>
-  </div>
 </header>
 
 <section id="about">
   <h2>About Me</h2>
   <p>
-    Hey, I'm Fisher — also known as ItzRealFisher or Luke IRL.  
-    I play Minecraft and Roblox, create Minecraft servers, and enjoy building fun online experiences.
+    I'm Fisher, also known as ItzRealFisher or Luke IRL.  
+    I play Minecraft and Roblox, and I create Minecraft servers for fun.
   </p>
 </section>
 
@@ -50,6 +68,18 @@
   </div>
 </section>
 
+<section id="discord">
+  <h2>My Discord</h2>
+  <div id="discord-card">Loading Discord profile...</div>
+</section>
+
+<section id="videos">
+  <h2>YouTube</h2>
+  <div class="video-grid">
+    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=ItzRealFisherYT" allowfullscreen></iframe>
+  </div>
+</section>
+
 <section id="contact">
   <h2>Contact Me</h2>
   <form action="https://formsubmit.co/contact@itzfisher.org" method="POST">
@@ -65,6 +95,11 @@
 <footer>
   <p>© 2026 ItzRealFisher</p>
 </footer>
+
+<!-- Background Music -->
+<audio id="bg-music" autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7c9bfae5d6.mp3" type="audio/mpeg">
+</audio>
 
 <script src="script.js"></script>
 </body>
