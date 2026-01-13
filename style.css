@@ -1,11 +1,44 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: #0b0f0a;
+  font-family: 'Press Start 2P', cursive;
+  background: url("https://i.imgur.com/9QOQK5F.png");
+  background-size: 128px 128px;
   color: #e5ffe5;
   text-align: center;
   overflow-x: hidden;
   cursor: none;
+}
+
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #050805;
+  color: #00ff88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 99999;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #050805;
+  padding: 10px;
+  z-index: 9999;
+}
+
+nav a {
+  color: #00ff88;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -13,35 +46,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: radial-gradient(#0f1f0f, #050805);
-}
-
-h1 {
-  font-size: 3.5rem;
-  color: #00ff88;
+  background: rgba(0,0,0,0.6);
 }
 
 .slogan {
   color: #7cffb2;
-  font-style: italic;
-}
-
-.btn {
-  background: #00ff88;
-  color: #003300;
-  padding: 12px 22px;
-  margin: 10px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.btn:hover {
-  transform: scale(1.2);
 }
 
 section {
   padding: 80px 20px;
+  background: rgba(0,0,0,0.6);
+  margin: 40px;
+  border-radius: 12px;
 }
 
 .cards {
@@ -56,7 +72,7 @@ section {
   padding: 30px;
   border-radius: 10px;
   width: 220px;
-  border: 1px solid #00ff88;
+  border: 2px solid #00ff88;
 }
 
 .social-logos img {
@@ -82,6 +98,8 @@ input, textarea {
   background: #050805;
   color: #00ff88;
   border: 1px solid #00ff88;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
 }
 
 button {
@@ -96,17 +114,16 @@ button:hover {
   transform: scale(1.1);
 }
 
-footer {
-  background: #050805;
-  padding: 20px;
-  color: #666;
+.video-grid iframe {
+  width: 90%;
+  height: 300px;
+  border: 3px solid #00ff88;
 }
 
-/* Cat Cursor */
 .cursor-cat {
   position: fixed;
   pointer-events: none;
   font-size: 24px;
   transform: translate(-50%, -50%);
-  z-index: 9999;
+  z-index: 99999;
 }
