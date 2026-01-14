@@ -1,257 +1,72 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ItzRealFisher</title>
-  <meta name="description" content="Hi I am ItzRealFisher (Fisher for short)">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
 
-  <!-- Banner -->
-  <div class="banner">
-    <img src="https://images.guns.lol/N9Fpe.png" alt="Banner">
-    <h1>ItzRealFisher <span class="sub">(Fisher)</span></h1>
-    <p class="motto">Turning ideas into code, one block at a time.</p>
-  </div>
+<header class="navbar">
+<div class="logo">⬛ YourName</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#blog">Blog</a>
+<a href="#contact">Contact</a>
+</nav>
+<button id="themeToggle">🌙</button>
+</header>
 
-  <!-- Header / Navigation -->
-  <header>
-    <div class="logo">IRF</div>
-    <nav>
-      <a href="#about">ABOUT</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
-  </header>
 
-  <!-- About + Discord -->
-  <section id="about" class="hero">
-    <div class="card about">
-      <h2>About</h2>
-      <p>Hey — I'm Fisher (ItzRealFisher). I create Minecraft-related projects, bots, and web stuff. I enjoy building things that help servers and communities grow. email me or add my discord, i can make u ur own website just like this!</p>
-
-      <strong>Top skills</strong>
-      <div class="skills">
-        <div class="chip">Minecraft</div>
-        <div class="chip">Node.js</div>
-        <div class="chip">Discord Bots</div>
-        <div class="chip">Web Dev</div>
-      </div>
-
-      <a class="btn" href="#projects">See projects</a>
-
-      <!-- Social Logos WITH TOOLTIP + CONFIRM -->
-      <div class="social-logos">
-
-        <a href="https://youtube.com/@ItzRealFisherYT" data-tooltip="YouTube" aria-label="YouTube">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
-        </a>
-
-        <a href="https://tiktok.com/@itzrealfisher" data-tooltip="TikTok" aria-label="TikTok">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
-        </a>
-
-        <a href="https://snapchat.com/add/lfish94ll" data-tooltip="Snapchat" aria-label="Snapchat">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/snapchat.svg" alt="Snapchat">
-        </a>
-
-        <a href="https://ko-fi.com/itzrealfisheryt" data-tooltip="Ko-fi" aria-label="Ko-fi">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kofi.svg" alt="Ko-fi">
-        </a>
-
-        <a href="https://github.com/itz-me-fisherYT" data-tooltip="GitHub" aria-label="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
-        </a>
-
-        <a href="https://guns.lol/itzrealfisher" data-tooltip="Guns.lol" aria-label="Guns.lol">
-          <img src="https://images.guns.lol/nSOvz.png" alt="Guns.lol">
-        </a>
-
-        <a href="https://slat.cc/ItzRealFisher" data-tooltip="Slat.cc" aria-label="Slat.cc">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/slack.svg" alt="Slat.cc">
-        </a>
-
-        <a href="https://feds.lol/ItzRealFisher" data-tooltip="Feds.lol" aria-label="Feds.lol">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/slack.svg" alt="Feds.lol">
-        </a>
-
-      </div>
-    </div>
-
-    <aside class="card">
-      <h3>Contact</h3>
-      <div class="contact-grid">
-        <div class="chip">Lfish94ll@gmail.com</div>
-        <div class="chip">Lifedupey@gmail.com</div>
-        <div class="chip">Itz.me.fisherYT@gmail.com</div>
-        <div class="chip">Discord: Lycan.fish.er</div>
-      </div>
-
-      <div class="domain">Domain: ItzFisher.org</div>
-
-      <h3 style="margin-top:20px;">Discord Profile</h3>
-      <div id="discord-card" class="card" style="text-align:center; padding:15px;">
-        <p>Loading Discord profile...</p>
-      </div>
-    </aside>
-  </section>
-
-<!-- Projects -->
-<section id="projects">
-  <h2 class="projects-title">Top Projects</h2>
-
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-    <article class="card project">
-      <div class="project-img-wrapper">
-        <img 
-          src="https://images.guns.lol/a9b2f68014e8baaf0f4b755af1617ac053420915/jt9S10.png" 
-          alt="TicketForge Bot"
-          onerror="this.src='project-placeholder.png'"
-        >
-      </div>
-
-      <h3>TicketForge – Discord Ticket Bot</h3>
-      <p>
-        A fully automated Discord ticketing bot featuring category-based support, 
-        staff-only controls, ticket limits, transcripts, customizable prompts, 
-        and automatic logging for clean server management.
-      </p>
-
-      <a class="project-btn" href="https://github.com/itz-me-fisherYT/TicketForge" target="_blank" rel="noopener">
-        View on GitHub
-      </a>
-    </article>
-  </div>
+<section id="home" class="hero">
+<h1 class="typewriter">Hey, I'm YourName</h1>
+<p>Minecraft & Roblox Dev • Builder • Gamer</p>
 </section>
 
 
-  <!-- Footer -->
-  <footer id="contact">
-    <p>Made for <strong>ItzRealFisher</strong> — ItzFisher.org</p>
-    <p class="copyright">© <span id="year"></span> ItzRealFisher</p>
-  </footer>
+<section id="about" class="section">
+<h2>🧱 About Me</h2>
+<p>
+I love building worlds in Minecraft and Roblox. I enjoy coding, designing,
+and creating fun experiences inspired by blocky games.
+</p>
+</section>
 
+
+<section id="projects" class="section">
+<h2>🛠 Projects</h2>
+<div class="grid">
+<div class="card">Minecraft Server</div>
+<div class="card">Roblox Obby</div>
+<div class="card">Game Website</div>
 </div>
+</section>
 
-<!-- Exit Confirmation Modal (embedded, mobile-friendly) -->
-<div id="exit-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="exit-title">
-  <div class="modal-content">
-    <h2 id="exit-title">Leaving ItzFisher.org</h2>
-    <p id="modal-text">You are about to visit another website.</p>
 
-    <div class="modal-buttons">
-      <button id="cancel-btn" type="button">Cancel</button>
-      <button id="continue-btn" type="button">Continue</button>
-    </div>
-  </div>
+<section id="blog" class="section">
+<h2>📜 Blog</h2>
+<div class="grid">
+<div class="card">How I Built My MC World</div>
+<div class="card">Roblox Studio Tips</div>
 </div>
+</section>
 
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
 
-document.querySelectorAll("nav a").forEach(a => {
-  a.addEventListener("click", e => {
-    e.preventDefault();
-    document.querySelector(a.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
-  });
-});
+<section id="contact" class="section">
+<h2>📮 Contact</h2>
+<form id="contactForm">
+<input type="text" placeholder="Name" required />
+<input type="email" placeholder="Email" required />
+<textarea placeholder="Message"></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
 
-// Modal logic (mobile-friendly, custom modal)
-const modal = document.getElementById("exit-modal");
-const modalText = document.getElementById("modal-text");
-const continueBtn = document.getElementById("continue-btn");
-const cancelBtn = document.getElementById("cancel-btn");
-let pendingUrl = null;
 
-// Attach modal to ALL social icons (use delegation-safe snapshot)
-document.querySelectorAll(".social-logos a").forEach(link => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    pendingUrl = link.href;
-    modalText.textContent = `You are about to visit: ${pendingUrl}`;
-    modal.style.display = "flex";
-    modal.setAttribute("aria-hidden", "false");
-    // prevent background scrolling while modal open (mobile)
-    document.body.style.overflow = "hidden";
-  });
-});
+<footer>
+<p>© 2026 YourName</p>
+</footer>
 
-cancelBtn.onclick = () => {
-  modal.style.display = "none";
-  modal.setAttribute("aria-hidden", "true");
-  pendingUrl = null;
-  document.body.style.overflow = ""; // restore scrolling
-};
 
-continueBtn.onclick = () => {
-  if (pendingUrl) window.open(pendingUrl, "_blank", "noopener");
-  modal.style.display = "none";
-  modal.setAttribute("aria-hidden", "true");
-  pendingUrl = null;
-  document.body.style.overflow = "";
-};
-
-// Close modal by clicking outside
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-    modal.setAttribute("aria-hidden", "true");
-    pendingUrl = null;
-    document.body.style.overflow = "";
-  }
-});
-
-// Discord profile loader
-async function loadDiscordProfile() {
-  try {
-    const res = await fetch("https://discord-profile-api-ru01.onrender.com/profile.json");
-    const data = await res.json();
-
-    const statusColors = { online:"green", idle:"orange", dnd:"red", offline:"gray" };
-
-    document.getElementById("discord-card").innerHTML = `
-      <div style="position: relative; display: inline-block;">
-          <img 
-              src="${data.avatar}" 
-              style="width:120px; height:120px; border-radius:50%; border:4px solid #3b3b3b;"
-              alt="Discord avatar"
-          >
-          <span style="
-              position: absolute;
-              bottom: 8px;
-              right: 8px;
-              width: 20px;
-              height: 20px;
-              border-radius: 50%;
-              background-color: ${statusColors[data.status]};
-              border: 2px solid #3b3b3b;
-          "></span>
-      </div>
-      <h3 style="margin-top:10px; font-family: 'Press Start 2P', cursive;">
-          ${data.username}
-      </h3>
-      <p style="opacity:0.7; font-size:12px;">
-          Status: ${data.status?.toUpperCase() || 'OFFLINE'} <br>
-          Activity: ${data.activity || 'None'} <br>
-          Updated: ${new Date(data.updated).toLocaleTimeString()}
-      </p>
-    `;
-  } catch (err) {
-    document.getElementById("discord-card").innerHTML = "<p>Failed to load Discord profile 😭</p>";
-    console.error("Discord profile load error:", err);
-  }
-}
-
-loadDiscordProfile();
-setInterval(loadDiscordProfile, 10000);
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
