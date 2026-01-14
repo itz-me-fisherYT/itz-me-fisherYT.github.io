@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Email",
+    "icon": "gmail",
+    "color": "EA4335",
+    "text": "lfish94l@gmail.com",
+    "url": "mailto:lfish94l@gmail.com"
+  },
+  {
+    "title": "YouTube",
+    "icon": "youtube",
+    "color": "FF0000",
+    "text": "@ItzRealFisher",
+    "url": "https://youtube.com/@ItzRealFisher"
+  },
+  {
+    "title": "TikTok",
+    "icon": "tiktok",
+    "color": "ffffff",
+    "text": "@itzrealfisher",
+    "url": "https://tiktok.com/@itzrealfisher"
+  },
+  {
+    "title": "Snapchat",
+    "icon": "snapchat",
+    "color": "FFFC00",
+    "text": "lfish94l",
+    "url": "https://snapchat.com/add/lfish94l"
+  },
+  {
+    "title": "Roblox",
+    "icon": "roblox",
+    "color": "ffffff",
+    "text": "Kit_Cattymm2",
+    "url": "https://www.roblox.com/users/8942431123/profile"
+  },
+  {
+    "title": "Ko-fi",
+    "icon": "kofi",
+    "color": "FF5E5B",
+    "text": "itzrealfisheryt",
+    "url": "https://ko-fi.com/itzrealfisheryt"
+  },
+  {
+    "title": "GitHub",
+    "icon": "github",
+    "color": "ffffff",
+    "text": "itz-me-fisherYT",
+    "url": "https://github.com/itz-me-fisherYT"
+  },
+  {
+    "title": "This Website",
+    "icon": "minecraft",
+    "color": "62B47A",
+    "text": "itzfisher.org",
+    "url": "https://www.itzfisher.org/"
+  },
+  {
+    "title": "Pastebin",
+    "icon": "pastebin",
+    "color": "02456C",
+    "text": "itzRealFisherYT",
+    "url": "https://pastebin.com/u/itzRealFisherYT"
+  }
+]
