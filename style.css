@@ -1,9 +1,8 @@
 :root {
-  --bg: #7ec850;
-  --bg-dark: #1b1b1b;
-  --text: #111;
-  --text-dark: #f5f5f5;
-  --card: #a0e080;
+  --bg-main: #0b0b0b;
+  --bg-card: #111;
+  --text-muted: #aaa;
+  --accent: #62b47a;
 }
 
 * {
@@ -13,85 +12,226 @@
 body {
   margin: 0;
   font-family: 'Press Start 2P', cursive;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--bg-main);
+  color: white;
+  animation: fadeIn 0.6s ease;
 }
 
-/* NAVBAR */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* NAV */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  background: #4b8f29;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  padding: 15px 25px;
+  background: black;
 }
 
 .navbar a {
-  margin: 0 10px;
   color: white;
   text-decoration: none;
+  margin-left: 15px;
+  font-size: 0.65rem;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#7ec850, #4b8f29);
-}
-
-/* SECTIONS */
-.section {
-  padding: 80px 20px;
   text-align: center;
 }
 
-/* GRID */
-.grid {
+/* SECTION */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* TOOLTIP */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 6px 8px;
+  font-size: 0.5rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+/* DISCORD CARD */
+.discord-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+  padding: 16px 20px;
+  background: var(--bg-card);
+  border-radius: 14px;
+  max-width: 420px;
+  transition: box-shadow 0.2s ease;
+}
+
+.discord-card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.discord-name {
+  font-size: 0.7rem;
+}
+
+.discord-username {
+  font-size: 0.55rem;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.discord-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.55rem;
+}
+
+.discord-activity {
+  font-size: 0.5rem;
+  color: #ccc;
+  margin-top: 4px;
+}
+
+/* STATUS DOTS */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.online {
+  background: #3ba55d;
+  animation: pulse 2s infinite;
+}
+
+.dot.idle { background: #faa61a; }
+.dot.dnd { background: #ed4245; }
+.dot.offline { background: #747f8d; }
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(59,165,93,0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(59,165,93,0); }
+  100% { box-shadow: 0 0 0 0 rgba(59,165,93,0); }
+}
+
+/* GRIDS */
+.grid,
+.links-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 25px;
+  margin-top: 40px;
+  justify-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.grid { grid-template-columns: repeat(3, 1fr); }
+.links-grid { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 900px) {
+  .grid, .links-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 500px) {
+  .grid, .links-grid { grid-template-columns: 1fr; }
 }
 
 /* CARDS */
-.card {
-  background: var(--card);
-  padding: 20px;
-  border: 4px solid #3a5f0b;
-  box-shadow: 6px 6px 0 #000;
+.roblox-card,
+.link-card {
+  width: 100%;
+  max-width: 320px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 22px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: popIn 0.4s ease backwards;
+  animation-delay: calc(var(--i, 0) * 60ms);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* FORM */
-form input,
-form textarea,
-form button {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  font-family: inherit;
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.roblox-card:hover,
+.link-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6),
+              0 0 14px rgba(98,180,122,0.25);
+}
+
+.roblox-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
+}
+
+.roblox-card h3 { font-size: 0.75rem; }
+.roblox-username { font-size: 0.6rem; color: var(--text-muted); }
+
+.roblox-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 0.55rem;
+  color: #ccc;
+}
+
+.link-card a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.65rem;
+}
+
+.link-card img {
+  width: 26px;
+  height: 26px;
 }
 
 /* FOOTER */
 footer {
+  padding: 25px;
   text-align: center;
-  padding: 20px;
-  background: #4b8f29;
-  color: white;
-}
-
-/* DARK MODE */
-body.dark {
-  background: var(--bg-dark);
-  color: var(--text-dark);
-}
-
-body.dark .card {
-  background: #333;
-  border-color: #000;
+  font-size: 0.55rem;
+  color: #777;
 }
