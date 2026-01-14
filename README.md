@@ -1,82 +1,104 @@
-<h1 align="center">🌐 ItzFisher.org — Portfolio Website</h1>
-<p align="center">A retro-pixel themed personal site built to showcase my projects, bots, and socials.</p>
+<h1 align="center">🌐 ItzFisher.org</h1>
 
-<div align="center">
+<p align="center">
+  A retro-pixel personal website showcasing my projects, APIs, and socials.
+</p>
 
-![Preview Image](A_digital_graphic_design_features_the_word_"TICKET.png)
-
-</div>
-
----
-
-## 🏷️ Badges
-
-<p align="left">
+<p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Made%20With-HTML%2FCSS%2FJS-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Design-Cyber%20Pixel%20Theme-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JS-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Hosting-GitHub%20Pages-black?style=for-the-badge" />
 </p>
 
 ---
 
 ## 🚀 Overview
 
-**ItzFisher.org** is my official portfolio website designed in a modern retro pixel style.  
-It highlights my best work — including **TicketForge**, **Help Bot 2.0**, future bots, and more.
+**ItzFisher.org** is my personal portfolio website built with a **retro pixel / guns.lol-inspired UI**.
 
-The site is built completely from scratch with custom HTML, CSS, and lightweight JavaScript.
+It features live data from custom APIs, animated cards, and a clean layout designed to be fast, simple, and expandable.
 
 ---
 
 ## ✨ Features
 
-### 🎨 Pixel-Retro Aesthetic
-- Soft neon gradients  
-- Blueprint-style pixel grid  
-- Monospaced UI inspired by classic terminal games  
+### 🎮 Live Integrations
+- **Discord profile card**
+  - Live status
+  - Activity display
+  - Auto-refresh every 30 seconds
+- **Roblox account grid**
+  - Avatars
+  - Friends & follower stats
+  - Data loaded from a custom Roblox API
 
-### 🔗 Interactive Social Icons
-- Hover tooltips  
-- Confirmation modal before leaving the site  
-- Mobile-friendly UI popup system  
+### 🧱 Portfolio
+- Clickable project cards
+- Links to real GitHub repositories
+- APIs, bots, and web projects
+- guns.lol-style animations & hover effects
 
-### 🧱 Modular Layout
-- Hero section  
-- Project cards  
-- Skill chips  
-- Clean glass panels  
-- Footer with domain + credit  
+### 📰 Blog
+- Dev logs
+- Updates & changelogs
+- Future expansion ready (no backend required)
 
-### 📁 Project Showcases
-Featured projects include:
-- **TicketForge** — Advanced ticketing bot  
-- **Help Bot 2.0** — Mod tools + alerts + utilities  
-
-Each card includes:
-✔ Image  
-✔ Description  
-✔ GitHub link  
-
-### 📱 Fully Responsive
-- Adjusts to all screen sizes  
-- Stacked layout on mobile  
-- Flexible grid for projects  
+### 🎨 UI / UX
+- Retro pixel font
+- Dark theme
+- Hover tooltips
+- Responsive grid layout
+- Smooth animations
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **HTML5**
-- **CSS3** (Custom theme, gradients, animations)
-- **JavaScript** (Modal logic, UI interactions)
-- Assets hosted via **ItzFisher.org CDN**
+- **CSS3**
+- **Vanilla JavaScript**
+- **GitHub Pages**
+- **Render (APIs)**
 
 ---
 
-## 📦 Installation & Setup
+## 📂 Project Structure
 
-Clone the repository:
+/
+├── index.html
+├── portfolio.html
+├── blog.html
+├── style.css
+├── script.js
+├── links.json
+└── README.md
 
-```bash
-git clone https://github.com/itz-me-fisherYT/itz-me-fisherYT.github.io/
+---
+
+## 🔌 APIs Used
+
+- **Discord Profile API**
+- **Roblox API**
+
+> Spotify integration is planned but currently paused due to Spotify API changes.
+
+---
+
+## 🧠 Notes
+
+- No frameworks
+- No build tools
+- No backend required for the website itself
+- Designed to be simple to maintain and extend
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+<p align="center">
+  Built by ItzRealFisher • © 2026
+</p>
