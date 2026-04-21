@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sentra | Discord Moderation Bot</title>
+  <meta name="description" content="Sentra is an all-in-one Discord moderation bot for safer, calmer servers.">
+  <meta name="theme-color" content="#091116">
+  <meta property="og:title" content="Sentra">
+  <meta property="og:description" content="The command center for safer, calmer Discord servers.">
+  <meta property="og:image" content="https://www.itzfisher.org/assets/sentra-avatar.svg">
+  <meta property="og:url" content="https://www.itzfisher.org/sentra.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sentra.css">
+</head>
+<body>
+  <header class="sentra-nav">
+    <a class="brand" href="index.html">
+      <img src="assets/sentra-avatar.svg" alt="Sentra logo">
+      <span>Sentra</span>
+    </a>
+    <nav aria-label="Sentra navigation">
+      <a href="#commands">Commands</a>
+      <a href="#setup">Setup</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="index.html">Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sentra-hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Discord moderation bot</p>
+        <h1>The command center for safer, calmer Discord servers.</h1>
+        <p>
+          Sentra is my main Discord bot project. It brings moderation, warning records, channel control, server utilities, and a brand-matched website into one focused system.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#commands">See commands</a>
+          <a class="button secondary" href="https://github.com/itz-me-fisherYT/Sentra/blob/main/README.md" target="_blank" rel="noopener">Read README</a>
+        </div>
+      </div>
+
+      <aside class="bot-panel reveal" aria-label="Sentra current build">
+        <p class="status">Current Build</p>
+        <img src="assets/sentra-avatar.svg" alt="Sentra bot avatar">
+        <div class="bot-stats">
+          <article>
+            <span>Moderation</span>
+            <strong>Ban, kick, timeout, purge, warn, lock</strong>
+          </article>
+          <article>
+            <span>Utility</span>
+            <strong>Help, ping, server info, user lookup</strong>
+          </article>
+          <article>
+            <span>Storage</span>
+            <strong>Warnings saved between restarts</strong>
+          </article>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section intro-block reveal" aria-labelledby="why-title">
+      <div class="section-heading">
+        <p class="eyebrow">Why Sentra</p>
+        <h2 id="why-title">One bot for the serious parts of running a server.</h2>
+      </div>
+      <div class="info-grid">
+        <article>
+          <span class="label">Built For</span>
+          <h3>Communities that need control</h3>
+          <p>Sentra is for staff teams, private communities, gaming groups, and creator servers that want cleaner moderation tools.</p>
+        </article>
+        <article>
+          <span class="label">Approach</span>
+          <h3>Fast commands, clear feedback</h3>
+          <p>Commands use branded responses and plain language so moderators know what happened without noisy output.</p>
+        </article>
+        <article>
+          <span class="label">Focus</span>
+          <h3>Moderation core before extras</h3>
+          <p>Warnings, member actions, and channel control come first. Logging, automod, and setup controls are the next layer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="eyebrow">Feature Stack</p>
+        <h2 id="features-title">The first Sentra toolkit is already taking shape.</h2>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <h3>Member Moderation</h3>
+          <p>Ban, kick, timeout, purge, and warning tools for handling behavior fast.</p>
+        </article>
+        <article>
+          <h3>Channel Control</h3>
+          <p>Lock or unlock channels during raids, announcements, or cleanup.</p>
+        </article>
+        <article>
+          <h3>Warning Records</h3>
+          <p>Save, review, and remove warning cases with generated warning IDs.</p>
+        </article>
+        <article>
+          <h3>Utility Layer</h3>
+          <p>Use server info, user lookup, latency checks, and help commands for staff flow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="commands" class="section commands reveal" aria-labelledby="commands-title">
+      <div class="section-heading">
+        <p class="eyebrow">Live Commands</p>
+        <h2 id="commands-title">The command menu currently running in Sentra.</h2>
+      </div>
+      <div class="command-grid">
+        <article><span>Utility</span><h3>/help</h3><p>Show the current command panel and what Sentra can do right now.</p></article>
+        <article><span>Utility</span><h3>/ping</h3><p>Check whether the bot is online and how responsive it is.</p></article>
+        <article><span>Utility</span><h3>/server</h3><p>View quick server stats like member count, age, and owner ID.</p></article>
+        <article><span>Utility</span><h3>/user</h3><p>Inspect a user profile, account age, and join date.</p></article>
+        <article><span>Moderation</span><h3>/ban</h3><p>Remove a member permanently with an optional reason.</p></article>
+        <article><span>Moderation</span><h3>/kick</h3><p>Kick a member while keeping the rest of the server intact.</p></article>
+        <article><span>Moderation</span><h3>/timeout</h3><p>Silence a member for values like <code>10m</code>, <code>2h</code>, or <code>1d</code>.</p></article>
+        <article><span>Moderation</span><h3>/purge</h3><p>Bulk delete recent messages during cleanup or spam events.</p></article>
+        <article><span>Moderation</span><h3>/lock</h3><p>Stop everyone from sending messages in the current channel.</p></article>
+        <article><span>Moderation</span><h3>/unlock</h3><p>Open the channel back up once things are under control.</p></article>
+        <article><span>Warnings</span><h3>/warn</h3><p>Add a recorded warning to a member with a reason and case ID.</p></article>
+        <article><span>Warnings</span><h3>/warnings</h3><p>Review a member's saved warning history directly from Discord.</p></article>
+      </div>
+    </section>
+
+    <section id="setup" class="section split reveal" aria-labelledby="setup-title">
+      <div>
+        <p class="eyebrow">Hosted Setup</p>
+        <h2 id="setup-title">Two deploys, one Sentra experience.</h2>
+        <ol class="step-list">
+          <li><strong>Website:</strong> host the public Sentra page on GitHub Pages.</li>
+          <li><strong>Bot:</strong> host the Discord bot from the bot app on LiteByte.</li>
+          <li><strong>Shared Brand:</strong> keep the avatar, command list, and tone aligned.</li>
+          <li><strong>Future Links:</strong> add invite and support server buttons when they are ready.</li>
+        </ol>
+      </div>
+      <blockquote>
+        Sentra protects your server quietly in the background, steps in fast when things go wrong, and keeps moderators in control.
+      </blockquote>
+    </section>
+
+    <section id="roadmap" class="section reveal" aria-labelledby="roadmap-title">
+      <div class="section-heading">
+        <p class="eyebrow">Next Build Phase</p>
+        <h2 id="roadmap-title">The next upgrades are about turning Sentra into a full control center.</h2>
+      </div>
+      <div class="roadmap-grid">
+        <article><h3>Real Invite Link</h3><p>Add the public bot invite when Sentra is ready for more servers.</p></article>
+        <article><h3>Support Server</h3><p>Give users a place to ask questions, report bugs, and request features.</p></article>
+        <article><h3>Logging</h3><p>Add cleaner moderation logs for staff visibility and accountability.</p></article>
+        <article><h3>Automod</h3><p>Build automatic protection for spam, links, and raid behavior.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sentra-footer">
+    <span>Sentra by ItzRealFisher</span>
+    <a href="index.html">Back to ItzFisher.org</a>
+  </footer>
+
+  <script src="sentra.js"></script>
+</body>
+</html>

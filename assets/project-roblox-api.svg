@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Roblox API project profile picture</title>
+  <desc id="desc">A blocky avatar icon for a Roblox profile API.</desc>
+  <rect width="1200" height="675" rx="42" fill="#121817"/>
+  <path d="M0 0h1200v675H0z" fill="#53d7e8" opacity=".08"/>
+  <rect x="390" y="120" width="420" height="420" rx="34" fill="#f2f5ef" opacity=".1" stroke="#ff6f61" stroke-width="8"/>
+  <rect x="500" y="208" width="200" height="160" rx="22" fill="#ff6f61"/>
+  <rect x="548" y="252" width="40" height="40" fill="#101312"/>
+  <rect x="612" y="252" width="40" height="40" fill="#101312"/>
+  <rect x="542" y="326" width="116" height="18" rx="8" fill="#101312"/>
+  <rect x="470" y="388" width="260" height="82" rx="16" fill="#5fe08f"/>
+  <text x="600" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="900" fill="#f2f5ef">ROBLOX API</text>
+</svg>

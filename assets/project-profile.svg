@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Profile README project profile picture</title>
+  <desc id="desc">A GitHub profile README icon with a markdown document.</desc>
+  <rect width="1200" height="675" rx="42" fill="#101312"/>
+  <rect x="330" y="112" width="540" height="450" rx="28" fill="#f2f5ef" opacity=".09" stroke="#5fe08f" stroke-width="6"/>
+  <rect x="390" y="182" width="420" height="46" rx="12" fill="#53d7e8" opacity=".85"/>
+  <rect x="390" y="270" width="280" height="24" rx="8" fill="#f2f5ef" opacity=".5"/>
+  <rect x="390" y="326" width="350" height="24" rx="8" fill="#f2f5ef" opacity=".34"/>
+  <rect x="390" y="382" width="240" height="24" rx="8" fill="#f2f5ef" opacity=".34"/>
+  <text x="600" y="492" text-anchor="middle" font-family="Arial, sans-serif" font-size="86" font-weight="900" fill="#f3c95b">README</text>
+</svg>

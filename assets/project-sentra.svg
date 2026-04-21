@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Sentra project profile picture</title>
+  <desc id="desc">A shield and bot workspace icon for Sentra.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151914"/>
+      <stop offset=".5" stop-color="#243320"/>
+      <stop offset="1" stop-color="#2b2325"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="42" fill="url(#bg)"/>
+  <path d="M600 118l260 96v156c0 142-104 226-260 278-156-52-260-136-260-278V214z" fill="#f2f5ef" opacity=".08" stroke="#f3c95b" stroke-width="8"/>
+  <path d="M600 184l150 56v106c0 78-58 132-150 169-92-37-150-91-150-169V240z" fill="#ff6f61" opacity=".72"/>
+  <rect x="530" y="295" width="140" height="108" rx="24" fill="#101312"/>
+  <circle cx="570" cy="348" r="12" fill="#5fe08f"/>
+  <circle cx="630" cy="348" r="12" fill="#5fe08f"/>
+  <path d="M560 390h80" stroke="#f2f5ef" stroke-width="12" stroke-linecap="round"/>
+  <text x="600" y="107" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#f2f5ef">SENTRA</text>
+</svg>
