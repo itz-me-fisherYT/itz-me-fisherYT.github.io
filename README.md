@@ -1,5 +1,5 @@
 <h1 align="center">🌐 ItzFisher.org — Portfolio Website</h1>
-<p align="center">A retro-pixel themed personal site built to showcase my projects, bots, and socials.</p>
+<p align="center">A retro-pixel themed personal site built to showcase my selected public projects, bots, and socials.</p>
 
 <div align="center">
 
@@ -23,7 +23,7 @@
 ## 🚀 Overview
 
 **ItzFisher.org** is my official portfolio website designed in a modern retro pixel style.  
-It highlights my best work — including **TicketForge**, **Help Bot 2.0**, future bots, and more.
+It highlights my selected public work, including **BlockBase Launcher**, **MineCord**, **Sentra**, my profile README, this website, and the BlockBaseMC website.
 
 The site is built completely from scratch with custom HTML, CSS, and lightweight JavaScript.
 
@@ -50,8 +50,13 @@ The site is built completely from scratch with custom HTML, CSS, and lightweight
 
 ### 📁 Project Showcases
 Featured projects include:
-- **TicketForge** — Advanced ticketing bot  
-- **Help Bot 2.0** — Mod tools + alerts + utilities  
+- **BlockBase Launcher** - Custom Minecraft Java launcher
+- **MineCord** - Minecraft and Discord project work
+- **itz-me-fisherYT.github.io** - This portfolio website
+- **Sentra** - Discord bot and website workspace
+- **itz-me-fisherYT profile README** - GitHub profile source
+- **BlockBaseApp.github.io** - BlockBaseMC launcher website
+
 
 Each card includes:
 ✔ Image  
