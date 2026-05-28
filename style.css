@@ -353,6 +353,126 @@ h3 {
   font-size: 42px;
 }
 
+.blockbase-page {
+  background:
+    radial-gradient(circle at 16% 12%, rgba(95, 224, 143, 0.16), transparent 32%),
+    radial-gradient(circle at 86% 4%, rgba(255, 111, 97, 0.12), transparent 28%),
+    var(--paper);
+}
+
+.blockbase-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 560px);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+.launcher-preview {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(24, 29, 27, 0.88);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.preview-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(242, 245, 239, 0.06);
+}
+
+.preview-bar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--green);
+}
+
+.preview-bar span:nth-child(2) {
+  background: var(--gold);
+}
+
+.preview-bar span:nth-child(3) {
+  background: var(--coral);
+}
+
+.preview-bar strong {
+  margin-left: 6px;
+}
+
+.preview-shell {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  min-height: 330px;
+}
+
+.preview-shell nav {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 18px;
+  border-right: 1px solid var(--line);
+  background: rgba(10, 14, 12, 0.55);
+}
+
+.preview-shell nav b {
+  margin-bottom: 12px;
+}
+
+.preview-shell nav span {
+  border-radius: var(--radius);
+  padding: 9px 10px;
+  color: var(--muted);
+}
+
+.preview-shell nav .active {
+  background: rgba(95, 224, 143, 0.2);
+  color: var(--ink);
+}
+
+.preview-shell section {
+  padding: 22px;
+}
+
+.preview-shell small {
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.preview-shell h2 {
+  margin: 8px 0 20px;
+  font-size: clamp(28px, 4vw, 44px);
+}
+
+.preview-shell article {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(95, 224, 143, 0.2), rgba(255, 111, 97, 0.12));
+}
+
+.preview-shell article p {
+  color: var(--muted);
+}
+
+.preview-shell article div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.preview-shell article span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 9px;
+  background: rgba(242, 245, 239, 0.08);
+  font-size: 13px;
+}
+
 .project-body,
 .service-grid article {
   padding: 24px;
@@ -678,8 +798,15 @@ dialog p {
   .intro,
   .project-grid,
   .service-grid,
-  .contact {
+  .contact,
+  .blockbase-hero,
+  .preview-shell {
     grid-template-columns: 1fr;
+  }
+
+  .preview-shell nav {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
   }
 
   .quick-strip div {
