@@ -339,7 +339,7 @@
 
     async function loadDiscordProfile() {
       try {
-        const response = await fetch("https://discord-profile-api-ru01.onrender.com/profile.json", {
+        const response = await fetch("https://discord-profile-api-v2.bonto.run/profile.json", {
           cache: "no-store",
         });
         if (!response.ok) throw new Error(`Discord API ${response.status}`);
