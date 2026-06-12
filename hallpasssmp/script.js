@@ -1,9 +1,12 @@
-const HALLPASS_API_BASE = "";
+const HALLPASS_API_BASE = "PUT_PUBLIC_API_URL_HERE";
+const HALLPASS_API_KEY = "PUT_API_KEY_HERE";
 
-const fallbackMessage = "Live data appears when a public API is connected.";
+const fallbackMessage = "Live data appears when the public NovaBridge API is configured.";
+const placeholderApiBase = "PUT_PUBLIC_API_URL_HERE";
 
 const state = {
   health: null,
+  server: null,
   players: [],
 };
 
@@ -40,7 +43,7 @@ const statFields = {
 };
 
 function hasApiBase() {
-  return HALLPASS_API_BASE.trim().length > 0;
+  return HALLPASS_API_BASE.trim().length > 0 && HALLPASS_API_BASE !== placeholderApiBase;
 }
 
 function apiUrl(path) {
@@ -52,8 +55,13 @@ async function fetchJson(path) {
     throw new Error("HallPass API base is not configured.");
   }
 
+  const headers = { Accept: "application/json" };
+  if (HALLPASS_API_KEY.trim().length > 0) {
+    headers.Authorization = `Bearer ${HALLPASS_API_KEY}`;
+  }
+
   const response = await fetch(apiUrl(path), {
-    headers: { Accept: "application/json" },
+    headers,
     cache: "no-store",
   });
 
@@ -109,7 +117,7 @@ function renderPlayers(players) {
 }
 
 function normalizePlayers(payload) {
-  const players = valueFrom(payload, ["players", "onlinePlayers", "list"], []);
+  const players = valueFrom(payload, ["players", "onlinePlayers", "list", "names"], []);
   return Array.isArray(players) ? players : [];
 }
 
@@ -125,17 +133,19 @@ async function loadServerInfo() {
   }
 
   try {
-    const [health, playersPayload] = await Promise.all([
+    const [health, server, onlinePayload] = await Promise.all([
       fetchJson("/api/health"),
-      fetchJson("/api/players"),
+      fetchJson("/api/server"),
+      fetchJson("/api/online"),
     ]);
 
     state.health = health;
-    state.players = normalizePlayers(playersPayload);
+    state.server = server;
+    state.players = normalizePlayers(onlinePayload);
 
-    const online = Boolean(valueFrom(health, ["online", "isOnline"], false));
-    const playerCount = valueFrom(playersPayload, ["count", "online", "onlineCount"], state.players.length);
-    const maxPlayers = valueFrom(playersPayload, ["max", "maxPlayers"], "");
+    const online = Boolean(valueFrom(health, ["online", "isOnline", "ok", "healthy"], false));
+    const playerCount = valueFrom(onlinePayload, ["count", "online", "onlineCount"], state.players.length);
+    const maxPlayers = valueFrom(server, ["maxPlayers", "max", "slots"], "");
 
     setStatus(
       online ? "online" : "offline",
@@ -198,18 +208,45 @@ function renderStats(stats) {
   statFields.lastSeen.textContent = formatDate(valueFrom(stats, ["lastSeen", "lastOnline"]));
 }
 
+function mergePayloads(payloads) {
+  return payloads.reduce((merged, payload) => {
+    if (payload && typeof payload === "object" && !Array.isArray(payload)) {
+      return { ...merged, ...payload };
+    }
+    return merged;
+  }, {});
+}
+
 async function lookupStats(playerName) {
   clearStats(playerName);
 
   if (!hasApiBase()) {
-    selectors.statsMessage.innerHTML = 'Stats lookup is ready, but <code>HALLPASS_API_BASE</code> is blank for static GitHub Pages.';
+    selectors.statsMessage.innerHTML = 'Stats lookup is ready, but <code>HALLPASS_API_BASE</code> still has the placeholder value.';
     return;
   }
 
   selectors.statsMessage.textContent = "Looking up player stats...";
 
   try {
-    const stats = await fetchJson(`/api/stats/${encodeURIComponent(playerName)}`);
+    const encodedPlayer = encodeURIComponent(playerName);
+    const responses = await Promise.allSettled([
+      fetchJson(`/api/stats/${encodedPlayer}`),
+      fetchJson(`/api/player/${encodedPlayer}`),
+      fetchJson(`/api/seen/${encodedPlayer}`),
+      fetchJson(`/api/playtime/${encodedPlayer}`),
+      fetchJson(`/api/balance/${encodedPlayer}`),
+      fetchJson(`/api/rank/${encodedPlayer}`),
+    ]);
+    const payloads = responses
+      .filter((response) => response.status === "fulfilled")
+      .map((response) => response.value);
+    const stats = mergePayloads(payloads);
+
+    if (!payloads.length) {
+      throw new Error("No player stat endpoints returned data.");
+    }
+
+    stats.name = valueFrom(stats, ["name", "player", "username"], playerName);
     renderStats(stats);
   } catch (error) {
     selectors.statsMessage.textContent = "Player stats are unavailable right now. Try again when the public API is online.";
