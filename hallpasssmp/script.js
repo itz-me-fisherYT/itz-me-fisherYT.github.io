@@ -3,6 +3,7 @@ const HALLPASS_API_KEY = "--9fzAKP0UCXcEsZTidw7u32jbrHj8xB-wLWNPaP-S4";
 
 const fallbackMessage = "Live data appears when the public NovaBridge API is configured.";
 const placeholderApiBase = "PUT_PUBLIC_API_URL_HERE";
+const apiRequestTimeoutMs = 8000;
 
 const state = {
   health: null,
@@ -57,9 +58,17 @@ function apiUrl(path) {
   return `${HALLPASS_API_BASE.replace(/\/+$/, "")}${path}`;
 }
 
+function isMixedContentApi() {
+  return window.location.protocol === "https:" && HALLPASS_API_BASE.startsWith("http://");
+}
+
 async function fetchJson(path) {
   if (!hasApiBase()) {
     throw new Error("HallPass API base is not configured.");
+  }
+
+  if (isMixedContentApi()) {
+    throw new Error("Mixed content blocked. The live HTTPS site needs an HTTPS API URL.");
   }
 
   const headers = { Accept: "application/json" };
@@ -67,10 +76,19 @@ async function fetchJson(path) {
     headers.Authorization = `Bearer ${HALLPASS_API_KEY}`;
   }
 
-  const response = await fetch(apiUrl(path), {
-    headers,
-    cache: "no-store",
-  });
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), apiRequestTimeoutMs);
+
+  let response;
+  try {
+    response = await fetch(apiUrl(path), {
+      headers,
+      cache: "no-store",
+      signal: controller.signal,
+    });
+  } finally {
+    clearTimeout(timeout);
+  }
 
   if (!response.ok) {
     throw new Error(`API returned ${response.status}`);
@@ -271,9 +289,16 @@ async function loadServerInfo() {
     selectors.apiState.textContent = "Connected";
     renderPlayers(state.players);
   } catch (error) {
-    setStatus("unknown", "Status unavailable", "The public API is offline or not reachable right now.");
+    const blockedByHttps = error.message.includes("Mixed content");
+    setStatus(
+      "unknown",
+      "Status unavailable",
+      blockedByHttps
+        ? "The API URL uses HTTP, but this page is HTTPS. Browsers block that until the API is available over HTTPS."
+        : "The public API is offline or not reachable right now."
+    );
     selectors.playerCount.textContent = "--";
-    selectors.apiState.textContent = "Offline";
+    selectors.apiState.textContent = blockedByHttps ? "Blocked" : "Offline";
     renderPlayers([]);
   }
 }
@@ -363,7 +388,9 @@ async function lookupStats(playerName) {
     stats.name = valueFrom(stats, ["name", "player", "username"], playerName);
     renderStats(stats);
   } catch (error) {
-    selectors.statsMessage.textContent = "Player stats are unavailable right now. Try again when the public API is online.";
+    selectors.statsMessage.textContent = error.message.includes("Mixed content")
+      ? "Stats are blocked because the API uses HTTP while this page is HTTPS. The API needs HTTPS for browser access."
+      : "Player stats are unavailable right now. Try again when the public API is online.";
   }
 }
 
