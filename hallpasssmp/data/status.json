@@ -1,31 +1,23 @@
 {
-  "errors": [],
-  "generatedAt": "2026-06-12T14:02:11.705033+00:00",
-  "health": {
-    "database": true,
-    "ok": true
-  },
-  "ok": true,
+  "errors": [
+    "/api/health: timed out"
+  ],
+  "generatedAt": "2026-06-12T16:33:44.729866+00:00",
+  "health": {},
+  "ok": false,
   "online": {
-    "players": [
-      {
-        "name": "Asparta",
-        "ping": 198,
-        "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "world": "world"
-      }
-    ]
+    "players": []
   },
   "server": {
     "memory": {
-      "free": 912403136,
+      "free": 419927696,
       "max": 8174698496,
-      "total": 3019898880
+      "total": 905969664
     },
     "name": "Paper",
-    "onlinePlayers": 1,
-    "tps": 16.35,
-    "uptime": 2390680,
+    "onlinePlayers": 0,
+    "tps": 20.0,
+    "uptime": 1262504,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -33,27 +25,5 @@
       "world_the_end"
     ]
   },
-  "statsByName": {
-    "Asparta": {
-      "balance": 0.0,
-      "blocksBroken": 454,
-      "blocksPlaced": 154,
-      "currentWorld": "world",
-      "deaths": 2,
-      "distanceWalked": 0.0,
-      "firstJoin": 1781268325463,
-      "joins": 2,
-      "jumps": 0,
-      "lastSeen": 1781272918082,
-      "mobKills": 0,
-      "name": "Asparta",
-      "player": "Asparta",
-      "playerKills": 0,
-      "playtime": 0,
-      "quits": 0,
-      "rank": "default",
-      "totalPlaytime": 0,
-      "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726"
-    }
-  }
+  "statsByName": {}
 }
