@@ -3,7 +3,7 @@ name: Update HallPass SMP data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -23,7 +23,13 @@ jobs:
         run: python .github/scripts/update_hallpass_data.py
 
       - name: Commit updated snapshot
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Update HallPass SMP data snapshot
-          file_pattern: hallpasssmp/data/status.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hallpasssmp/data/status.json
+          if git diff --cached --quiet; then
+            echo "No snapshot changes to commit."
+          else
+            git commit -m "Update HallPass SMP data snapshot"
+            git push
+          fi
