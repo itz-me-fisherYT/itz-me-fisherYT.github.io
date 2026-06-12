@@ -210,7 +210,18 @@ function renderPlayers(players) {
   selectors.playerList.className = "player-list";
   for (const player of players) {
     const chip = document.createElement("span");
-    chip.textContent = typeof player === "string" ? player : valueFrom(player, ["name", "username", "player"], "Unknown");
+    const playerName = typeof player === "string" ? player : valueFrom(player, ["name", "username", "player"], "Unknown");
+    chip.textContent = playerName;
+    chip.title = "Click to lookup stats";
+    chip.tabIndex = 0;
+    chip.setAttribute("role", "button");
+    chip.addEventListener("click", () => lookupPlayerFromChip(playerName));
+    chip.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        lookupPlayerFromChip(playerName);
+      }
+    });
     selectors.playerList.append(chip);
   }
 }
@@ -320,6 +331,12 @@ function lookupStats(playerName) {
   }
 
   renderStats(stats);
+}
+
+function lookupPlayerFromChip(playerName) {
+  selectors.playerName.value = playerName;
+  lookupStats(playerName);
+  document.querySelector("#stats").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 document.querySelectorAll("[data-copy]").forEach((button) => {
