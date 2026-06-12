@@ -626,10 +626,8 @@ dd {
   height: 26px;
   border: 1px solid rgba(114, 230, 139, 0.72);
   border-radius: 999px;
-  background:
-    radial-gradient(circle, rgba(114, 230, 139, 0.42), transparent 58%),
-    rgba(124, 183, 255, 0.12);
-  box-shadow: 0 0 26px rgba(114, 230, 139, 0.34);
+  background: rgba(20, 42, 30, 0.82);
+  box-shadow: none;
   opacity: 0;
   pointer-events: none;
   transition: opacity 160ms ease;
