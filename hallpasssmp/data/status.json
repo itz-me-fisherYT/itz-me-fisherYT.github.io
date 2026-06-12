@@ -1,16 +1,86 @@
 {
-  "ok": false,
-  "generatedAt": null,
+  "errors": [],
+  "generatedAt": "2026-06-12T12:50:58.397972+00:00",
   "health": {
-    "ok": false
+    "database": true,
+    "ok": true
   },
-  "server": {},
+  "ok": true,
   "online": {
-    "players": [],
-    "count": 0
+    "players": [
+      {
+        "name": "ItzOnlyFisher",
+        "ping": 309,
+        "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
+        "world": "world"
+      },
+      {
+        "name": "Asparta",
+        "ping": 191,
+        "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
+        "world": "world"
+      }
+    ]
   },
-  "statsByName": {},
-  "errors": [
-    "Waiting for the GitHub Actions updater to generate the first snapshot."
-  ]
+  "server": {
+    "memory": {
+      "free": 314928848,
+      "max": 8174698496,
+      "total": 1170210816
+    },
+    "name": "Paper",
+    "onlinePlayers": 2,
+    "tps": 19.22,
+    "uptime": 1300513,
+    "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
+    "worlds": [
+      "world",
+      "world_nether",
+      "world_the_end"
+    ]
+  },
+  "statsByName": {
+    "Asparta": {
+      "balance": 0.0,
+      "blocksBroken": 43,
+      "blocksPlaced": 3,
+      "currentWorld": "world",
+      "deaths": 0,
+      "distanceWalked": 0.0,
+      "firstJoin": 1781268325463,
+      "joins": 1,
+      "jumps": 0,
+      "lastSeen": 1781268650210,
+      "mobKills": 0,
+      "name": "Asparta",
+      "player": "Asparta",
+      "playerKills": 0,
+      "playtime": 0,
+      "quits": 0,
+      "rank": "default",
+      "totalPlaytime": 0,
+      "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726"
+    },
+    "ItzOnlyFisher": {
+      "balance": 0.0,
+      "blocksBroken": 1,
+      "blocksPlaced": 0,
+      "currentWorld": "world",
+      "deaths": 1,
+      "distanceWalked": 0.0,
+      "firstJoin": 1781167266490,
+      "joins": 11,
+      "jumps": 0,
+      "lastSeen": 1781267515528,
+      "mobKills": 0,
+      "name": "ItzOnlyFisher",
+      "player": "ItzOnlyFisher",
+      "playerKills": 0,
+      "playtime": 13816416,
+      "quits": 4,
+      "rank": "default",
+      "totalPlaytime": 13816416,
+      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
+    }
+  }
 }
