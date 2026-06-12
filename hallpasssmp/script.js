@@ -164,8 +164,6 @@ function makeGlowCardsInteractive() {
       const rotateX = ((0.5 - (y / rect.height)) * 3.5);
 
       card.classList.add("is-lit");
-      card.style.setProperty("--spot-x", `${x}px`);
-      card.style.setProperty("--spot-y", `${y}px`);
 
       if (window.matchMedia("(pointer: fine)").matches) {
         card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;

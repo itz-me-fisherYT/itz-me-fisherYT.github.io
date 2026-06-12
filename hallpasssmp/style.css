@@ -149,13 +149,7 @@ main {
 .stats-card::after,
 .stats-grid div::after,
 .command-columns article::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(114, 230, 139, 0.22), transparent 15rem);
-  opacity: 0;
-  transition: opacity 180ms ease;
+  content: none;
 }
 
 .hero-copy.is-lit,
@@ -169,18 +163,6 @@ main {
 .command-columns article.is-lit {
   border-color: rgba(114, 230, 139, 0.48);
   box-shadow: var(--glow);
-}
-
-.hero-copy.is-lit::after,
-.status-panel.is-lit::after,
-.stats-lookup.is-lit::after,
-.section.is-lit::after,
-.server-status.is-lit::after,
-.status-metrics article.is-lit::after,
-.stats-card.is-lit::after,
-.stats-grid div.is-lit::after,
-.command-columns article.is-lit::after {
-  opacity: 1;
 }
 
 .hero-copy {
@@ -619,14 +601,14 @@ dd {
 
 .cursor-orb {
   position: fixed;
-  top: -13px;
-  left: -13px;
+  top: -9px;
+  left: -9px;
   z-index: 140;
-  width: 26px;
-  height: 26px;
-  border: 1px solid rgba(114, 230, 139, 0.72);
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(114, 230, 139, 0.84);
   border-radius: 999px;
-  background: rgba(20, 42, 30, 0.82);
+  background: rgba(13, 17, 16, 0.88);
   box-shadow: none;
   opacity: 0;
   pointer-events: none;
@@ -636,7 +618,7 @@ dd {
 .cursor-orb::after {
   content: "";
   position: absolute;
-  inset: 8px;
+  inset: 6px;
   border-radius: inherit;
   background: var(--green);
 }
