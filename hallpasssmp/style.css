@@ -51,17 +51,6 @@ body::before {
   mask-image: linear-gradient(to bottom, black, transparent 78%);
 }
 
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background: radial-gradient(circle at var(--cursor-x, 50%) var(--cursor-y, 20%), rgba(114, 230, 139, 0.16), transparent 22rem);
-  opacity: 0.72;
-  transition: opacity 180ms ease;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -628,6 +617,36 @@ dd {
   transform: translate(-50%, 0);
 }
 
+.cursor-orb {
+  position: fixed;
+  top: -13px;
+  left: -13px;
+  z-index: 140;
+  width: 26px;
+  height: 26px;
+  border: 1px solid rgba(114, 230, 139, 0.72);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, rgba(114, 230, 139, 0.42), transparent 58%),
+    rgba(124, 183, 255, 0.12);
+  box-shadow: 0 0 26px rgba(114, 230, 139, 0.34);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease;
+}
+
+.cursor-orb::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: inherit;
+  background: var(--green);
+}
+
+.cursor-orb.is-active {
+  opacity: 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -645,7 +664,8 @@ dd {
   .status-metrics article,
   .stats-card,
   .stats-grid div,
-  .command-columns article {
+  .command-columns article,
+  .cursor-orb {
     transform: none !important;
   }
 }

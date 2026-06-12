@@ -23,9 +23,14 @@ const selectors = {
   statsPlayer: document.querySelector("#stats-player"),
   statsOnline: document.querySelector("#stats-online"),
   statsMessage: document.querySelector("#stats-message"),
+  cursorOrb: document.querySelector("#cursor-orb"),
 };
 
 let toastTimer;
+let cursorX = window.innerWidth / 2;
+let cursorY = window.innerHeight / 2;
+let orbX = cursorX;
+let orbY = cursorY;
 
 const statFields = {
   world: document.querySelector("#stat-world"),
@@ -155,10 +160,6 @@ function makeGlowCardsInteractive() {
     });
   });
 
-  document.addEventListener("pointermove", (event) => {
-    document.body.style.setProperty("--cursor-x", `${event.clientX}px`);
-    document.body.style.setProperty("--cursor-y", `${event.clientY}px`);
-  });
 }
 
 function makeClickableBitsInteractive() {
@@ -191,6 +192,25 @@ function makeClickableBitsInteractive() {
       showToast(chip.classList.contains("is-active") ? `${chip.textContent} selected` : `${chip.textContent} unselected`);
     });
   });
+}
+
+function moveCursorFollower(event) {
+  cursorX = event.clientX;
+  cursorY = event.clientY;
+  selectors.cursorOrb.classList.add("is-active");
+}
+
+function animateCursorFollower() {
+  orbX += (cursorX - orbX) * 0.18;
+  orbY += (cursorY - orbY) * 0.18;
+  selectors.cursorOrb.style.transform = `translate3d(${orbX}px, ${orbY}px, 0)`;
+  requestAnimationFrame(animateCursorFollower);
+}
+
+function startCursorFollower() {
+  if (!selectors.cursorOrb || !window.matchMedia("(pointer: fine)").matches) return;
+  window.addEventListener("pointermove", moveCursorFollower);
+  animateCursorFollower();
 }
 
 function renderPlayers(players) {
@@ -376,4 +396,5 @@ selectors.statsForm.addEventListener("submit", (event) => {
 
 makeGlowCardsInteractive();
 makeClickableBitsInteractive();
+startCursorFollower();
 loadServerInfo();
