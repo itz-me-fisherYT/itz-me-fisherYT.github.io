@@ -1,5 +1,5 @@
-const HALLPASS_API_BASE = "PUT_PUBLIC_API_URL_HERE";
-const HALLPASS_API_KEY = "PUT_API_KEY_HERE";
+const HALLPASS_API_BASE = "http://147.189.171.246:8123";
+const HALLPASS_API_KEY = "--9fzAKP0UCXcEsZTidw7u32jbrHj8xB-wLWNPaP-S4";
 
 const fallbackMessage = "Live data appears when the public NovaBridge API is configured.";
 const placeholderApiBase = "PUT_PUBLIC_API_URL_HERE";
