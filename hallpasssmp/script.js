@@ -25,6 +25,8 @@ const selectors = {
   statsMessage: document.querySelector("#stats-message"),
 };
 
+let toastTimer;
+
 const statFields = {
   world: document.querySelector("#stat-world"),
   rank: document.querySelector("#stat-rank"),
@@ -97,6 +99,98 @@ function setStatus(kind, title, detail) {
   selectors.statusDot.className = `status-dot ${kind}`;
   selectors.statusText.textContent = title;
   selectors.statusDetail.textContent = detail;
+}
+
+function showToast(message) {
+  let toast = document.querySelector(".toast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.className = "toast";
+    toast.setAttribute("role", "status");
+    toast.setAttribute("aria-live", "polite");
+    document.body.append(toast);
+  }
+
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toast.classList.remove("is-visible");
+  }, 1700);
+}
+
+function burstSpark(target, event) {
+  const rect = target.getBoundingClientRect();
+  const spark = document.createElement("span");
+  spark.className = "spark";
+  spark.style.left = `${event.clientX - rect.left}px`;
+  spark.style.top = `${event.clientY - rect.top}px`;
+  target.append(spark);
+  spark.addEventListener("animationend", () => spark.remove(), { once: true });
+}
+
+function makeGlowCardsInteractive() {
+  const glowCards = document.querySelectorAll(".hero-copy, .status-panel, .stats-lookup, .section, .server-status, .status-metrics article, .stats-card, .stats-grid div, .command-columns article");
+
+  glowCards.forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const rotateY = ((x / rect.width) - 0.5) * 3.5;
+      const rotateX = ((0.5 - (y / rect.height)) * 3.5);
+
+      card.classList.add("is-lit");
+      card.style.setProperty("--spot-x", `${x}px`);
+      card.style.setProperty("--spot-y", `${y}px`);
+
+      if (window.matchMedia("(pointer: fine)").matches) {
+        card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
+      }
+    });
+
+    card.addEventListener("pointerleave", () => {
+      card.classList.remove("is-lit");
+      card.style.transform = "";
+    });
+  });
+
+  document.addEventListener("pointermove", (event) => {
+    document.body.style.setProperty("--cursor-x", `${event.clientX}px`);
+    document.body.style.setProperty("--cursor-y", `${event.clientY}px`);
+  });
+}
+
+function makeClickableBitsInteractive() {
+  const clickableBits = document.querySelectorAll(".copy-button, .discord-button, .lookup-form button, .icon-button, .chip-grid span, .command-list code");
+
+  clickableBits.forEach((element) => {
+    element.addEventListener("click", (event) => {
+      burstSpark(element, event);
+    });
+  });
+
+  document.querySelectorAll(".command-list code").forEach((command) => {
+    command.title = "Click to copy";
+    command.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(command.textContent.trim());
+        command.classList.add("is-active");
+        showToast(`Copied ${command.textContent.trim()}`);
+        setTimeout(() => command.classList.remove("is-active"), 900);
+      } catch (error) {
+        window.prompt("Copy this command", command.textContent.trim());
+      }
+    });
+  });
+
+  document.querySelectorAll(".chip-grid span").forEach((chip) => {
+    chip.title = "Click to highlight";
+    chip.addEventListener("click", () => {
+      chip.classList.toggle("is-active");
+      showToast(chip.classList.contains("is-active") ? `${chip.textContent} selected` : `${chip.textContent} unselected`);
+    });
+  });
 }
 
 function renderPlayers(players) {
@@ -260,6 +354,7 @@ document.querySelectorAll("[data-copy]").forEach((button) => {
       await navigator.clipboard.writeText(value);
       const original = button.querySelector("span").textContent;
       button.querySelector("span").textContent = "Copied";
+      showToast(`Copied ${value}`);
       setTimeout(() => {
         button.querySelector("span").textContent = original;
       }, 1400);
@@ -279,4 +374,6 @@ selectors.statsForm.addEventListener("submit", (event) => {
   }
 });
 
+makeGlowCardsInteractive();
+makeClickableBitsInteractive();
 loadServerInfo();
