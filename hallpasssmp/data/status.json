@@ -1,8 +1,6 @@
 {
-  "errors": [
-    "/api/server: timed out"
-  ],
-  "generatedAt": "2026-06-12T22:13:39.897462+00:00",
+  "errors": [],
+  "generatedAt": "2026-06-12T23:53:56.826943+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -11,6 +9,22 @@
   "online": {
     "players": []
   },
-  "server": {},
+  "server": {
+    "memory": {
+      "free": 513869360,
+      "max": 8174698496,
+      "total": 905969664
+    },
+    "name": "Paper",
+    "onlinePlayers": 0,
+    "tps": 20.0,
+    "uptime": 27674966,
+    "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
+    "worlds": [
+      "world",
+      "world_nether",
+      "world_the_end"
+    ]
+  },
   "statsByName": {}
 }
