@@ -1,0 +1,16 @@
+{
+  "ok": false,
+  "generatedAt": null,
+  "health": {
+    "ok": false
+  },
+  "server": {},
+  "online": {
+    "players": [],
+    "count": 0
+  },
+  "statsByName": {},
+  "errors": [
+    "Waiting for the GitHub Actions updater to generate the first snapshot."
+  ]
+}

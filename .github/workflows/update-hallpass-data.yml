@@ -1,0 +1,29 @@
+name: Update HallPass SMP data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Generate HallPass snapshot
+        env:
+          HALLPASS_API_BASE: http://147.189.171.246:25719
+          HALLPASS_API_KEY: ${{ secrets.HALLPASS_API_KEY }}
+          HALLPASS_PLAYERS: ${{ vars.HALLPASS_PLAYERS }}
+        run: python .github/scripts/update_hallpass_data.py
+
+      - name: Commit updated snapshot
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update HallPass SMP data snapshot
+          file_pattern: hallpasssmp/data/status.json

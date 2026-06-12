@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260612-api-port-25719">
+  <link rel="stylesheet" href="style.css?v=20260612-static-data">
 </head>
 <body>
   <header class="site-nav" aria-label="HallPass SMP navigation">
@@ -56,8 +56,8 @@
         <div class="server-status">
           <span id="status-dot" class="status-dot unknown"></span>
           <div>
-            <strong id="server-status-text">Checking API...</strong>
-            <span id="server-status-detail">Live data appears when a public API is connected.</span>
+            <strong id="server-status-text">Checking snapshot...</strong>
+            <span id="server-status-detail">Server data updates from a static GitHub Pages snapshot.</span>
           </div>
         </div>
         <div class="status-metrics">
@@ -66,7 +66,7 @@
             <strong id="player-count">--</strong>
           </article>
           <article>
-            <span>API</span>
+            <span>Data</span>
             <strong id="api-state">Not set</strong>
           </article>
         </div>
@@ -97,7 +97,7 @@
             <span id="stats-online" class="pill neutral">Unavailable</span>
           </div>
           <div id="stats-message" class="stats-message">
-            Connect a public read-only API later, then search a player to show Discord-style <code>!mcstats</code> info here.
+            Search a player from the latest static snapshot to show Discord-style <code>!mcstats</code> info here.
           </div>
           <dl class="stats-grid">
             <div><dt>World</dt><dd id="stat-world">--</dd></div>
@@ -169,6 +169,6 @@
 
   <div class="cursor-orb" id="cursor-orb" aria-hidden="true"></div>
 
-  <script src="script.js?v=20260612-api-port-25719"></script>
+  <script src="script.js?v=20260612-static-data"></script>
 </body>
 </html>

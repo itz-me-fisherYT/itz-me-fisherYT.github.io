@@ -1,14 +1,9 @@
-const HALLPASS_API_BASE = "http://147.189.171.246:25719";
-const HALLPASS_API_KEY = "--9fzAKP0UCXcEsZTidw7u32jbrHj8xB-wLWNPaP-S4";
-
-const fallbackMessage = "Live data appears when the public NovaBridge API is configured.";
-const placeholderApiBase = "PUT_PUBLIC_API_URL_HERE";
-const apiRequestTimeoutMs = 8000;
+const HALLPASS_DATA_URL = "data/status.json";
 
 const state = {
-  health: null,
-  server: null,
+  snapshot: null,
   players: [],
+  statsByName: {},
 };
 
 const selectors = {
@@ -50,48 +45,14 @@ const statFields = {
   lastSeen: document.querySelector("#stat-last-seen"),
 };
 
-function hasApiBase() {
-  return HALLPASS_API_BASE.trim().length > 0 && HALLPASS_API_BASE !== placeholderApiBase;
-}
-
-function apiUrl(path) {
-  return `${HALLPASS_API_BASE.replace(/\/+$/, "")}${path}`;
-}
-
-function isMixedContentApi() {
-  return window.location.protocol === "https:" && HALLPASS_API_BASE.startsWith("http://");
-}
-
-async function fetchJson(path) {
-  if (!hasApiBase()) {
-    throw new Error("HallPass API base is not configured.");
-  }
-
-  if (isMixedContentApi()) {
-    throw new Error("Mixed content blocked. The live HTTPS site needs an HTTPS API URL.");
-  }
-
-  const headers = { Accept: "application/json" };
-  if (HALLPASS_API_KEY.trim().length > 0) {
-    headers.Authorization = `Bearer ${HALLPASS_API_KEY}`;
-  }
-
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), apiRequestTimeoutMs);
-
-  let response;
-  try {
-    response = await fetch(apiUrl(path), {
-      headers,
-      cache: "no-store",
-      signal: controller.signal,
-    });
-  } finally {
-    clearTimeout(timeout);
-  }
+async function fetchSnapshot() {
+  const response = await fetch(`${HALLPASS_DATA_URL}?v=${Date.now()}`, {
+    headers: { Accept: "application/json" },
+    cache: "no-store",
+  });
 
   if (!response.ok) {
-    throw new Error(`API returned ${response.status}`);
+    throw new Error(`Snapshot returned ${response.status}`);
   }
 
   return response.json();
@@ -116,6 +77,10 @@ function formatDate(value) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return value;
   return date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
+}
+
+function normalizeName(name) {
+  return String(name || "").trim().toLowerCase();
 }
 
 function setStatus(kind, title, detail) {
@@ -161,7 +126,7 @@ function makeGlowCardsInteractive() {
       const x = event.clientX - rect.left;
       const y = event.clientY - rect.top;
       const rotateY = ((x / rect.width) - 0.5) * 3.5;
-      const rotateX = ((0.5 - (y / rect.height)) * 3.5);
+      const rotateX = (0.5 - (y / rect.height)) * 3.5;
 
       card.classList.add("is-lit");
 
@@ -175,7 +140,6 @@ function makeGlowCardsInteractive() {
       card.style.transform = "";
     });
   });
-
 }
 
 function makeClickableBitsInteractive() {
@@ -229,12 +193,17 @@ function startCursorFollower() {
   animateCursorFollower();
 }
 
+function normalizePlayers(payload) {
+  const players = valueFrom(payload, ["players", "onlinePlayers", "list", "names"], []);
+  return Array.isArray(players) ? players : [];
+}
+
 function renderPlayers(players) {
   selectors.playerList.innerHTML = "";
 
   if (!players.length) {
     selectors.playerList.className = "player-list empty";
-    selectors.playerList.textContent = "No player list available yet.";
+    selectors.playerList.textContent = "No player list available in the latest snapshot.";
     return;
   }
 
@@ -246,57 +215,53 @@ function renderPlayers(players) {
   }
 }
 
-function normalizePlayers(payload) {
-  const players = valueFrom(payload, ["players", "onlinePlayers", "list", "names"], []);
-  return Array.isArray(players) ? players : [];
+function getSnapshotAge(snapshot) {
+  const generatedAt = snapshot && snapshot.generatedAt;
+  if (!generatedAt) return "Snapshot has not updated yet.";
+
+  const date = new Date(generatedAt);
+  if (Number.isNaN(date.getTime())) return `Last updated: ${generatedAt}`;
+
+  return `Last updated ${date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}.`;
+}
+
+function buildStatsIndex(snapshot) {
+  const stats = snapshot.statsByName || {};
+  const index = {};
+
+  for (const [name, value] of Object.entries(stats)) {
+    index[normalizeName(name)] = value;
+  }
+
+  return index;
 }
 
 async function loadServerInfo() {
-  selectors.apiState.textContent = hasApiBase() ? "Loading" : "Not set";
-
-  if (!hasApiBase()) {
-    setStatus("unknown", "Status unavailable", fallbackMessage);
-    selectors.playerCount.textContent = "--";
-    renderPlayers([]);
-    selectors.apiState.textContent = "Not set";
-    return;
-  }
+  selectors.apiState.textContent = "Loading";
 
   try {
-    const [health, server, onlinePayload] = await Promise.all([
-      fetchJson("/api/health"),
-      fetchJson("/api/server"),
-      fetchJson("/api/online"),
-    ]);
+    const snapshot = await fetchSnapshot();
+    state.snapshot = snapshot;
+    state.players = normalizePlayers(snapshot.online || {});
+    state.statsByName = buildStatsIndex(snapshot);
 
-    state.health = health;
-    state.server = server;
-    state.players = normalizePlayers(onlinePayload);
-
-    const online = Boolean(valueFrom(health, ["online", "isOnline", "ok", "healthy"], false));
-    const playerCount = valueFrom(onlinePayload, ["count", "online", "onlineCount"], state.players.length);
-    const maxPlayers = valueFrom(server, ["maxPlayers", "max", "slots"], "");
+    const online = Boolean(valueFrom(snapshot.health, ["online", "isOnline", "ok", "healthy"], false));
+    const playerCount = valueFrom(snapshot.online, ["count", "online", "onlineCount"], state.players.length);
+    const maxPlayers = valueFrom(snapshot.server, ["maxPlayers", "max", "slots"], "");
 
     setStatus(
       online ? "online" : "offline",
       online ? "Server online" : "Server offline",
-      online ? "HallPass SMP is reachable from the public API." : "The public API reports the server is offline."
+      getSnapshotAge(snapshot)
     );
 
     selectors.playerCount.textContent = maxPlayers ? `${playerCount}/${maxPlayers}` : String(playerCount);
-    selectors.apiState.textContent = "Connected";
+    selectors.apiState.textContent = snapshot.ok ? "Snapshot" : "Stale";
     renderPlayers(state.players);
   } catch (error) {
-    const blockedByHttps = error.message.includes("Mixed content");
-    setStatus(
-      "unknown",
-      "Status unavailable",
-      blockedByHttps
-        ? "The API URL uses HTTP, but this page is HTTPS. Browsers block that until the API is available over HTTPS."
-        : "The public API is offline or not reachable right now."
-    );
+    setStatus("unknown", "Status unavailable", "No static server snapshot is available yet.");
     selectors.playerCount.textContent = "--";
-    selectors.apiState.textContent = blockedByHttps ? "Blocked" : "Offline";
+    selectors.apiState.textContent = "No data";
     renderPlayers([]);
   }
 }
@@ -327,7 +292,7 @@ function clearStats(playerName = "Waiting for lookup") {
 function renderStats(stats) {
   selectors.statsPlayer.textContent = valueFrom(stats, ["name", "player", "username"], "Unknown player");
   setStatsOnline(valueFrom(stats, ["online", "isOnline"], null));
-  selectors.statsMessage.textContent = "Latest player stats from the HallPass SMP public API.";
+  selectors.statsMessage.textContent = "Stats from the latest static HallPass snapshot.";
 
   statFields.world.textContent = valueFrom(stats, ["world", "currentWorld"]);
   statFields.rank.textContent = valueFrom(stats, ["rank", "group"]);
@@ -345,51 +310,16 @@ function renderStats(stats) {
   statFields.lastSeen.textContent = formatDate(valueFrom(stats, ["lastSeen", "lastOnline"]));
 }
 
-function mergePayloads(payloads) {
-  return payloads.reduce((merged, payload) => {
-    if (payload && typeof payload === "object" && !Array.isArray(payload)) {
-      return { ...merged, ...payload };
-    }
-    return merged;
-  }, {});
-}
-
-async function lookupStats(playerName) {
+function lookupStats(playerName) {
   clearStats(playerName);
 
-  if (!hasApiBase()) {
-    selectors.statsMessage.innerHTML = 'Stats lookup is ready, but <code>HALLPASS_API_BASE</code> still has the placeholder value.';
+  const stats = state.statsByName[normalizeName(playerName)];
+  if (!stats) {
+    selectors.statsMessage.textContent = "That player is not in the latest static snapshot yet. The updater usually captures online players and any configured names.";
     return;
   }
 
-  selectors.statsMessage.textContent = "Looking up player stats...";
-
-  try {
-    const encodedPlayer = encodeURIComponent(playerName);
-    const responses = await Promise.allSettled([
-      fetchJson(`/api/stats/${encodedPlayer}`),
-      fetchJson(`/api/player/${encodedPlayer}`),
-      fetchJson(`/api/seen/${encodedPlayer}`),
-      fetchJson(`/api/playtime/${encodedPlayer}`),
-      fetchJson(`/api/balance/${encodedPlayer}`),
-      fetchJson(`/api/rank/${encodedPlayer}`),
-    ]);
-    const payloads = responses
-      .filter((response) => response.status === "fulfilled")
-      .map((response) => response.value);
-    const stats = mergePayloads(payloads);
-
-    if (!payloads.length) {
-      throw new Error("No player stat endpoints returned data.");
-    }
-
-    stats.name = valueFrom(stats, ["name", "player", "username"], playerName);
-    renderStats(stats);
-  } catch (error) {
-    selectors.statsMessage.textContent = error.message.includes("Mixed content")
-      ? "Stats are blocked because the API uses HTTP while this page is HTTPS. The API needs HTTPS for browser access."
-      : "Player stats are unavailable right now. Try again when the public API is online.";
-  }
+  renderStats(stats);
 }
 
 document.querySelectorAll("[data-copy]").forEach((button) => {
