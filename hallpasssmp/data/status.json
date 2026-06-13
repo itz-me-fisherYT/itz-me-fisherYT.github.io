@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T11:32:13.916Z",
+  "generatedAt": "2026-06-13T11:37:13.530Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,25 +9,31 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 8052382,
+    "uptime": 8352295,
     "memory": {
-      "total": 1556086784,
+      "total": 1585446912,
       "max": 8174698496,
-      "free": 783595296
+      "free": 261849736
     },
     "worlds": [
       "world",
       "world_nether",
       "world_the_end"
     ],
-    "onlinePlayers": 3
+    "onlinePlayers": 4
   },
   "online": {
     "players": [
       {
         "name": "ItzOnlyFisher",
         "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "ping": 375,
+        "ping": 367,
+        "world": "world"
+      },
+      {
+        "name": "Nigh1mare",
+        "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
+        "ping": 191,
         "world": "world"
       },
       {
@@ -37,9 +43,9 @@
         "world": "world"
       },
       {
-        "name": "Nigh1mare",
-        "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
-        "ping": 190,
+        "name": "C0mbat_Ace",
+        "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
+        "ping": 198,
         "world": "world"
       }
     ]
@@ -49,12 +55,12 @@
       "name": "ItzOnlyFisher",
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
       "firstJoin": 1781167266490,
-      "lastSeen": 1781350276652,
+      "lastSeen": 1781350576653,
       "totalPlaytime": 29838959,
       "joins": 17,
       "quits": 9,
       "deaths": 5,
-      "playerKills": 1,
+      "playerKills": 2,
       "mobKills": 18,
       "blocksBroken": 197,
       "blocksPlaced": 188,
@@ -65,31 +71,11 @@
       "currentWorld": "world",
       "player": "ItzOnlyFisher"
     },
-    "Asparta": {
-      "name": "Asparta",
-      "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-      "firstJoin": 1781268325463,
-      "lastSeen": 1781350276653,
-      "totalPlaytime": 24298080,
-      "joins": 12,
-      "quits": 8,
-      "deaths": 2,
-      "playerKills": 0,
-      "mobKills": 96,
-      "blocksBroken": 4192,
-      "blocksPlaced": 2769,
-      "distanceWalked": 58148.37,
-      "jumps": 8978,
-      "balance": 0,
-      "rank": "default",
-      "currentWorld": "world",
-      "player": "Asparta"
-    },
     "Nigh1mare": {
       "name": "Nigh1mare",
       "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
       "firstJoin": 1781269043032,
-      "lastSeen": 1781350276654,
+      "lastSeen": 1781350576653,
       "totalPlaytime": 5926607,
       "joins": 17,
       "quits": 16,
@@ -105,21 +91,41 @@
       "currentWorld": "world",
       "player": "Nigh1mare"
     },
+    "Asparta": {
+      "name": "Asparta",
+      "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
+      "firstJoin": 1781268325463,
+      "lastSeen": 1781350576654,
+      "totalPlaytime": 24298080,
+      "joins": 12,
+      "quits": 8,
+      "deaths": 3,
+      "playerKills": 0,
+      "mobKills": 96,
+      "blocksBroken": 4192,
+      "blocksPlaced": 2769,
+      "distanceWalked": 58148.37,
+      "jumps": 8978,
+      "balance": 0,
+      "rank": "default",
+      "currentWorld": "world",
+      "player": "Asparta"
+    },
     "C0mbat_Ace": {
       "name": "C0mbat_Ace",
       "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
       "firstJoin": 1781182408569,
-      "lastSeen": 1781335614599,
+      "lastSeen": 1781350576654,
       "totalPlaytime": 6192673,
-      "joins": 8,
+      "joins": 9,
       "quits": 8,
       "deaths": 0,
       "playerKills": 0,
-      "mobKills": 0,
+      "mobKills": 1,
       "blocksBroken": 17,
       "blocksPlaced": 15,
-      "distanceWalked": 0,
-      "jumps": 0,
+      "distanceWalked": 17807.09,
+      "jumps": 684,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
