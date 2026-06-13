@@ -20,6 +20,17 @@ EXTRA_PLAYERS = [
 ]
 
 
+def load_existing_names():
+    if not OUTFILE.exists():
+        return []
+    try:
+        existing = json.loads(OUTFILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    stats = existing.get("statsByName", {})
+    return list(stats.keys()) if isinstance(stats, dict) else []
+
+
 def fetch_json(path):
     if not BASE_URL:
         raise RuntimeError("HALLPASS_API_BASE is missing")
@@ -101,7 +112,7 @@ def main():
     online = safe_fetch("/api/online", errors)
 
     player_names = []
-    for name in normalize_players(online) + EXTRA_PLAYERS:
+    for name in normalize_players(online) + EXTRA_PLAYERS + load_existing_names():
         if name.lower() not in [existing.lower() for existing in player_names]:
             player_names.append(name)
 

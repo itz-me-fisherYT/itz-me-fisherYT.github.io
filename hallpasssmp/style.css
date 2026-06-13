@@ -392,8 +392,14 @@ footer {
 }
 
 .player-list-wrap h2 {
-  margin-bottom: 10px;
-  font-size: 22px;
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.offline-player-wrap {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
 }
 
 .player-list,
@@ -436,9 +442,14 @@ footer {
 .stats-lookup {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(240px, 0.55fr) minmax(280px, 0.65fr) minmax(0, 1.2fr);
-  gap: 18px;
+  grid-template-columns: minmax(180px, 0.42fr) minmax(280px, 0.7fr) minmax(0, 1.85fr);
+  gap: 14px;
   align-items: start;
+}
+
+.stats-lookup .lookup-copy h2 {
+  max-width: 260px;
+  font-size: clamp(30px, 4vw, 52px);
 }
 
 .lookup-form label {
@@ -455,7 +466,7 @@ footer {
 
 .lookup-form input {
   width: 100%;
-  min-height: 48px;
+  min-height: 42px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #0f1512;
@@ -472,7 +483,7 @@ footer {
 }
 
 .lookup-form button {
-  min-height: 48px;
+  min-height: 42px;
   padding: 0 16px;
   background: var(--green);
   color: #102015;
@@ -484,13 +495,13 @@ footer {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #101713;
-  padding: 16px;
+  padding: 12px;
   transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .stats-card-head strong {
   display: block;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .pill {
@@ -523,16 +534,19 @@ footer {
 }
 
 .stats-message {
-  margin: 14px 0;
+  margin: 8px 0 10px;
   color: var(--muted);
+  font-size: 14px;
+  line-height: 1.35;
 }
 
 .stats-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
 }
 
 .stats-grid div {
-  padding: 12px;
+  padding: 9px;
 }
 
 dt,
@@ -541,8 +555,10 @@ dd {
 }
 
 dd {
-  margin-top: 4px;
+  margin-top: 2px;
   font-weight: 900;
+  font-size: 14px;
+  line-height: 1.25;
 }
 
 .section {

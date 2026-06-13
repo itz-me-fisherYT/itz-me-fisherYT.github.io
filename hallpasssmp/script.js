@@ -13,6 +13,7 @@ const selectors = {
   playerCount: document.querySelector("#player-count"),
   apiState: document.querySelector("#api-state"),
   playerList: document.querySelector("#player-list"),
+  offlinePlayerList: document.querySelector("#offline-player-list"),
   refreshStatus: document.querySelector("#refresh-status"),
   statsForm: document.querySelector("#stats-form"),
   playerName: document.querySelector("#player-name"),
@@ -199,15 +200,23 @@ function normalizePlayers(payload) {
 }
 
 function renderPlayers(players) {
-  selectors.playerList.innerHTML = "";
+  renderPlayerChips(selectors.playerList, players, "No player list available in the latest snapshot.");
+}
+
+function renderOfflinePlayers(players) {
+  renderPlayerChips(selectors.offlinePlayerList, players, "No offline player stats saved yet.");
+}
+
+function renderPlayerChips(container, players, emptyMessage) {
+  container.innerHTML = "";
 
   if (!players.length) {
-    selectors.playerList.className = "player-list empty";
-    selectors.playerList.textContent = "No player list available in the latest snapshot.";
+    container.className = "player-list empty";
+    container.textContent = emptyMessage;
     return;
   }
 
-  selectors.playerList.className = "player-list";
+  container.className = "player-list";
   for (const player of players) {
     const chip = document.createElement("span");
     const playerName = typeof player === "string" ? player : valueFrom(player, ["name", "username", "player"], "Unknown");
@@ -222,7 +231,7 @@ function renderPlayers(players) {
         lookupPlayerFromChip(playerName);
       }
     });
-    selectors.playerList.append(chip);
+    container.append(chip);
   }
 }
 
@@ -247,6 +256,17 @@ function buildStatsIndex(snapshot) {
   return index;
 }
 
+function getOfflinePlayers(snapshot, onlinePlayers) {
+  const onlineNames = new Set(onlinePlayers.map((player) => {
+    const name = typeof player === "string" ? player : valueFrom(player, ["name", "username", "player"], "");
+    return normalizeName(name);
+  }));
+
+  return Object.keys(snapshot.statsByName || {})
+    .filter((name) => !onlineNames.has(normalizeName(name)))
+    .sort((a, b) => a.localeCompare(b));
+}
+
 async function loadServerInfo() {
   selectors.apiState.textContent = "Loading";
 
@@ -269,11 +289,13 @@ async function loadServerInfo() {
     selectors.playerCount.textContent = maxPlayers ? `${playerCount}/${maxPlayers}` : String(playerCount);
     selectors.apiState.textContent = snapshot.ok ? "Snapshot" : "Stale";
     renderPlayers(state.players);
+    renderOfflinePlayers(getOfflinePlayers(snapshot, state.players));
   } catch (error) {
     setStatus("unknown", "Status unavailable", "No static server snapshot is available yet.");
     selectors.playerCount.textContent = "--";
     selectors.apiState.textContent = "No data";
     renderPlayers([]);
+    renderOfflinePlayers([]);
   }
 }
 
