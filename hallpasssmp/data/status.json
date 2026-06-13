@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T15:50:11.427Z",
+  "generatedAt": "2026-06-13T15:55:11.914Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,38 +9,31 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 23529860,
+    "uptime": 23829885,
     "memory": {
       "total": 1769996288,
       "max": 8174698496,
-      "free": 461623920
+      "free": 674144256
     },
     "worlds": [
       "world",
       "world_nether",
       "world_the_end"
     ],
-    "onlinePlayers": 1
+    "onlinePlayers": 0
   },
   "online": {
-    "players": [
-      {
-        "name": "Asparta",
-        "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "ping": 463,
-        "world": "world"
-      }
-    ]
+    "players": []
   },
   "statsByName": {
     "Asparta": {
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781365700453,
-      "totalPlaytime": 31552089,
+      "lastSeen": 1781365836072,
+      "totalPlaytime": 34337250,
       "joins": 14,
-      "quits": 10,
+      "quits": 11,
       "deaths": 3,
       "playerKills": 0,
       "mobKills": 189,
@@ -57,10 +50,10 @@
       "name": "C0mbat_Ace",
       "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
       "firstJoin": 1781182408569,
-      "lastSeen": 1781365760452,
-      "totalPlaytime": 9839828,
+      "lastSeen": 1781365839363,
+      "totalPlaytime": 15076580,
       "joins": 10,
-      "quits": 9,
+      "quits": 10,
       "deaths": 0,
       "playerKills": 0,
       "mobKills": 4,
