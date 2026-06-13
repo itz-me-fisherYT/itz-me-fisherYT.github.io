@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T10:57:50.613Z",
+  "generatedAt": "2026-06-13T11:02:50.636Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 5989343,
+    "uptime": 6289383,
     "memory": {
-      "total": 1476395008,
+      "total": 1484783616,
       "max": 8174698496,
-      "free": 469374656
+      "free": 140558352
     },
     "worlds": [
       "world",
@@ -27,7 +27,7 @@
       {
         "name": "Asparta",
         "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "ping": 192,
+        "ping": 194,
         "world": "world"
       }
     ]
@@ -37,15 +37,15 @@
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781348216728,
+      "lastSeen": 1781348508570,
       "totalPlaytime": 18041509,
       "joins": 11,
       "quits": 7,
       "deaths": 2,
       "playerKills": 0,
       "mobKills": 96,
-      "blocksBroken": 3846,
-      "blocksPlaced": 2585,
+      "blocksBroken": 4110,
+      "blocksPlaced": 2649,
       "distanceWalked": 54092.17,
       "jumps": 8340,
       "balance": 0,
@@ -217,17 +217,17 @@
       "name": "Nigh1mare",
       "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
       "firstJoin": 1781269043032,
-      "lastSeen": 1781336143466,
-      "totalPlaytime": 5895489,
-      "joins": 14,
-      "quits": 14,
+      "lastSeen": 1781348306220,
+      "totalPlaytime": 5926607,
+      "joins": 16,
+      "quits": 16,
       "deaths": 10,
       "playerKills": 1,
-      "mobKills": 0,
+      "mobKills": 107,
       "blocksBroken": 573,
       "blocksPlaced": 198,
-      "distanceWalked": 0,
-      "jumps": 0,
+      "distanceWalked": 7372.54,
+      "jumps": 1793,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
