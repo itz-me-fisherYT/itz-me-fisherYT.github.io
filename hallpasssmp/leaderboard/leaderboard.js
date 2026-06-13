@@ -163,7 +163,9 @@ function updateTimestamp(snapshot) {
     updated.textContent = "Waiting for the first leaderboard snapshot.";
     return;
   }
-  updated.textContent = `Last updated ${generatedAt.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+  const minutesOld = Math.floor((Date.now() - generatedAt.getTime()) / 60000);
+  const staleText = minutesOld > 15 ? " Data may be stale." : "";
+  updated.textContent = `Last updated ${generatedAt.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}.${staleText}`;
 }
 
 async function loadLeaderboard() {

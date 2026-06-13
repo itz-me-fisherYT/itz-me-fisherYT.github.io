@@ -273,7 +273,16 @@ function getSnapshotAge(snapshot) {
   const date = new Date(generatedAt);
   if (Number.isNaN(date.getTime())) return `Last updated: ${generatedAt}`;
 
-  return `Last updated ${date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}.`;
+  const minutesOld = Math.floor((Date.now() - date.getTime()) / 60000);
+  const staleText = minutesOld > 15 ? " Data may be stale." : "";
+  return `Last updated ${date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}.${staleText}`;
+}
+
+function isSnapshotStale(snapshot) {
+  if (!snapshot || !snapshot.generatedAt) return true;
+  const date = new Date(snapshot.generatedAt);
+  if (Number.isNaN(date.getTime())) return true;
+  return Date.now() - date.getTime() > 15 * 60 * 1000;
 }
 
 function buildStatsIndex(snapshot) {
@@ -337,7 +346,7 @@ async function loadServerInfo() {
     );
 
     selectors.playerCount.textContent = maxPlayers ? `${playerCount}/${maxPlayers}` : String(playerCount);
-    selectors.apiState.textContent = snapshot.ok ? "Snapshot" : "Stale";
+    selectors.apiState.textContent = snapshot.ok && !isSnapshotStale(snapshot) ? "Snapshot" : "Stale";
     renderPlayers(state.players);
     renderOfflinePlayers(getOfflinePlayers(snapshot, state.players));
   } catch (error) {
