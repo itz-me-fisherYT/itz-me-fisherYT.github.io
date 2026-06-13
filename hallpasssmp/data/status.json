@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T08:57:14.992Z",
+  "generatedAt": "2026-06-13T09:02:14.835Z",
   "health": {
     "database": true,
     "ok": true
@@ -9,10 +9,10 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 10054044,
+    "uptime": 10353914,
     "memory": {
       "total": 1304428544,
-      "free": 633681776,
+      "free": 113821864,
       "max": 8174698496
     },
     "worlds": [
@@ -27,13 +27,13 @@
       {
         "name": "Asparta",
         "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "ping": 192,
+        "ping": 196,
         "world": "world"
       },
       {
         "name": "ItzRealFisherYT",
         "uuid": "eed6dcc0-12d3-3bfc-b179-2b3d025c4c77",
-        "ping": 311,
+        "ping": 323,
         "world": "world"
       }
     ]
@@ -43,15 +43,15 @@
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781340757238,
+      "lastSeen": 1781341277450,
       "totalPlaytime": 18041509,
       "joins": 9,
       "quits": 7,
       "deaths": 2,
       "playerKills": 0,
       "mobKills": 0,
-      "blocksBroken": 2624,
-      "blocksPlaced": 1867,
+      "blocksBroken": 2643,
+      "blocksPlaced": 1869,
       "distanceWalked": 0,
       "jumps": 0,
       "balance": 0,
