@@ -1,16 +1,19 @@
 {
-  "ok": false,
-  "generatedAt": "2026-06-13T12:08:11.518Z",
-  "health": {},
+  "ok": true,
+  "generatedAt": "2026-06-13T12:13:10.792Z",
+  "health": {
+    "ok": true,
+    "database": true
+  },
   "server": {
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 10210267,
+    "uptime": 10509545,
     "memory": {
-      "total": 1598029824,
+      "total": 1665138688,
       "max": 8174698496,
-      "free": 610737200
+      "free": 138758736
     },
     "worlds": [
       "world",
@@ -24,7 +27,7 @@
       {
         "name": "Ligxth",
         "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
-        "ping": 190,
+        "ping": 191,
         "world": "world"
       }
     ]
@@ -34,17 +37,17 @@
       "name": "Ligxth",
       "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
       "firstJoin": 1781275218674,
-      "lastSeen": 1781352436902,
-      "totalPlaytime": 826117,
-      "joins": 4,
-      "quits": 3,
-      "deaths": 0,
+      "lastSeen": 1781352677853,
+      "totalPlaytime": 1130755,
+      "joins": 5,
+      "quits": 4,
+      "deaths": 1,
       "playerKills": 0,
-      "mobKills": 5,
-      "blocksBroken": 113,
-      "blocksPlaced": 13,
-      "distanceWalked": 1697.14,
-      "jumps": 277,
+      "mobKills": 12,
+      "blocksBroken": 132,
+      "blocksPlaced": 14,
+      "distanceWalked": 2354.15,
+      "jumps": 430,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
@@ -74,7 +77,7 @@
       "name": "C0mbat_Ace",
       "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
       "firstJoin": 1781182408569,
-      "lastSeen": 1781352436902,
+      "lastSeen": 1781352737852,
       "totalPlaytime": 6192673,
       "joins": 9,
       "quits": 8,
@@ -271,7 +274,5 @@
       "player": "ItzRealFisherYT"
     }
   },
-  "errors": [
-    "/api/health: fetch failed"
-  ]
+  "errors": []
 }
