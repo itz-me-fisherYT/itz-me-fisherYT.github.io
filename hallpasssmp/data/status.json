@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T14:17:10.179Z",
+  "generatedAt": "2026-06-13T14:22:10.219Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 17948926,
+    "uptime": 18248959,
     "memory": {
-      "total": 1757413376,
+      "total": 1761607680,
       "max": 8174698496,
-      "free": 1036992480
+      "free": 288514960
     },
     "worlds": [
       "world",
@@ -27,19 +27,19 @@
       {
         "name": "Asparta",
         "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "ping": 192,
+        "ping": 195,
         "world": "world"
       },
       {
         "name": "Nigh1mare",
         "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
-        "ping": 194,
+        "ping": 189,
         "world": "world"
       },
       {
         "name": "Ligxth",
         "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
-        "ping": 192,
+        "ping": 188,
         "world": "world"
       }
     ]
@@ -49,15 +49,15 @@
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781360176447,
+      "lastSeen": 1781360476502,
       "totalPlaytime": 27335929,
       "joins": 13,
       "quits": 9,
       "deaths": 3,
       "playerKills": 0,
       "mobKills": 98,
-      "blocksBroken": 4756,
-      "blocksPlaced": 3280,
+      "blocksBroken": 4926,
+      "blocksPlaced": 3306,
       "distanceWalked": 61918.3,
       "jumps": 9518,
       "balance": 0,
@@ -69,15 +69,15 @@
       "name": "Nigh1mare",
       "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
       "firstJoin": 1781269043032,
-      "lastSeen": 1781360180154,
+      "lastSeen": 1781360480153,
       "totalPlaytime": 7504529,
       "joins": 18,
       "quits": 17,
       "deaths": 12,
       "playerKills": 2,
       "mobKills": 107,
-      "blocksBroken": 582,
-      "blocksPlaced": 204,
+      "blocksBroken": 589,
+      "blocksPlaced": 248,
       "distanceWalked": 7417.95,
       "jumps": 1797,
       "balance": 0,
@@ -89,15 +89,15 @@
       "name": "Ligxth",
       "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
       "firstJoin": 1781275218674,
-      "lastSeen": 1781360180154,
+      "lastSeen": 1781360484195,
       "totalPlaytime": 2216269,
       "joins": 10,
       "quits": 9,
-      "deaths": 10,
+      "deaths": 11,
       "playerKills": 2,
       "mobKills": 34,
-      "blocksBroken": 220,
-      "blocksPlaced": 24,
+      "blocksBroken": 228,
+      "blocksPlaced": 72,
       "distanceWalked": 5287.34,
       "jumps": 1256,
       "balance": 0,
