@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T08:32:10.316Z",
+  "generatedAt": "2026-06-13T08:37:10.214Z",
   "health": {
     "database": true,
     "ok": true
@@ -9,10 +9,10 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 8553938,
+    "uptime": 8853858,
     "memory": {
       "total": 1304428544,
-      "free": 325726256,
+      "free": 233812600,
       "max": 8174698496
     },
     "worlds": [
@@ -20,32 +20,58 @@
       "world_nether",
       "world_the_end"
     ],
-    "onlinePlayers": 1
+    "onlinePlayers": 2
   },
   "online": {
     "players": [
       {
+        "name": "ItzOnlyFisher",
+        "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
+        "ping": 329,
+        "world": "world"
+      },
+      {
         "name": "Asparta",
         "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "ping": 198,
+        "ping": 195,
         "world": "world"
       }
     ]
   },
   "statsByName": {
+    "ItzOnlyFisher": {
+      "name": "ItzOnlyFisher",
+      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
+      "firstJoin": 1781167266490,
+      "lastSeen": 1781331208464,
+      "totalPlaytime": 20523263,
+      "joins": 16,
+      "quits": 8,
+      "deaths": 4,
+      "playerKills": 1,
+      "mobKills": 0,
+      "blocksBroken": 21,
+      "blocksPlaced": 0,
+      "distanceWalked": 0,
+      "jumps": 0,
+      "balance": 0,
+      "rank": "default",
+      "currentWorld": "world",
+      "player": "ItzOnlyFisher"
+    },
     "Asparta": {
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781339478625,
+      "lastSeen": 1781339785180,
       "totalPlaytime": 18041509,
       "joins": 9,
       "quits": 7,
       "deaths": 2,
       "playerKills": 0,
       "mobKills": 0,
-      "blocksBroken": 2464,
-      "blocksPlaced": 1792,
+      "blocksBroken": 2490,
+      "blocksPlaced": 1811,
       "distanceWalked": 0,
       "jumps": 0,
       "balance": 0,
@@ -92,26 +118,6 @@
       "rank": "default",
       "currentWorld": "world",
       "player": "IAmSpxce"
-    },
-    "ItzOnlyFisher": {
-      "name": "ItzOnlyFisher",
-      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-      "firstJoin": 1781167266490,
-      "lastSeen": 1781331208464,
-      "totalPlaytime": 20523263,
-      "joins": 16,
-      "quits": 8,
-      "deaths": 4,
-      "playerKills": 1,
-      "mobKills": 0,
-      "blocksBroken": 21,
-      "blocksPlaced": 0,
-      "distanceWalked": 0,
-      "jumps": 0,
-      "balance": 0,
-      "rank": "default",
-      "currentWorld": "world",
-      "player": "ItzOnlyFisher"
     },
     "KingApple_III": {
       "name": "KingApple_III",
