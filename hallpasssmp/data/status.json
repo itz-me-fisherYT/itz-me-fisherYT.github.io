@@ -1,53 +1,76 @@
 {
-  "ok": true,
-  "generatedAt": "2026-06-13T12:18:10.777Z",
-  "health": {
-    "ok": true,
-    "database": true
-  },
+  "ok": false,
+  "generatedAt": "2026-06-13T12:28:11.498Z",
+  "health": {},
   "server": {
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 10809523,
+    "uptime": 11410268,
     "memory": {
-      "total": 1694498816,
+      "total": 1744830464,
       "max": 8174698496,
-      "free": 763538784
+      "free": 466632520
     },
     "worlds": [
       "world",
       "world_nether",
       "world_the_end"
     ],
-    "onlinePlayers": 1
+    "onlinePlayers": 2
   },
   "online": {
     "players": [
       {
+        "name": "C0mbat_Ace",
+        "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
+        "ping": 189,
+        "world": "world"
+      },
+      {
         "name": "Ligxth",
         "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
-        "ping": 191,
+        "ping": 189,
         "world": "world"
       }
     ]
   },
   "statsByName": {
+    "C0mbat_Ace": {
+      "name": "C0mbat_Ace",
+      "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
+      "firstJoin": 1781182408569,
+      "lastSeen": 1781353637952,
+      "totalPlaytime": 6192673,
+      "joins": 9,
+      "quits": 8,
+      "deaths": 0,
+      "playerKills": 0,
+      "mobKills": 1,
+      "blocksBroken": 19,
+      "blocksPlaced": 16,
+      "distanceWalked": 20043.45,
+      "jumps": 725,
+      "balance": 0,
+      "rank": "default",
+      "currentWorld": "world",
+      "player": "C0mbat_Ace"
+    },
     "Ligxth": {
       "name": "Ligxth",
       "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
       "firstJoin": 1781275218674,
-      "lastSeen": 1781352986981,
-      "totalPlaytime": 1130755,
-      "joins": 5,
-      "quits": 4,
-      "deaths": 1,
+      "lastSeen": 1781353638893,
+      "totalPlaytime": 1751127,
+      "joins": 6,
+      "quits": 5,
+      "deaths": 5,
       "playerKills": 0,
-      "mobKills": 12,
-      "blocksBroken": 153,
-      "blocksPlaced": 20,
-      "distanceWalked": 2354.15,
-      "jumps": 430,
+      "mobKills": 34,
+      "blocksBroken": 179,
+      "blocksPlaced": 23,
+      "distanceWalked": 4143.7,
+      "jumps": 934,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
@@ -72,26 +95,6 @@
       "rank": "default",
       "currentWorld": "world",
       "player": "Asparta"
-    },
-    "C0mbat_Ace": {
-      "name": "C0mbat_Ace",
-      "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
-      "firstJoin": 1781182408569,
-      "lastSeen": 1781353037852,
-      "totalPlaytime": 6192673,
-      "joins": 9,
-      "quits": 8,
-      "deaths": 0,
-      "playerKills": 0,
-      "mobKills": 1,
-      "blocksBroken": 17,
-      "blocksPlaced": 15,
-      "distanceWalked": 20043.45,
-      "jumps": 725,
-      "balance": 0,
-      "rank": "default",
-      "currentWorld": "world",
-      "player": "C0mbat_Ace"
     },
     "IAmSpxce": {
       "name": "IAmSpxce",
@@ -274,5 +277,7 @@
       "player": "ItzRealFisherYT"
     }
   },
-  "errors": []
+  "errors": [
+    "/api/health: fetch failed"
+  ]
 }
