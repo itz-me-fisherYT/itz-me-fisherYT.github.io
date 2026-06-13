@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T11:12:50.603Z",
+  "generatedAt": "2026-06-13T11:17:50.629Z",
   "health": {
     "ok": true,
     "database": true
@@ -8,12 +8,12 @@
   "server": {
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
-    "tps": 19.95,
-    "uptime": 6889366,
+    "tps": 20,
+    "uptime": 7189384,
     "memory": {
       "total": 1514143744,
       "max": 8174698496,
-      "free": 499668880
+      "free": 465492888
     },
     "worlds": [
       "world",
@@ -27,13 +27,13 @@
       {
         "name": "ItzOnlyFisher",
         "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "ping": 350,
+        "ping": 366,
         "world": "world"
       },
       {
         "name": "Asparta",
         "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "ping": 189,
+        "ping": 191,
         "world": "world"
       }
     ]
@@ -43,15 +43,15 @@
       "name": "ItzOnlyFisher",
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
       "firstJoin": 1781167266490,
-      "lastSeen": 1781349076203,
+      "lastSeen": 1781349413269,
       "totalPlaytime": 29838959,
       "joins": 17,
       "quits": 9,
       "deaths": 5,
       "playerKills": 1,
       "mobKills": 10,
-      "blocksBroken": 51,
-      "blocksPlaced": 70,
+      "blocksBroken": 66,
+      "blocksPlaced": 148,
       "distanceWalked": 6813.21,
       "jumps": 182,
       "balance": 0,
@@ -63,15 +63,15 @@
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781349120281,
+      "lastSeen": 1781349419381,
       "totalPlaytime": 24298080,
       "joins": 12,
       "quits": 8,
       "deaths": 2,
       "playerKills": 0,
       "mobKills": 96,
-      "blocksBroken": 4143,
-      "blocksPlaced": 2738,
+      "blocksBroken": 4156,
+      "blocksPlaced": 2748,
       "distanceWalked": 56392.03,
       "jumps": 8609,
       "balance": 0,
