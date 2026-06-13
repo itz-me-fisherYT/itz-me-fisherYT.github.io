@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T11:37:13.530Z",
+  "generatedAt": "2026-06-13T11:42:13.537Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,43 +9,37 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 8352295,
+    "uptime": 8652297,
     "memory": {
-      "total": 1585446912,
+      "total": 1598029824,
       "max": 8174698496,
-      "free": 261849736
+      "free": 883866664
     },
     "worlds": [
       "world",
       "world_nether",
       "world_the_end"
     ],
-    "onlinePlayers": 4
+    "onlinePlayers": 3
   },
   "online": {
     "players": [
       {
         "name": "ItzOnlyFisher",
         "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "ping": 367,
+        "ping": 456,
         "world": "world"
       },
       {
         "name": "Nigh1mare",
         "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
-        "ping": 191,
+        "ping": 190,
         "world": "world"
       },
       {
         "name": "Asparta",
         "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "ping": 188,
-        "world": "world"
-      },
-      {
-        "name": "C0mbat_Ace",
-        "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
-        "ping": 198,
+        "ping": 189,
         "world": "world"
       }
     ]
@@ -55,7 +49,7 @@
       "name": "ItzOnlyFisher",
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
       "firstJoin": 1781167266490,
-      "lastSeen": 1781350576653,
+      "lastSeen": 1781350876717,
       "totalPlaytime": 29838959,
       "joins": 17,
       "quits": 9,
@@ -75,7 +69,7 @@
       "name": "Nigh1mare",
       "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
       "firstJoin": 1781269043032,
-      "lastSeen": 1781350576653,
+      "lastSeen": 1781350876718,
       "totalPlaytime": 5926607,
       "joins": 17,
       "quits": 16,
@@ -84,8 +78,8 @@
       "mobKills": 107,
       "blocksBroken": 573,
       "blocksPlaced": 198,
-      "distanceWalked": 7374.95,
-      "jumps": 1796,
+      "distanceWalked": 7403.59,
+      "jumps": 1797,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
@@ -95,7 +89,7 @@
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781350576654,
+      "lastSeen": 1781350876718,
       "totalPlaytime": 24298080,
       "joins": 12,
       "quits": 8,
@@ -115,7 +109,7 @@
       "name": "C0mbat_Ace",
       "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
       "firstJoin": 1781182408569,
-      "lastSeen": 1781350576654,
+      "lastSeen": 1781350876718,
       "totalPlaytime": 6192673,
       "joins": 9,
       "quits": 8,
