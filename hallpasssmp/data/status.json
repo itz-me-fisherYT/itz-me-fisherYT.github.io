@@ -1,24 +1,46 @@
 {
-  "errors": [],
-  "generatedAt": "2026-06-13T02:49:28.825530+00:00",
+  "errors": [
+    "/api/stats/eeee: HTTP Error 404: Not Found",
+    "/api/stats/itzrealfisherYt: HTTP Error 404: Not Found"
+  ],
+  "generatedAt": "2026-06-13T03:53:23.711039+00:00",
   "health": {
     "database": true,
     "ok": true
   },
   "ok": true,
   "online": {
-    "players": []
+    "players": [
+      {
+        "name": "C0mbat_Ace",
+        "ping": 200,
+        "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
+        "world": "world"
+      },
+      {
+        "name": "Asparta",
+        "ping": 188,
+        "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
+        "world": "world"
+      },
+      {
+        "name": "ItzOnlyFisher",
+        "ping": 301,
+        "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
+        "world": "world"
+      }
+    ]
   },
   "server": {
     "memory": {
-      "free": 942945576,
+      "free": 740860592,
       "max": 8174698496,
-      "total": 1547698176
+      "total": 1849688064
     },
     "name": "Paper",
-    "onlinePlayers": 0,
+    "onlinePlayers": 3,
     "tps": 20.0,
-    "uptime": 38206882,
+    "uptime": 42031028,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -26,5 +48,116 @@
       "world_the_end"
     ]
   },
-  "statsByName": {}
+  "statsByName": {
+    "Asparta": {
+      "blocksBroken": 1663,
+      "blocksPlaced": 1555,
+      "deaths": 2,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "Asparta",
+      "playerKills": 0
+    },
+    "C0mbat_Ace": {
+      "blocksBroken": 16,
+      "blocksPlaced": 14,
+      "deaths": 0,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "C0mbat_Ace",
+      "playerKills": 0
+    },
+    "IAmSpxce": {
+      "blocksBroken": 11,
+      "blocksPlaced": 0,
+      "deaths": 0,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "IAmSpxce",
+      "playerKills": 0
+    },
+    "ItzOnlyFisher": {
+      "blocksBroken": 2,
+      "blocksPlaced": 0,
+      "deaths": 2,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "ItzOnlyFisher",
+      "playerKills": 1
+    },
+    "KingApple_III": {
+      "blocksBroken": 26,
+      "blocksPlaced": 17,
+      "deaths": 3,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "KingApple_III",
+      "playerKills": 0
+    },
+    "Krxzy": {
+      "blocksBroken": 1,
+      "blocksPlaced": 0,
+      "deaths": 3,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "Krxzy",
+      "playerKills": 1
+    },
+    "Ligxth": {
+      "blocksBroken": 105,
+      "blocksPlaced": 13,
+      "deaths": 0,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "Ligxth",
+      "playerKills": 0
+    },
+    "Maftyouth": {
+      "blocksBroken": 22,
+      "blocksPlaced": 8,
+      "deaths": 3,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "Maftyouth",
+      "playerKills": 2
+    },
+    "NahIamJohm": {
+      "blocksBroken": 277,
+      "blocksPlaced": 60,
+      "deaths": 4,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "NahIamJohm",
+      "playerKills": 0
+    },
+    "Nigh1mare": {
+      "blocksBroken": 484,
+      "blocksPlaced": 164,
+      "deaths": 10,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "Nigh1mare",
+      "playerKills": 1
+    },
+    "VTXC9_24": {
+      "blocksBroken": 50,
+      "blocksPlaced": 10,
+      "deaths": 2,
+      "distanceWalked": 0.0,
+      "jumps": 0,
+      "mobKills": 0,
+      "name": "VTXC9_24",
+      "playerKills": 4
+    }
+  }
 }

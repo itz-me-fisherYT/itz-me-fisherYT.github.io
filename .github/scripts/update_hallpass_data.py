@@ -11,6 +11,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[2]
 OUTFILE = ROOT / "hallpasssmp" / "data" / "status.json"
+PLAYERS_FILE = ROOT / "hallpasssmp" / "data" / "players.json"
 BASE_URL = os.environ.get("HALLPASS_API_BASE", "").rstrip("/")
 API_KEY = os.environ.get("HALLPASS_API_KEY", "")
 EXTRA_PLAYERS = [
@@ -29,6 +30,16 @@ def load_existing_names():
         return []
     stats = existing.get("statsByName", {})
     return list(stats.keys()) if isinstance(stats, dict) else []
+
+
+def load_configured_names():
+    if not PLAYERS_FILE.exists():
+        return []
+    try:
+        players = json.loads(PLAYERS_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    return [name for name in players if isinstance(name, str) and name.strip()]
 
 
 def fetch_json(path):
@@ -92,17 +103,11 @@ def merge_dicts(*payloads):
 
 def fetch_player_snapshot(name, errors):
     encoded = quote(name, safe="")
-    payloads = [
-        safe_fetch(f"/api/stats/{encoded}", errors),
-        safe_fetch(f"/api/player/{encoded}", errors),
-        safe_fetch(f"/api/seen/{encoded}", errors),
-        safe_fetch(f"/api/playtime/{encoded}", errors),
-        safe_fetch(f"/api/balance/{encoded}", errors),
-        safe_fetch(f"/api/rank/{encoded}", errors),
-    ]
-    merged = merge_dicts(*payloads)
-    merged.setdefault("name", name)
-    return merged
+    stats = safe_fetch(f"/api/stats/{encoded}", errors)
+    if not stats:
+        return None
+    stats.setdefault("name", name)
+    return stats
 
 
 def main():
@@ -112,13 +117,15 @@ def main():
     online = safe_fetch("/api/online", errors)
 
     player_names = []
-    for name in normalize_players(online) + EXTRA_PLAYERS + load_existing_names():
+    for name in normalize_players(online) + EXTRA_PLAYERS + load_configured_names() + load_existing_names():
         if name.lower() not in [existing.lower() for existing in player_names]:
             player_names.append(name)
 
     stats_by_name = {}
     for name in player_names:
-        stats_by_name[name] = fetch_player_snapshot(name, errors)
+        player_snapshot = fetch_player_snapshot(name, errors)
+        if player_snapshot:
+            stats_by_name[name] = player_snapshot
         time.sleep(0.2)
 
     snapshot = {
