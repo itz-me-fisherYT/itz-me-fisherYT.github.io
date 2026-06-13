@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T23:48:13.634Z",
+  "generatedAt": "2026-06-13T23:53:13.388Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 52212202,
+    "uptime": 52512157,
     "memory": {
       "total": 1635778560,
       "max": 8174698496,
-      "free": 573485400
+      "free": 193778976
     },
     "worlds": [
       "world",
@@ -70,17 +70,17 @@
       "name": "IAmSpxce",
       "uuid": "ddad3cfe-a0a2-3bcc-aecd-1ba68b7cdbea",
       "firstJoin": 1781321389727,
-      "lastSeen": 1781321641939,
+      "lastSeen": 1781394740852,
       "totalPlaytime": 239289,
-      "joins": 2,
+      "joins": 3,
       "quits": 2,
       "deaths": 0,
       "playerKills": 0,
-      "mobKills": 0,
+      "mobKills": 10,
       "blocksBroken": 11,
       "blocksPlaced": 0,
-      "distanceWalked": 0,
-      "jumps": 0,
+      "distanceWalked": 396.76,
+      "jumps": 141,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
