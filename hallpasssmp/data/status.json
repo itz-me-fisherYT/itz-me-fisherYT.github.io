@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T12:13:10.792Z",
+  "generatedAt": "2026-06-13T12:18:10.777Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 10509545,
+    "uptime": 10809523,
     "memory": {
-      "total": 1665138688,
+      "total": 1694498816,
       "max": 8174698496,
-      "free": 138758736
+      "free": 763538784
     },
     "worlds": [
       "world",
@@ -37,15 +37,15 @@
       "name": "Ligxth",
       "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
       "firstJoin": 1781275218674,
-      "lastSeen": 1781352677853,
+      "lastSeen": 1781352986981,
       "totalPlaytime": 1130755,
       "joins": 5,
       "quits": 4,
       "deaths": 1,
       "playerKills": 0,
       "mobKills": 12,
-      "blocksBroken": 132,
-      "blocksPlaced": 14,
+      "blocksBroken": 153,
+      "blocksPlaced": 20,
       "distanceWalked": 2354.15,
       "jumps": 430,
       "balance": 0,
@@ -77,7 +77,7 @@
       "name": "C0mbat_Ace",
       "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
       "firstJoin": 1781182408569,
-      "lastSeen": 1781352737852,
+      "lastSeen": 1781353037852,
       "totalPlaytime": 6192673,
       "joins": 9,
       "quits": 8,
@@ -86,8 +86,8 @@
       "mobKills": 1,
       "blocksBroken": 17,
       "blocksPlaced": 15,
-      "distanceWalked": 18422.29,
-      "jumps": 702,
+      "distanceWalked": 20043.45,
+      "jumps": 725,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
