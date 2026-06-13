@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T15:24:12.798Z",
+  "generatedAt": "2026-06-13T15:29:12.803Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 21971558,
+    "uptime": 22271565,
     "memory": {
       "total": 1769996288,
       "max": 8174698496,
-      "free": 140060872
+      "free": 834715176
     },
     "worlds": [
       "world",
@@ -37,17 +37,17 @@
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781364192321,
+      "lastSeen": 1781364456173,
       "totalPlaytime": 31552089,
       "joins": 14,
       "quits": 10,
       "deaths": 3,
       "playerKills": 0,
-      "mobKills": 165,
-      "blocksBroken": 5341,
-      "blocksPlaced": 3794,
-      "distanceWalked": 65763.48,
-      "jumps": 10181,
+      "mobKills": 186,
+      "blocksBroken": 5394,
+      "blocksPlaced": 3837,
+      "distanceWalked": 66339.87,
+      "jumps": 10374,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
@@ -57,7 +57,7 @@
       "name": "C0mbat_Ace",
       "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
       "firstJoin": 1781182408569,
-      "lastSeen": 1781364200453,
+      "lastSeen": 1781364500452,
       "totalPlaytime": 9839828,
       "joins": 10,
       "quits": 9,
