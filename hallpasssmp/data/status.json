@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T11:02:50.636Z",
+  "generatedAt": "2026-06-13T11:07:50.603Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 6289383,
+    "uptime": 6589362,
     "memory": {
       "total": 1484783616,
       "max": 8174698496,
-      "free": 140558352
+      "free": 331630080
     },
     "worlds": [
       "world",
@@ -27,7 +27,7 @@
       {
         "name": "Asparta",
         "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "ping": 194,
+        "ping": 197,
         "world": "world"
       }
     ]
@@ -37,17 +37,17 @@
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781348508570,
-      "totalPlaytime": 18041509,
+      "lastSeen": 1781348816664,
+      "totalPlaytime": 24298080,
       "joins": 11,
-      "quits": 7,
+      "quits": 8,
       "deaths": 2,
       "playerKills": 0,
       "mobKills": 96,
-      "blocksBroken": 4110,
-      "blocksPlaced": 2649,
-      "distanceWalked": 54092.17,
-      "jumps": 8340,
+      "blocksBroken": 4139,
+      "blocksPlaced": 2732,
+      "distanceWalked": 55858.58,
+      "jumps": 8546,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
