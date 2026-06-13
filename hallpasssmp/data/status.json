@@ -1,8 +1,6 @@
 {
-  "errors": [
-    "/api/rank/Krxzy: timed out"
-  ],
-  "generatedAt": "2026-06-13T19:48:49.687714+00:00",
+  "errors": [],
+  "generatedAt": "2026-06-13T20:56:50.471634+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -13,14 +11,14 @@
   },
   "server": {
     "memory": {
-      "free": 738364656,
+      "free": 737002544,
       "max": 8174698496,
-      "total": 1769996288
+      "total": 1761607680
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 37873904,
+    "uptime": 41969234,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
