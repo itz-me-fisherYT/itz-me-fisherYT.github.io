@@ -1,6 +1,6 @@
 {
   "errors": [],
-  "generatedAt": "2026-06-13T06:19:26.276889+00:00",
+  "generatedAt": "2026-06-13T06:36:55.376479+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -11,14 +11,14 @@
   },
   "server": {
     "memory": {
-      "free": 161674008,
+      "free": 376338016,
       "max": 8174698496,
       "total": 952107008
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 617884,
+    "uptime": 1665547,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
