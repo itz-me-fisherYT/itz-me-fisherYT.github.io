@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T11:22:50.614Z",
+  "generatedAt": "2026-06-13T11:27:50.633Z",
   "health": {
     "ok": true,
     "database": true
@@ -8,12 +8,12 @@
   "server": {
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
-    "tps": 19.92,
-    "uptime": 7489366,
+    "tps": 20,
+    "uptime": 7789375,
     "memory": {
       "total": 1556086784,
       "max": 8174698496,
-      "free": 707161736
+      "free": 608693984
     },
     "worlds": [
       "world",
@@ -27,13 +27,13 @@
       {
         "name": "Asparta",
         "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
-        "ping": 188,
+        "ping": 194,
         "world": "world"
       },
       {
         "name": "Nigh1mare",
         "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
-        "ping": 189,
+        "ping": 191,
         "world": "world"
       }
     ]
@@ -43,15 +43,15 @@
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781349714584,
+      "lastSeen": 1781349976653,
       "totalPlaytime": 24298080,
       "joins": 12,
       "quits": 8,
       "deaths": 2,
       "playerKills": 0,
       "mobKills": 96,
-      "blocksBroken": 4186,
-      "blocksPlaced": 2767,
+      "blocksBroken": 4192,
+      "blocksPlaced": 2769,
       "distanceWalked": 56392.03,
       "jumps": 8609,
       "balance": 0,
@@ -63,7 +63,7 @@
       "name": "Nigh1mare",
       "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
       "firstJoin": 1781269043032,
-      "lastSeen": 1781349676404,
+      "lastSeen": 1781349976654,
       "totalPlaytime": 5926607,
       "joins": 17,
       "quits": 16,
@@ -123,14 +123,14 @@
       "name": "ItzOnlyFisher",
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
       "firstJoin": 1781167266490,
-      "lastSeen": 1781349676402,
+      "lastSeen": 1781349976652,
       "totalPlaytime": 29838959,
       "joins": 17,
       "quits": 9,
       "deaths": 5,
       "playerKills": 1,
       "mobKills": 10,
-      "blocksBroken": 165,
+      "blocksBroken": 166,
       "blocksPlaced": 188,
       "distanceWalked": 6813.21,
       "jumps": 182,
