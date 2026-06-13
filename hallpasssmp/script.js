@@ -75,9 +75,40 @@ function formatNumber(value) {
 
 function formatDate(value) {
   if (!value) return "--";
-  const date = new Date(value);
+  const date = new Date(normalizeTimestamp(value));
   if (Number.isNaN(date.getTime())) return value;
   return date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
+}
+
+function normalizeTimestamp(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return value;
+  return number < 10000000000 ? number * 1000 : number;
+}
+
+function formatDuration(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number) || number <= 0) return value || "--";
+
+  let totalSeconds = number > 100000 ? Math.floor(number / 1000) : Math.floor(number);
+  const days = Math.floor(totalSeconds / 86400);
+  totalSeconds -= days * 86400;
+  const hours = Math.floor(totalSeconds / 3600);
+  totalSeconds -= hours * 3600;
+  const minutes = Math.floor(totalSeconds / 60);
+
+  const parts = [];
+  if (days) parts.push(`${days}d`);
+  if (hours) parts.push(`${hours}h`);
+  if (minutes || !parts.length) parts.push(`${minutes}m`);
+  return parts.slice(0, 3).join(" ");
+}
+
+function formatDistance(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return value || "--";
+  if (number >= 1000) return `${(number / 1000).toFixed(1)}k`;
+  return Math.round(number).toLocaleString();
 }
 
 function normalizeName(name) {
@@ -248,9 +279,28 @@ function getSnapshotAge(snapshot) {
 function buildStatsIndex(snapshot) {
   const stats = snapshot.statsByName || {};
   const index = {};
+  const onlinePlayers = normalizePlayers(snapshot.online || {});
 
   for (const [name, value] of Object.entries(stats)) {
-    index[normalizeName(name)] = value;
+    index[normalizeName(name)] = { ...value };
+  }
+
+  for (const player of onlinePlayers) {
+    const name = typeof player === "string" ? player : valueFrom(player, ["name", "username", "player"], "");
+    if (!name) continue;
+    const key = normalizeName(name);
+    index[key] = {
+      ...(index[key] || {}),
+      ...(typeof player === "object" ? player : {}),
+      name,
+      online: true,
+    };
+  }
+
+  for (const value of Object.values(index)) {
+    if (value.online !== true) {
+      value.online = false;
+    }
   }
 
   return index;
@@ -330,14 +380,14 @@ function renderStats(stats) {
   statFields.world.textContent = valueFrom(stats, ["world", "currentWorld"]);
   statFields.rank.textContent = valueFrom(stats, ["rank", "group"]);
   statFields.balance.textContent = valueFrom(stats, ["balance", "money"]);
-  statFields.playtime.textContent = valueFrom(stats, ["playtime", "playTime"]);
+  statFields.playtime.textContent = formatDuration(valueFrom(stats, ["playtime", "playTime", "totalPlaytime"], 0));
   statFields.joins.textContent = formatNumber(valueFrom(stats, ["joins", "joinCount"]));
   statFields.deaths.textContent = formatNumber(valueFrom(stats, ["deaths"]));
   statFields.playerKills.textContent = formatNumber(valueFrom(stats, ["playerKills", "kills"]));
   statFields.mobKills.textContent = formatNumber(valueFrom(stats, ["mobKills"]));
   statFields.blocksBroken.textContent = formatNumber(valueFrom(stats, ["blocksBroken", "broken"]));
   statFields.blocksPlaced.textContent = formatNumber(valueFrom(stats, ["blocksPlaced", "placed"]));
-  statFields.distanceWalked.textContent = valueFrom(stats, ["distanceWalked", "walked"]);
+  statFields.distanceWalked.textContent = formatDistance(valueFrom(stats, ["distanceWalked", "walked"], 0));
   statFields.jumps.textContent = formatNumber(valueFrom(stats, ["jumps"]));
   statFields.firstJoined.textContent = formatDate(valueFrom(stats, ["firstJoined", "firstJoin"]));
   statFields.lastSeen.textContent = formatDate(valueFrom(stats, ["lastSeen", "lastOnline"]));

@@ -103,7 +103,14 @@ def merge_dicts(*payloads):
 
 def fetch_player_snapshot(name, errors):
     encoded = quote(name, safe="")
-    stats = safe_fetch(f"/api/stats/{encoded}", errors)
+    payloads = [
+        safe_fetch(f"/api/player/{encoded}", errors),
+        safe_fetch(f"/api/balance/{encoded}", errors),
+        safe_fetch(f"/api/rank/{encoded}", errors),
+    ]
+    stats = merge_dicts(*payloads)
+    if not stats:
+        stats = safe_fetch(f"/api/stats/{encoded}", errors)
     if not stats:
         return None
     stats.setdefault("name", name)
@@ -126,7 +133,7 @@ def main():
         player_snapshot = fetch_player_snapshot(name, errors)
         if player_snapshot:
             stats_by_name[name] = player_snapshot
-        time.sleep(0.2)
+        time.sleep(0.35)
 
     snapshot = {
         "ok": bool(health.get("ok") or health.get("online") or health.get("healthy")),

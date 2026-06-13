@@ -1,9 +1,6 @@
 {
-  "errors": [
-    "/api/stats/eeee: HTTP Error 404: Not Found",
-    "/api/stats/itzrealfisherYt: HTTP Error 404: Not Found"
-  ],
-  "generatedAt": "2026-06-13T03:53:23.711039+00:00",
+  "errors": [],
+  "generatedAt": "2026-06-13T04:03:39.136461+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -13,7 +10,7 @@
     "players": [
       {
         "name": "C0mbat_Ace",
-        "ping": 200,
+        "ping": 191,
         "uuid": "248b52e7-a4f7-33af-9337-e8883843f022",
         "world": "world"
       },
@@ -25,22 +22,28 @@
       },
       {
         "name": "ItzOnlyFisher",
-        "ping": 301,
+        "ping": 338,
         "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
+        "world": "world"
+      },
+      {
+        "name": "Nigh1mare",
+        "ping": 188,
+        "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1",
         "world": "world"
       }
     ]
   },
   "server": {
     "memory": {
-      "free": 740860592,
+      "free": 782987496,
       "max": 8174698496,
-      "total": 1849688064
+      "total": 2004877312
     },
     "name": "Paper",
-    "onlinePlayers": 3,
+    "onlinePlayers": 4,
     "tps": 20.0,
-    "uptime": 42031028,
+    "uptime": 42632639,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -50,114 +53,224 @@
   },
   "statsByName": {
     "Asparta": {
+      "balance": 0.0,
       "blocksBroken": 1663,
-      "blocksPlaced": 1555,
+      "blocksPlaced": 1557,
+      "currentWorld": "world",
       "deaths": 2,
       "distanceWalked": 0.0,
+      "firstJoin": 1781268325463,
+      "joins": 7,
       "jumps": 0,
+      "lastSeen": 1781322911156,
       "mobKills": 0,
       "name": "Asparta",
-      "playerKills": 0
+      "player": "Asparta",
+      "playerKills": 0,
+      "quits": 5,
+      "rank": "default",
+      "totalPlaytime": 14782141,
+      "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726"
     },
     "C0mbat_Ace": {
+      "balance": 0.0,
       "blocksBroken": 16,
       "blocksPlaced": 14,
+      "currentWorld": "world",
       "deaths": 0,
       "distanceWalked": 0.0,
+      "firstJoin": 1781182408569,
+      "joins": 5,
       "jumps": 0,
+      "lastSeen": 1781321309008,
       "mobKills": 0,
       "name": "C0mbat_Ace",
-      "playerKills": 0
+      "player": "C0mbat_Ace",
+      "playerKills": 0,
+      "quits": 4,
+      "rank": "default",
+      "totalPlaytime": 828202,
+      "uuid": "248b52e7-a4f7-33af-9337-e8883843f022"
     },
     "IAmSpxce": {
+      "balance": 0.0,
       "blocksBroken": 11,
       "blocksPlaced": 0,
+      "currentWorld": "world",
       "deaths": 0,
       "distanceWalked": 0.0,
+      "firstJoin": 1781321389727,
+      "joins": 2,
       "jumps": 0,
+      "lastSeen": 1781321641939,
       "mobKills": 0,
       "name": "IAmSpxce",
-      "playerKills": 0
+      "player": "IAmSpxce",
+      "playerKills": 0,
+      "quits": 2,
+      "rank": "default",
+      "totalPlaytime": 239289,
+      "uuid": "ddad3cfe-a0a2-3bcc-aecd-1ba68b7cdbea"
     },
     "ItzOnlyFisher": {
+      "balance": 0.0,
       "blocksBroken": 2,
       "blocksPlaced": 0,
+      "currentWorld": "world",
       "deaths": 2,
       "distanceWalked": 0.0,
+      "firstJoin": 1781167266490,
+      "joins": 14,
       "jumps": 0,
+      "lastSeen": 1781322088467,
       "mobKills": 0,
       "name": "ItzOnlyFisher",
-      "playerKills": 1
+      "player": "ItzOnlyFisher",
+      "playerKills": 1,
+      "quits": 6,
+      "rank": "default",
+      "totalPlaytime": 15988476,
+      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
     },
     "KingApple_III": {
+      "balance": 0.0,
       "blocksBroken": 26,
       "blocksPlaced": 17,
+      "currentWorld": "world",
       "deaths": 3,
       "distanceWalked": 0.0,
+      "firstJoin": 1781269633560,
+      "joins": 1,
       "jumps": 0,
+      "lastSeen": 1781270205401,
       "mobKills": 0,
       "name": "KingApple_III",
-      "playerKills": 0
+      "player": "KingApple_III",
+      "playerKills": 0,
+      "quits": 1,
+      "rank": "default",
+      "totalPlaytime": 571842,
+      "uuid": "6861f494-e724-398b-bc66-fb04f35ae407"
     },
     "Krxzy": {
+      "balance": 0.0,
       "blocksBroken": 1,
       "blocksPlaced": 0,
+      "currentWorld": "world",
       "deaths": 3,
       "distanceWalked": 0.0,
+      "firstJoin": 1781269019193,
+      "joins": 3,
       "jumps": 0,
+      "lastSeen": 1781321705046,
       "mobKills": 0,
       "name": "Krxzy",
-      "playerKills": 1
+      "player": "Krxzy",
+      "playerKills": 1,
+      "quits": 3,
+      "rank": "default",
+      "totalPlaytime": 438095,
+      "uuid": "bfa528cc-c67d-3d7b-9a13-47c905f99b64"
     },
     "Ligxth": {
+      "balance": 0.0,
       "blocksBroken": 105,
       "blocksPlaced": 13,
+      "currentWorld": "world",
       "deaths": 0,
       "distanceWalked": 0.0,
+      "firstJoin": 1781275218674,
+      "joins": 3,
       "jumps": 0,
+      "lastSeen": 1781311182345,
       "mobKills": 0,
       "name": "Ligxth",
-      "playerKills": 0
+      "player": "Ligxth",
+      "playerKills": 0,
+      "quits": 3,
+      "rank": "default",
+      "totalPlaytime": 826117,
+      "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb"
     },
     "Maftyouth": {
+      "balance": 0.0,
       "blocksBroken": 22,
       "blocksPlaced": 8,
+      "currentWorld": "world",
       "deaths": 3,
       "distanceWalked": 0.0,
+      "firstJoin": 1781269475024,
+      "joins": 3,
       "jumps": 0,
+      "lastSeen": 1781271154487,
       "mobKills": 0,
       "name": "Maftyouth",
-      "playerKills": 2
+      "player": "Maftyouth",
+      "playerKills": 2,
+      "quits": 3,
+      "rank": "default",
+      "totalPlaytime": 703484,
+      "uuid": "e2f04975-0f54-3dc6-acc0-9a0d30bb8e3d"
     },
     "NahIamJohm": {
+      "balance": 0.0,
       "blocksBroken": 277,
       "blocksPlaced": 60,
+      "currentWorld": "world",
       "deaths": 4,
       "distanceWalked": 0.0,
+      "firstJoin": 1781269718898,
+      "joins": 2,
       "jumps": 0,
+      "lastSeen": 1781272042740,
       "mobKills": 0,
       "name": "NahIamJohm",
-      "playerKills": 0
+      "player": "NahIamJohm",
+      "playerKills": 0,
+      "quits": 2,
+      "rank": "default",
+      "totalPlaytime": 1153122,
+      "uuid": "713f8625-0d38-3448-9e98-817972b8d899"
     },
     "Nigh1mare": {
-      "blocksBroken": 484,
+      "balance": 0.0,
+      "blocksBroken": 488,
       "blocksPlaced": 164,
+      "currentWorld": "world",
       "deaths": 10,
       "distanceWalked": 0.0,
+      "firstJoin": 1781269043032,
+      "joins": 12,
       "jumps": 0,
+      "lastSeen": 1781323141503,
       "mobKills": 0,
       "name": "Nigh1mare",
-      "playerKills": 1
+      "player": "Nigh1mare",
+      "playerKills": 1,
+      "quits": 11,
+      "rank": "default",
+      "totalPlaytime": 4528335,
+      "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1"
     },
     "VTXC9_24": {
+      "balance": 0.0,
       "blocksBroken": 50,
       "blocksPlaced": 10,
+      "currentWorld": "world",
       "deaths": 2,
       "distanceWalked": 0.0,
+      "firstJoin": 1781269495274,
+      "joins": 1,
       "jumps": 0,
+      "lastSeen": 1781270169749,
       "mobKills": 0,
       "name": "VTXC9_24",
-      "playerKills": 4
+      "player": "VTXC9_24",
+      "playerKills": 4,
+      "quits": 1,
+      "rank": "default",
+      "totalPlaytime": 674476,
+      "uuid": "46246c79-55ef-3c16-8ed2-dcaebdbbce14"
     }
   }
 }
