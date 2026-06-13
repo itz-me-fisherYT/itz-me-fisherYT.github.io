@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-13T13:30:11.043Z",
+  "generatedAt": "2026-06-13T13:36:10.557Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 15129780,
+    "uptime": 15489249,
     "memory": {
       "total": 1757413376,
       "max": 8174698496,
-      "free": 243479376
+      "free": 1086509152
     },
     "worlds": [
       "world",
