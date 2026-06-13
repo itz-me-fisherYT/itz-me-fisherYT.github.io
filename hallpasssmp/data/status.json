@@ -1,11 +1,8 @@
 {
   "errors": [
-    "/api/player/ItzOnlyFisher: timed out",
-    "/api/rank/ItzOnlyFisher: timed out",
-    "/api/balance/KingApple_III: timed out",
-    "/api/player/NahIamJohm: timed out"
+    "/api/rank/Krxzy: timed out"
   ],
-  "generatedAt": "2026-06-13T18:01:49.491750+00:00",
+  "generatedAt": "2026-06-13T19:48:49.687714+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -16,14 +13,14 @@
   },
   "server": {
     "memory": {
-      "free": 862273792,
+      "free": 738364656,
       "max": 8174698496,
       "total": 1769996288
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 31394071,
+    "uptime": 37873904,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -94,8 +91,23 @@
     },
     "ItzOnlyFisher": {
       "balance": 0.0,
+      "blocksBroken": 197,
+      "blocksPlaced": 188,
+      "currentWorld": "world",
+      "deaths": 5,
+      "distanceWalked": 9350.68,
+      "firstJoin": 1781167266490,
+      "joins": 17,
+      "jumps": 436,
+      "lastSeen": 1781351532266,
+      "mobKills": 23,
       "name": "ItzOnlyFisher",
-      "player": "ItzOnlyFisher"
+      "player": "ItzOnlyFisher",
+      "playerKills": 2,
+      "quits": 10,
+      "rank": "staff",
+      "totalPlaytime": 32351205,
+      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
     },
     "ItzRealFisherYT": {
       "balance": 0.0,
@@ -199,9 +211,23 @@
     },
     "NahIamJohm": {
       "balance": 0.0,
+      "blocksBroken": 277,
+      "blocksPlaced": 60,
+      "currentWorld": "world",
+      "deaths": 4,
+      "distanceWalked": 0.0,
+      "firstJoin": 1781269718898,
+      "joins": 2,
+      "jumps": 0,
+      "lastSeen": 1781272042740,
+      "mobKills": 0,
       "name": "NahIamJohm",
       "player": "NahIamJohm",
-      "rank": "default"
+      "playerKills": 0,
+      "quits": 2,
+      "rank": "default",
+      "totalPlaytime": 1153122,
+      "uuid": "713f8625-0d38-3448-9e98-817972b8d899"
     },
     "Nigh1mare": {
       "balance": 0.0,
