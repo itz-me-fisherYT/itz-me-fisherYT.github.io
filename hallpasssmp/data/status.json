@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-14T02:02:21.970Z",
+  "generatedAt": "2026-06-14T02:07:23.095Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 60260710,
+    "uptime": 60560729,
     "memory": {
       "total": 1635778560,
       "max": 8174698496,
-      "free": 899631712
+      "free": 154578544
     },
     "worlds": [
       "world",
@@ -27,7 +27,7 @@
       {
         "name": "ItzOnlyFisher",
         "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "ping": 303,
+        "ping": 314,
         "world": "world"
       }
     ]
@@ -37,17 +37,17 @@
       "name": "ItzOnlyFisher",
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
       "firstJoin": 1781167266490,
-      "lastSeen": 1781402481702,
+      "lastSeen": 1781402781702,
       "totalPlaytime": 32351205,
       "joins": 18,
       "quits": 10,
       "deaths": 5,
       "playerKills": 2,
-      "mobKills": 23,
-      "blocksBroken": 247,
+      "mobKills": 24,
+      "blocksBroken": 251,
       "blocksPlaced": 346,
-      "distanceWalked": 9648.46,
-      "jumps": 463,
+      "distanceWalked": 9691.81,
+      "jumps": 519,
       "balance": 0,
       "rank": "staff",
       "currentWorld": "world",
