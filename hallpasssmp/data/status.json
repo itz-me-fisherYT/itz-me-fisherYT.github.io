@@ -1,16 +1,12 @@
 {
   "errors": [
-    "/api/player/ItzOnlyFisher: timed out",
-    "/api/balance/ItzOnlyFisher: timed out",
-    "/api/balance/NahIamJohm: timed out",
-    "/api/player/Nigh1mare: timed out"
+    "/api/health: timed out",
+    "/api/rank/VTXC9_24: timed out",
+    "/api/player/ItzRealFisherYT: timed out"
   ],
-  "generatedAt": "2026-06-14T10:02:00.076441+00:00",
-  "health": {
-    "database": true,
-    "ok": true
-  },
-  "ok": true,
+  "generatedAt": "2026-06-14T12:08:02.209982+00:00",
+  "health": {},
+  "ok": false,
   "online": {
     "players": [
       {
@@ -18,25 +14,19 @@
         "ping": 194,
         "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
         "world": "world"
-      },
-      {
-        "name": "ItzOnlyFisher",
-        "ping": 370,
-        "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "world": "world"
       }
     ]
   },
   "server": {
     "memory": {
-      "free": 448383288,
+      "free": 273407552,
       "max": 8174698496,
-      "total": 1119879168
+      "total": 1245708288
     },
     "name": "Paper",
-    "onlinePlayers": 2,
+    "onlinePlayers": 1,
     "tps": 20.0,
-    "uptime": 8420470,
+    "uptime": 16013536,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -47,16 +37,16 @@
   "statsByName": {
     "Asparta": {
       "balance": 0.0,
-      "blocksBroken": 8045,
-      "blocksPlaced": 5318,
+      "blocksBroken": 9047,
+      "blocksPlaced": 5791,
       "currentWorld": "world",
       "deaths": 3,
-      "distanceWalked": 81835.03,
+      "distanceWalked": 89575.57,
       "firstJoin": 1781268325463,
       "joins": 19,
-      "jumps": 12324,
-      "lastSeen": 1781431200413,
-      "mobKills": 291,
+      "jumps": 13088,
+      "lastSeen": 1781438831240,
+      "mobKills": 321,
       "name": "Asparta",
       "player": "Asparta",
       "playerKills": 0,
@@ -71,11 +61,11 @@
       "blocksPlaced": 16,
       "currentWorld": "world",
       "deaths": 0,
-      "distanceWalked": 23970.75,
+      "distanceWalked": 23990.25,
       "firstJoin": 1781182408569,
       "joins": 15,
       "jumps": 784,
-      "lastSeen": 1781431260412,
+      "lastSeen": 1781438822362,
       "mobKills": 4,
       "name": "C0mbat_Ace",
       "player": "C0mbat_Ace",
@@ -106,29 +96,30 @@
       "uuid": "ddad3cfe-a0a2-3bcc-aecd-1ba68b7cdbea"
     },
     "ItzOnlyFisher": {
+      "balance": 0.0,
+      "blocksBroken": 1196,
+      "blocksPlaced": 436,
+      "currentWorld": "world",
+      "deaths": 5,
+      "distanceWalked": 14161.41,
+      "firstJoin": 1781167266490,
+      "joins": 23,
+      "jumps": 1274,
+      "lastSeen": 1781436496979,
+      "mobKills": 132,
       "name": "ItzOnlyFisher",
       "player": "ItzOnlyFisher",
-      "rank": "staff"
+      "playerKills": 2,
+      "quits": 16,
+      "rank": "staff",
+      "totalPlaytime": 55374356,
+      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
     },
     "ItzRealFisherYT": {
       "balance": 0.0,
-      "blocksBroken": 6,
-      "blocksPlaced": 1,
-      "currentWorld": "world",
-      "deaths": 1,
-      "distanceWalked": 876.85,
-      "firstJoin": 1781340489738,
-      "joins": 4,
-      "jumps": 137,
-      "lastSeen": 1781343006589,
-      "mobKills": 1,
       "name": "ItzRealFisherYT",
       "player": "ItzRealFisherYT",
-      "playerKills": 0,
-      "quits": 2,
-      "rank": "default",
-      "totalPlaytime": 701664,
-      "uuid": "eed6dcc0-12d3-3bfc-b179-2b3d025c4c77"
+      "rank": "default"
     },
     "KingApple_III": {
       "balance": 0.0,
@@ -232,9 +223,23 @@
     },
     "Nigh1mare": {
       "balance": 0.0,
+      "blocksBroken": 598,
+      "blocksPlaced": 264,
+      "currentWorld": "world",
+      "deaths": 12,
+      "distanceWalked": 7417.95,
+      "firstJoin": 1781269043032,
+      "joins": 18,
+      "jumps": 1797,
+      "lastSeen": 1781360651177,
+      "mobKills": 107,
       "name": "Nigh1mare",
       "player": "Nigh1mare",
-      "rank": "default"
+      "playerKills": 2,
+      "quits": 18,
+      "rank": "default",
+      "totalPlaytime": 8387705,
+      "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1"
     },
     "VTXC9_24": {
       "balance": 0.0,
