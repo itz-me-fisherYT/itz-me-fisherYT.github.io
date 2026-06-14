@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-14T01:21:12.384Z",
+  "generatedAt": "2026-06-14T01:26:12.367Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,23 +9,50 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 57791113,
+    "uptime": 58091095,
     "memory": {
       "total": 1635778560,
       "max": 8174698496,
-      "free": 321660048
+      "free": 681984824
     },
     "worlds": [
       "world",
       "world_nether",
       "world_the_end"
     ],
-    "onlinePlayers": 0
+    "onlinePlayers": 1
   },
   "online": {
-    "players": []
+    "players": [
+      {
+        "name": "ItzOnlyFisher",
+        "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
+        "ping": 298,
+        "world": "world"
+      }
+    ]
   },
   "statsByName": {
+    "ItzOnlyFisher": {
+      "name": "ItzOnlyFisher",
+      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
+      "firstJoin": 1781167266490,
+      "lastSeen": 1781400261452,
+      "totalPlaytime": 32351205,
+      "joins": 18,
+      "quits": 10,
+      "deaths": 5,
+      "playerKills": 2,
+      "mobKills": 23,
+      "blocksBroken": 197,
+      "blocksPlaced": 188,
+      "distanceWalked": 9350.68,
+      "jumps": 437,
+      "balance": 0,
+      "rank": "staff",
+      "currentWorld": "world",
+      "player": "ItzOnlyFisher"
+    },
     "Asparta": {
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
@@ -85,26 +112,6 @@
       "rank": "default",
       "currentWorld": "world",
       "player": "IAmSpxce"
-    },
-    "ItzOnlyFisher": {
-      "name": "ItzOnlyFisher",
-      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-      "firstJoin": 1781167266490,
-      "lastSeen": 1781351532266,
-      "totalPlaytime": 32351205,
-      "joins": 17,
-      "quits": 10,
-      "deaths": 5,
-      "playerKills": 2,
-      "mobKills": 23,
-      "blocksBroken": 197,
-      "blocksPlaced": 188,
-      "distanceWalked": 9350.68,
-      "jumps": 436,
-      "balance": 0,
-      "rank": "staff",
-      "currentWorld": "world",
-      "player": "ItzOnlyFisher"
     },
     "KingApple_III": {
       "name": "KingApple_III",
