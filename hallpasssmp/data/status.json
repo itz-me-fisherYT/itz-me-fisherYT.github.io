@@ -1,9 +1,6 @@
 {
-  "errors": [
-    "/api/player/C0mbat_Ace: timed out",
-    "/api/balance/Maftyouth: timed out"
-  ],
-  "generatedAt": "2026-06-14T20:23:28.102244+00:00",
+  "errors": [],
+  "generatedAt": "2026-06-14T21:48:59.400420+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -14,14 +11,14 @@
   },
   "server": {
     "memory": {
-      "free": 669911192,
+      "free": 610813544,
       "max": 8174698496,
       "total": 1468006400
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 45750085,
+    "uptime": 50922429,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -52,9 +49,23 @@
     },
     "C0mbat_Ace": {
       "balance": 0.0,
+      "blocksBroken": 24,
+      "blocksPlaced": 16,
+      "currentWorld": "world",
+      "deaths": 2,
+      "distanceWalked": 25100.26,
+      "firstJoin": 1781182408569,
+      "joins": 16,
+      "jumps": 872,
+      "lastSeen": 1781446683381,
+      "mobKills": 23,
       "name": "C0mbat_Ace",
       "player": "C0mbat_Ace",
-      "rank": "staff"
+      "playerKills": 0,
+      "quits": 14,
+      "rank": "staff",
+      "totalPlaytime": 50022668,
+      "uuid": "248b52e7-a4f7-33af-9337-e8883843f022"
     },
     "IAmSpxce": {
       "balance": 0.0,
