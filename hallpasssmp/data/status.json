@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-14T01:57:21.970Z",
+  "generatedAt": "2026-06-14T02:02:21.970Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 59960725,
+    "uptime": 60260710,
     "memory": {
       "total": 1635778560,
       "max": 8174698496,
-      "free": 446535248
+      "free": 899631712
     },
     "worlds": [
       "world",
@@ -27,7 +27,7 @@
       {
         "name": "ItzOnlyFisher",
         "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "ping": 317,
+        "ping": 303,
         "world": "world"
       }
     ]
@@ -37,7 +37,7 @@
       "name": "ItzOnlyFisher",
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
       "firstJoin": 1781167266490,
-      "lastSeen": 1781402181702,
+      "lastSeen": 1781402481702,
       "totalPlaytime": 32351205,
       "joins": 18,
       "quits": 10,
