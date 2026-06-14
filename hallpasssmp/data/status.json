@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-14T00:45:11.656Z",
+  "generatedAt": "2026-06-14T00:50:11.589Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,11 +9,11 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 55630381,
+    "uptime": 55930324,
     "memory": {
       "total": 1635778560,
       "max": 8174698496,
-      "free": 784145344
+      "free": 631148232
     },
     "worlds": [
       "world",
@@ -150,17 +150,17 @@
       "name": "Ligxth",
       "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
       "firstJoin": 1781275218674,
-      "lastSeen": 1781360650035,
+      "lastSeen": 1781398178776,
       "totalPlaytime": 3164292,
-      "joins": 10,
+      "joins": 11,
       "quits": 10,
       "deaths": 13,
       "playerKills": 2,
-      "mobKills": 34,
+      "mobKills": 50,
       "blocksBroken": 228,
       "blocksPlaced": 84,
-      "distanceWalked": 5287.34,
-      "jumps": 1256,
+      "distanceWalked": 7015.1,
+      "jumps": 1653,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
