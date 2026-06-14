@@ -1,9 +1,14 @@
 {
   "errors": [
-    "/api/balance/Krxzy: timed out",
-    "/api/player/VTXC9_24: timed out"
+    "/api/balance/C0mbat_Ace: timed out",
+    "/api/balance/IAmSpxce: timed out",
+    "/api/player/ItzOnlyFisher: timed out",
+    "/api/rank/KingApple_III: timed out",
+    "/api/balance/Nigh1mare: timed out",
+    "/api/rank/VTXC9_24: timed out",
+    "/api/player/ItzRealFisherYT: timed out"
   ],
-  "generatedAt": "2026-06-14T16:06:24.508034+00:00",
+  "generatedAt": "2026-06-14T17:45:16.740420+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -14,14 +19,14 @@
   },
   "server": {
     "memory": {
-      "free": 898793736,
+      "free": 444131560,
       "max": 8174698496,
       "total": 1468006400
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 30325073,
+    "uptime": 36157975,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -92,43 +97,15 @@
     },
     "ItzOnlyFisher": {
       "balance": 0.0,
-      "blocksBroken": 1259,
-      "blocksPlaced": 453,
-      "currentWorld": "world",
-      "deaths": 5,
-      "distanceWalked": 14801.55,
-      "firstJoin": 1781167266490,
-      "joins": 25,
-      "jumps": 1450,
-      "lastSeen": 1781445477854,
-      "mobKills": 133,
       "name": "ItzOnlyFisher",
       "player": "ItzOnlyFisher",
-      "playerKills": 3,
-      "quits": 18,
-      "rank": "staff",
-      "totalPlaytime": 57303463,
-      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
+      "rank": "staff"
     },
     "ItzRealFisherYT": {
       "balance": 0.0,
-      "blocksBroken": 6,
-      "blocksPlaced": 1,
-      "currentWorld": "world",
-      "deaths": 1,
-      "distanceWalked": 876.85,
-      "firstJoin": 1781340489738,
-      "joins": 4,
-      "jumps": 137,
-      "lastSeen": 1781343006589,
-      "mobKills": 1,
       "name": "ItzRealFisherYT",
       "player": "ItzRealFisherYT",
-      "playerKills": 0,
-      "quits": 2,
-      "rank": "default",
-      "totalPlaytime": 701664,
-      "uuid": "eed6dcc0-12d3-3bfc-b179-2b3d025c4c77"
+      "rank": "default"
     },
     "KingApple_III": {
       "balance": 0.0,
@@ -252,9 +229,23 @@
     },
     "VTXC9_24": {
       "balance": 0.0,
+      "blocksBroken": 58,
+      "blocksPlaced": 11,
+      "currentWorld": "world",
+      "deaths": 3,
+      "distanceWalked": 2333.51,
+      "firstJoin": 1781269495274,
+      "joins": 2,
+      "jumps": 573,
+      "lastSeen": 1781443079652,
+      "mobKills": 2,
       "name": "VTXC9_24",
       "player": "VTXC9_24",
-      "rank": "default"
+      "playerKills": 5,
+      "quits": 2,
+      "rank": "default",
+      "totalPlaytime": 795359,
+      "uuid": "46246c79-55ef-3c16-8ed2-dcaebdbbce14"
     }
   }
 }
