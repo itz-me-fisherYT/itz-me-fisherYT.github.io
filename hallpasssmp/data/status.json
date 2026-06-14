@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-14T02:07:23.095Z",
+  "generatedAt": "2026-06-14T02:12:22.014Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,25 +9,31 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 60560729,
+    "uptime": 60860755,
     "memory": {
-      "total": 1635778560,
+      "total": 1669332992,
       "max": 8174698496,
-      "free": 154578544
+      "free": 830754408
     },
     "worlds": [
       "world",
       "world_nether",
       "world_the_end"
     ],
-    "onlinePlayers": 1
+    "onlinePlayers": 2
   },
   "online": {
     "players": [
       {
         "name": "ItzOnlyFisher",
         "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "ping": 314,
+        "ping": 324,
+        "world": "world"
+      },
+      {
+        "name": "Asparta",
+        "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
+        "ping": 189,
         "world": "world"
       }
     ]
@@ -37,7 +43,7 @@
       "name": "ItzOnlyFisher",
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
       "firstJoin": 1781167266490,
-      "lastSeen": 1781402781702,
+      "lastSeen": 1781403082303,
       "totalPlaytime": 32351205,
       "joins": 18,
       "quits": 10,
@@ -57,17 +63,17 @@
       "name": "Asparta",
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
       "firstJoin": 1781268325463,
-      "lastSeen": 1781365836072,
+      "lastSeen": 1781403082303,
       "totalPlaytime": 34337250,
-      "joins": 14,
+      "joins": 15,
       "quits": 11,
       "deaths": 3,
       "playerKills": 0,
       "mobKills": 189,
       "blocksBroken": 5518,
       "blocksPlaced": 3884,
-      "distanceWalked": 67410.9,
-      "jumps": 10491,
+      "distanceWalked": 67427.16,
+      "jumps": 10493,
       "balance": 0,
       "rank": "default",
       "currentWorld": "world",
