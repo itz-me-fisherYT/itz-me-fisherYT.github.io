@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-14T01:41:12.373Z",
+  "generatedAt": "2026-06-14T01:47:22.062Z",
   "health": {
     "ok": true,
     "database": true
@@ -9,25 +9,31 @@
     "name": "Paper",
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "tps": 20,
-    "uptime": 58991112,
+    "uptime": 59360774,
     "memory": {
       "total": 1635778560,
       "max": 8174698496,
-      "free": 710138032
+      "free": 152578640
     },
     "worlds": [
       "world",
       "world_nether",
       "world_the_end"
     ],
-    "onlinePlayers": 1
+    "onlinePlayers": 2
   },
   "online": {
     "players": [
       {
         "name": "ItzOnlyFisher",
         "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "ping": 313,
+        "ping": 332,
+        "world": "world"
+      },
+      {
+        "name": "Ligxth",
+        "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
+        "ping": 191,
         "world": "world"
       }
     ]
@@ -37,21 +43,41 @@
       "name": "ItzOnlyFisher",
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
       "firstJoin": 1781167266490,
-      "lastSeen": 1781401161452,
+      "lastSeen": 1781401581702,
       "totalPlaytime": 32351205,
       "joins": 18,
       "quits": 10,
       "deaths": 5,
       "playerKills": 2,
       "mobKills": 23,
-      "blocksBroken": 245,
+      "blocksBroken": 247,
       "blocksPlaced": 345,
-      "distanceWalked": 9350.68,
-      "jumps": 437,
+      "distanceWalked": 9648.46,
+      "jumps": 463,
       "balance": 0,
       "rank": "staff",
       "currentWorld": "world",
       "player": "ItzOnlyFisher"
+    },
+    "Ligxth": {
+      "name": "Ligxth",
+      "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
+      "firstJoin": 1781275218674,
+      "lastSeen": 1781401581703,
+      "totalPlaytime": 3179279,
+      "joins": 12,
+      "quits": 11,
+      "deaths": 13,
+      "playerKills": 2,
+      "mobKills": 50,
+      "blocksBroken": 228,
+      "blocksPlaced": 84,
+      "distanceWalked": 7015.6,
+      "jumps": 1653,
+      "balance": 0,
+      "rank": "default",
+      "currentWorld": "world",
+      "player": "Ligxth"
     },
     "Asparta": {
       "name": "Asparta",
@@ -152,26 +178,6 @@
       "rank": "default",
       "currentWorld": "world",
       "player": "Krxzy"
-    },
-    "Ligxth": {
-      "name": "Ligxth",
-      "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb",
-      "firstJoin": 1781275218674,
-      "lastSeen": 1781398193761,
-      "totalPlaytime": 3179279,
-      "joins": 11,
-      "quits": 11,
-      "deaths": 13,
-      "playerKills": 2,
-      "mobKills": 50,
-      "blocksBroken": 228,
-      "blocksPlaced": 84,
-      "distanceWalked": 7015.1,
-      "jumps": 1653,
-      "balance": 0,
-      "rank": "default",
-      "currentWorld": "world",
-      "player": "Ligxth"
     },
     "Maftyouth": {
       "name": "Maftyouth",
