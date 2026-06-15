@@ -1,33 +1,23 @@
 {
   "errors": [
-    "/api/player/C0mbat_Ace: timed out",
-    "/api/balance/C0mbat_Ace: timed out",
-    "/api/rank/C0mbat_Ace: timed out",
-    "/api/rank/ItzOnlyFisher: timed out",
-    "/api/balance/Maftyouth: timed out",
-    "/api/balance/NahIamJohm: timed out",
-    "/api/rank/NahIamJohm: timed out",
-    "/api/rank/ItzRealFisherYT: timed out"
+    "/api/health: timed out"
   ],
-  "generatedAt": "2026-06-15T16:32:09.249785+00:00",
-  "health": {
-    "database": true,
-    "ok": true
-  },
-  "ok": true,
+  "generatedAt": "2026-06-15T20:04:25.235834+00:00",
+  "health": {},
+  "ok": false,
   "online": {
     "players": []
   },
   "server": {
     "memory": {
-      "free": 122811640,
+      "free": 320757352,
       "max": 8174698496,
       "total": 994050048
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 19565291,
+    "uptime": 32456543,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -57,14 +47,24 @@
       "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726"
     },
     "C0mbat_Ace": {
+      "balance": 0.0,
       "blocksBroken": 24,
       "blocksPlaced": 16,
+      "currentWorld": "world",
       "deaths": 2,
       "distanceWalked": 25100.26,
+      "firstJoin": 1781182408569,
+      "joins": 16,
       "jumps": 872,
+      "lastSeen": 1781541020120,
       "mobKills": 23,
       "name": "C0mbat_Ace",
-      "playerKills": 0
+      "player": "C0mbat_Ace",
+      "playerKills": 0,
+      "quits": 14,
+      "rank": "staff",
+      "totalPlaytime": 50022668,
+      "uuid": "248b52e7-a4f7-33af-9337-e8883843f022"
     },
     "IAmSpxce": {
       "balance": 0.0,
@@ -219,6 +219,7 @@
       "lastSeen": 1781443206505,
       "mobKills": 1,
       "name": "NahIamJohm",
+      "player": "NahIamJohm",
       "playerKills": 0,
       "quits": 3,
       "rank": "default",
