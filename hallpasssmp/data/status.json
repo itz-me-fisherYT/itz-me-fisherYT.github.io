@@ -1,31 +1,29 @@
 {
-  "errors": [],
-  "generatedAt": "2026-06-15T05:27:19.352391+00:00",
+  "errors": [
+    "/api/server: timed out",
+    "/api/player/KingApple_III: timed out",
+    "/api/player/Krxzy: timed out",
+    "/api/rank/Maftyouth: timed out",
+    "/api/rank/Nigh1mare: timed out",
+    "/api/rank/ItzRealFisherYT: timed out"
+  ],
+  "generatedAt": "2026-06-15T11:32:19.866562+00:00",
   "health": {
     "database": true,
     "ok": true
   },
   "ok": true,
   "online": {
-    "players": []
-  },
-  "server": {
-    "memory": {
-      "free": 270910952,
-      "max": 8174698496,
-      "total": 1468006400
-    },
-    "name": "Paper",
-    "onlinePlayers": 0,
-    "tps": 20.0,
-    "uptime": 78422036,
-    "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
-    "worlds": [
-      "world",
-      "world_nether",
-      "world_the_end"
+    "players": [
+      {
+        "name": "ItzOnlyFisher",
+        "ping": 426,
+        "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
+        "world": "world"
+      }
     ]
   },
+  "server": {},
   "statsByName": {
     "Asparta": {
       "balance": 0.0,
@@ -89,22 +87,22 @@
     },
     "ItzOnlyFisher": {
       "balance": 0.0,
-      "blocksBroken": 1259,
-      "blocksPlaced": 453,
+      "blocksBroken": 1619,
+      "blocksPlaced": 670,
       "currentWorld": "world",
       "deaths": 5,
-      "distanceWalked": 14801.55,
+      "distanceWalked": 16945.45,
       "firstJoin": 1781167266490,
-      "joins": 25,
-      "jumps": 1450,
-      "lastSeen": 1781445477854,
-      "mobKills": 133,
+      "joins": 29,
+      "jumps": 1691,
+      "lastSeen": 1781523025266,
+      "mobKills": 137,
       "name": "ItzOnlyFisher",
       "player": "ItzOnlyFisher",
       "playerKills": 3,
-      "quits": 18,
+      "quits": 21,
       "rank": "staff",
-      "totalPlaytime": 57303463,
+      "totalPlaytime": 61126853,
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
     },
     "ItzRealFisherYT": {
@@ -129,43 +127,15 @@
     },
     "KingApple_III": {
       "balance": 0.0,
-      "blocksBroken": 26,
-      "blocksPlaced": 17,
-      "currentWorld": "world",
-      "deaths": 3,
-      "distanceWalked": 0.0,
-      "firstJoin": 1781269633560,
-      "joins": 1,
-      "jumps": 0,
-      "lastSeen": 1781270205401,
-      "mobKills": 0,
       "name": "KingApple_III",
       "player": "KingApple_III",
-      "playerKills": 0,
-      "quits": 1,
-      "rank": "default",
-      "totalPlaytime": 571842,
-      "uuid": "6861f494-e724-398b-bc66-fb04f35ae407"
+      "rank": "default"
     },
     "Krxzy": {
       "balance": 0.0,
-      "blocksBroken": 11,
-      "blocksPlaced": 0,
-      "currentWorld": "world",
-      "deaths": 3,
-      "distanceWalked": 1517.43,
-      "firstJoin": 1781269019193,
-      "joins": 5,
-      "jumps": 371,
-      "lastSeen": 1781443433902,
-      "mobKills": 5,
       "name": "Krxzy",
       "player": "Krxzy",
-      "playerKills": 1,
-      "quits": 5,
-      "rank": "default",
-      "totalPlaytime": 1079201,
-      "uuid": "bfa528cc-c67d-3d7b-9a13-47c905f99b64"
+      "rank": "default"
     },
     "Ligxth": {
       "balance": 0.0,
