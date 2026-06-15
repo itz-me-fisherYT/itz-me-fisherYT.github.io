@@ -1,23 +1,24 @@
 {
-  "errors": [
-    "/api/health: timed out"
-  ],
-  "generatedAt": "2026-06-15T20:04:25.235834+00:00",
-  "health": {},
-  "ok": false,
+  "errors": [],
+  "generatedAt": "2026-06-15T22:26:21.447093+00:00",
+  "health": {
+    "database": true,
+    "ok": true
+  },
+  "ok": true,
   "online": {
     "players": []
   },
   "server": {
     "memory": {
-      "free": 320757352,
+      "free": 502475808,
       "max": 8174698496,
       "total": 994050048
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 32456543,
+    "uptime": 40972640,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
