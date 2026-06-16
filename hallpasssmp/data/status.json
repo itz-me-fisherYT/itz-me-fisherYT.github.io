@@ -1,6 +1,10 @@
 {
-  "errors": [],
-  "generatedAt": "2026-06-16T05:34:36.007483+00:00",
+  "errors": [
+    "/api/balance/IAmSpxce: timed out",
+    "/api/player/NahIamJohm: timed out",
+    "/api/player/VTXC9_24: timed out"
+  ],
+  "generatedAt": "2026-06-16T10:30:17.307261+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -11,14 +15,14 @@
   },
   "server": {
     "memory": {
-      "free": 440756608,
+      "free": 258118784,
       "max": 8174698496,
-      "total": 973078528
+      "total": 1056964608
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 17662380,
+    "uptime": 35342849,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -89,22 +93,22 @@
     },
     "ItzOnlyFisher": {
       "balance": 0.0,
-      "blocksBroken": 2315,
-      "blocksPlaced": 962,
+      "blocksBroken": 6672,
+      "blocksPlaced": 1807,
       "currentWorld": "world",
-      "deaths": 5,
-      "distanceWalked": 18627.4,
+      "deaths": 16,
+      "distanceWalked": 24740.57,
       "firstJoin": 1781167266490,
-      "joins": 32,
-      "jumps": 1874,
-      "lastSeen": 1781575710992,
-      "mobKills": 208,
+      "joins": 36,
+      "jumps": 2172,
+      "lastSeen": 1781604380615,
+      "mobKills": 226,
       "name": "ItzOnlyFisher",
       "player": "ItzOnlyFisher",
       "playerKills": 3,
-      "quits": 23,
+      "quits": 27,
       "rank": "staff",
-      "totalPlaytime": 68766412,
+      "totalPlaytime": 84300427,
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
     },
     "ItzRealFisherYT": {
@@ -209,23 +213,9 @@
     },
     "NahIamJohm": {
       "balance": 0.0,
-      "blocksBroken": 404,
-      "blocksPlaced": 95,
-      "currentWorld": "world",
-      "deaths": 4,
-      "distanceWalked": 1198.71,
-      "firstJoin": 1781269718898,
-      "joins": 3,
-      "jumps": 319,
-      "lastSeen": 1781443206505,
-      "mobKills": 1,
       "name": "NahIamJohm",
       "player": "NahIamJohm",
-      "playerKills": 0,
-      "quits": 3,
-      "rank": "default",
-      "totalPlaytime": 1401617,
-      "uuid": "713f8625-0d38-3448-9e98-817972b8d899"
+      "rank": "default"
     },
     "Nigh1mare": {
       "balance": 0.0,
@@ -249,23 +239,9 @@
     },
     "VTXC9_24": {
       "balance": 0.0,
-      "blocksBroken": 58,
-      "blocksPlaced": 11,
-      "currentWorld": "world",
-      "deaths": 3,
-      "distanceWalked": 2333.51,
-      "firstJoin": 1781269495274,
-      "joins": 2,
-      "jumps": 573,
-      "lastSeen": 1781443079652,
-      "mobKills": 2,
       "name": "VTXC9_24",
       "player": "VTXC9_24",
-      "playerKills": 5,
-      "quits": 2,
-      "rank": "default",
-      "totalPlaytime": 795359,
-      "uuid": "46246c79-55ef-3c16-8ed2-dcaebdbbce14"
+      "rank": "default"
     }
   }
 }
