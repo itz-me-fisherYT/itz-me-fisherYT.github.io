@@ -1,8 +1,6 @@
 {
-  "errors": [
-    "/api/player/KingApple_III: timed out"
-  ],
-  "generatedAt": "2026-06-16T21:46:30.950375+00:00",
+  "errors": [],
+  "generatedAt": "2026-06-16T23:13:24.126334+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -13,14 +11,14 @@
   },
   "server": {
     "memory": {
-      "free": 961907568,
+      "free": 389077848,
       "max": 8174698496,
-      "total": 1610612736
+      "total": 1132462080
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 75953068,
+    "uptime": 1311683,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -131,9 +129,23 @@
     },
     "KingApple_III": {
       "balance": 0.0,
+      "blocksBroken": 26,
+      "blocksPlaced": 17,
+      "currentWorld": "world",
+      "deaths": 3,
+      "distanceWalked": 0.0,
+      "firstJoin": 1781269633560,
+      "joins": 1,
+      "jumps": 0,
+      "lastSeen": 1781270205401,
+      "mobKills": 0,
       "name": "KingApple_III",
       "player": "KingApple_III",
-      "rank": "default"
+      "playerKills": 0,
+      "quits": 1,
+      "rank": "default",
+      "totalPlaytime": 571842,
+      "uuid": "6861f494-e724-398b-bc66-fb04f35ae407"
     },
     "Krxzy": {
       "balance": 0.0,
