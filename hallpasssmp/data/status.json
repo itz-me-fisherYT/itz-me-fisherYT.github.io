@@ -1,31 +1,34 @@
 {
   "errors": [
-    "/api/rank/Asparta: timed out",
-    "/api/balance/IAmSpxce: timed out",
-    "/api/player/ItzOnlyFisher: timed out",
-    "/api/player/Ligxth: timed out",
-    "/api/rank/Ligxth: timed out",
-    "/api/player/Nigh1mare: timed out"
+    "/api/online: timed out",
+    "/api/player/Asparta: timed out",
+    "/api/balance/Asparta: timed out",
+    "/api/player/C0mbat_Ace: timed out",
+    "/api/balance/C0mbat_Ace: timed out",
+    "/api/rank/C0mbat_Ace: timed out",
+    "/api/balance/NahIamJohm: timed out",
+    "/api/player/Nigh1mare: timed out",
+    "/api/balance/Nigh1mare: timed out",
+    "/api/rank/Nigh1mare: timed out",
+    "/api/player/VTXC9_24: timed out"
   ],
-  "generatedAt": "2026-06-16T15:32:03.169769+00:00",
+  "generatedAt": "2026-06-16T19:08:33.077923+00:00",
   "health": {
     "database": true,
     "ok": true
   },
   "ok": true,
-  "online": {
-    "players": []
-  },
+  "online": {},
   "server": {
     "memory": {
-      "free": 161019976,
+      "free": 178620176,
       "max": 8174698496,
       "total": 1635778560
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 53384891,
+    "uptime": 66275712,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -35,44 +38,19 @@
   },
   "statsByName": {
     "Asparta": {
-      "balance": 0.0,
-      "blocksBroken": 12831,
-      "blocksPlaced": 7648,
-      "currentWorld": "world",
-      "deaths": 5,
-      "distanceWalked": 121153.73,
-      "firstJoin": 1781268325463,
-      "joins": 23,
-      "jumps": 17008,
-      "lastSeen": 1781619792167,
-      "mobKills": 407,
       "name": "Asparta",
       "player": "Asparta",
-      "playerKills": 0,
-      "quits": 19,
-      "rank": "default",
-      "totalPlaytime": 78789470,
-      "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726"
+      "rank": "default"
     },
     "C0mbat_Ace": {
-      "balance": 0.0,
       "blocksBroken": 24,
       "blocksPlaced": 16,
-      "currentWorld": "world",
       "deaths": 3,
       "distanceWalked": 25457.25,
-      "firstJoin": 1781182408569,
-      "joins": 17,
       "jumps": 908,
-      "lastSeen": 1781619795058,
       "mobKills": 23,
       "name": "C0mbat_Ace",
-      "player": "C0mbat_Ace",
-      "playerKills": 0,
-      "quits": 15,
-      "rank": "staff",
-      "totalPlaytime": 57932062,
-      "uuid": "248b52e7-a4f7-33af-9337-e8883843f022"
+      "playerKills": 0
     },
     "IAmSpxce": {
       "balance": 0.0,
@@ -96,9 +74,23 @@
     },
     "ItzOnlyFisher": {
       "balance": 0.0,
+      "blocksBroken": 6672,
+      "blocksPlaced": 1807,
+      "currentWorld": "world",
+      "deaths": 16,
+      "distanceWalked": 24740.57,
+      "firstJoin": 1781167266490,
+      "joins": 36,
+      "jumps": 2172,
+      "lastSeen": 1781604380615,
+      "mobKills": 226,
       "name": "ItzOnlyFisher",
       "player": "ItzOnlyFisher",
-      "rank": "staff"
+      "playerKills": 3,
+      "quits": 27,
+      "rank": "staff",
+      "totalPlaytime": 84300427,
+      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
     },
     "ItzRealFisherYT": {
       "balance": 0.0,
@@ -162,8 +154,23 @@
     },
     "Ligxth": {
       "balance": 0.0,
+      "blocksBroken": 307,
+      "blocksPlaced": 126,
+      "currentWorld": "world",
+      "deaths": 15,
+      "distanceWalked": 8187.33,
+      "firstJoin": 1781275218674,
+      "joins": 14,
+      "jumps": 1853,
+      "lastSeen": 1781427396433,
+      "mobKills": 50,
       "name": "Ligxth",
-      "player": "Ligxth"
+      "player": "Ligxth",
+      "playerKills": 2,
+      "quits": 14,
+      "rank": "default",
+      "totalPlaytime": 3594731,
+      "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb"
     },
     "Maftyouth": {
       "balance": 0.0,
@@ -206,30 +213,20 @@
       "uuid": "713f8625-0d38-3448-9e98-817972b8d899"
     },
     "Nigh1mare": {
-      "balance": 0.0,
+      "blocksBroken": 599,
+      "blocksPlaced": 265,
+      "deaths": 12,
+      "distanceWalked": 8783.25,
+      "jumps": 2088,
+      "mobKills": 150,
       "name": "Nigh1mare",
-      "player": "Nigh1mare",
-      "rank": "default"
+      "playerKills": 2
     },
     "VTXC9_24": {
       "balance": 0.0,
-      "blocksBroken": 58,
-      "blocksPlaced": 11,
-      "currentWorld": "world",
-      "deaths": 3,
-      "distanceWalked": 2333.51,
-      "firstJoin": 1781269495274,
-      "joins": 2,
-      "jumps": 573,
-      "lastSeen": 1781443079652,
-      "mobKills": 2,
       "name": "VTXC9_24",
       "player": "VTXC9_24",
-      "playerKills": 5,
-      "quits": 2,
-      "rank": "default",
-      "totalPlaytime": 795359,
-      "uuid": "46246c79-55ef-3c16-8ed2-dcaebdbbce14"
+      "rank": "default"
     }
   }
 }
