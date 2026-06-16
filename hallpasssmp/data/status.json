@@ -1,34 +1,26 @@
 {
   "errors": [
-    "/api/online: timed out",
-    "/api/player/Asparta: timed out",
-    "/api/balance/Asparta: timed out",
-    "/api/player/C0mbat_Ace: timed out",
-    "/api/balance/C0mbat_Ace: timed out",
-    "/api/rank/C0mbat_Ace: timed out",
-    "/api/balance/NahIamJohm: timed out",
-    "/api/player/Nigh1mare: timed out",
-    "/api/balance/Nigh1mare: timed out",
-    "/api/rank/Nigh1mare: timed out",
-    "/api/player/VTXC9_24: timed out"
+    "/api/player/KingApple_III: timed out"
   ],
-  "generatedAt": "2026-06-16T19:08:33.077923+00:00",
+  "generatedAt": "2026-06-16T21:46:30.950375+00:00",
   "health": {
     "database": true,
     "ok": true
   },
   "ok": true,
-  "online": {},
+  "online": {
+    "players": []
+  },
   "server": {
     "memory": {
-      "free": 178620176,
+      "free": 961907568,
       "max": 8174698496,
-      "total": 1635778560
+      "total": 1610612736
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 66275712,
+    "uptime": 75953068,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -38,19 +30,44 @@
   },
   "statsByName": {
     "Asparta": {
+      "balance": 0.0,
+      "blocksBroken": 12831,
+      "blocksPlaced": 7648,
+      "currentWorld": "world",
+      "deaths": 5,
+      "distanceWalked": 121153.73,
+      "firstJoin": 1781268325463,
+      "joins": 23,
+      "jumps": 17008,
+      "lastSeen": 1781619792167,
+      "mobKills": 407,
       "name": "Asparta",
       "player": "Asparta",
-      "rank": "default"
+      "playerKills": 0,
+      "quits": 19,
+      "rank": "default",
+      "totalPlaytime": 78789470,
+      "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726"
     },
     "C0mbat_Ace": {
+      "balance": 0.0,
       "blocksBroken": 24,
       "blocksPlaced": 16,
+      "currentWorld": "world",
       "deaths": 3,
       "distanceWalked": 25457.25,
+      "firstJoin": 1781182408569,
+      "joins": 17,
       "jumps": 908,
+      "lastSeen": 1781636800172,
       "mobKills": 23,
       "name": "C0mbat_Ace",
-      "playerKills": 0
+      "player": "C0mbat_Ace",
+      "playerKills": 0,
+      "quits": 15,
+      "rank": "staff",
+      "totalPlaytime": 57932062,
+      "uuid": "248b52e7-a4f7-33af-9337-e8883843f022"
     },
     "IAmSpxce": {
       "balance": 0.0,
@@ -114,23 +131,9 @@
     },
     "KingApple_III": {
       "balance": 0.0,
-      "blocksBroken": 26,
-      "blocksPlaced": 17,
-      "currentWorld": "world",
-      "deaths": 3,
-      "distanceWalked": 0.0,
-      "firstJoin": 1781269633560,
-      "joins": 1,
-      "jumps": 0,
-      "lastSeen": 1781270205401,
-      "mobKills": 0,
       "name": "KingApple_III",
       "player": "KingApple_III",
-      "playerKills": 0,
-      "quits": 1,
-      "rank": "default",
-      "totalPlaytime": 571842,
-      "uuid": "6861f494-e724-398b-bc66-fb04f35ae407"
+      "rank": "default"
     },
     "Krxzy": {
       "balance": 0.0,
@@ -213,20 +216,44 @@
       "uuid": "713f8625-0d38-3448-9e98-817972b8d899"
     },
     "Nigh1mare": {
+      "balance": 0.0,
       "blocksBroken": 599,
       "blocksPlaced": 265,
+      "currentWorld": "world",
       "deaths": 12,
       "distanceWalked": 8783.25,
+      "firstJoin": 1781269043032,
+      "joins": 20,
       "jumps": 2088,
+      "lastSeen": 1781636890218,
       "mobKills": 150,
       "name": "Nigh1mare",
-      "playerKills": 2
+      "player": "Nigh1mare",
+      "playerKills": 2,
+      "quits": 20,
+      "rank": "default",
+      "totalPlaytime": 8473313,
+      "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1"
     },
     "VTXC9_24": {
       "balance": 0.0,
+      "blocksBroken": 58,
+      "blocksPlaced": 11,
+      "currentWorld": "world",
+      "deaths": 3,
+      "distanceWalked": 2333.51,
+      "firstJoin": 1781269495274,
+      "joins": 2,
+      "jumps": 573,
+      "lastSeen": 1781443079652,
+      "mobKills": 2,
       "name": "VTXC9_24",
       "player": "VTXC9_24",
-      "rank": "default"
+      "playerKills": 5,
+      "quits": 2,
+      "rank": "default",
+      "totalPlaytime": 795359,
+      "uuid": "46246c79-55ef-3c16-8ed2-dcaebdbbce14"
     }
   }
 }
