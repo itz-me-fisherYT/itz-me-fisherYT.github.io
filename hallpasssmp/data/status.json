@@ -1,8 +1,6 @@
 {
-  "errors": [
-    "/api/rank/Nigh1mare: timed out"
-  ],
-  "generatedAt": "2026-06-17T21:48:36.598909+00:00",
+  "errors": [],
+  "generatedAt": "2026-06-17T23:11:27.241099+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -13,14 +11,14 @@
   },
   "server": {
     "memory": {
-      "free": 616977552,
+      "free": 376410616,
       "max": 8174698496,
       "total": 1317011456
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 82606595,
+    "uptime": 87592711,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
