@@ -1,23 +1,26 @@
 {
   "errors": [
-    "/api/health: timed out"
+    "/api/balance/Ligxth: timed out"
   ],
-  "generatedAt": "2026-06-17T11:27:52.555943+00:00",
-  "health": {},
-  "ok": false,
+  "generatedAt": "2026-06-17T14:38:31.671139+00:00",
+  "health": {
+    "database": true,
+    "ok": true
+  },
+  "ok": true,
   "online": {
     "players": []
   },
   "server": {
     "memory": {
-      "free": 137743496,
+      "free": 469222224,
       "max": 8174698496,
-      "total": 1224736768
+      "total": 1317011456
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 45381275,
+    "uptime": 56800471,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -152,18 +155,18 @@
       "blocksPlaced": 29,
       "currentWorld": "world",
       "deaths": 4,
-      "distanceWalked": 4522.89,
+      "distanceWalked": 4636.01,
       "firstJoin": 1781269019193,
-      "joins": 8,
-      "jumps": 959,
-      "lastSeen": 1781692295940,
+      "joins": 9,
+      "jumps": 997,
+      "lastSeen": 1781700599635,
       "mobKills": 10,
       "name": "Krxzy",
       "player": "Krxzy",
       "playerKills": 1,
-      "quits": 8,
+      "quits": 9,
       "rank": "default",
-      "totalPlaytime": 2132062,
+      "totalPlaytime": 2211926,
       "uuid": "bfa528cc-c67d-3d7b-9a13-47c905f99b64"
     },
     "Ligxth": {
@@ -188,22 +191,22 @@
     },
     "Maftyouth": {
       "balance": 0.0,
-      "blocksBroken": 37,
+      "blocksBroken": 42,
       "blocksPlaced": 8,
       "currentWorld": "world",
-      "deaths": 5,
-      "distanceWalked": 2753.64,
+      "deaths": 6,
+      "distanceWalked": 3301.15,
       "firstJoin": 1781269475024,
-      "joins": 6,
-      "jumps": 768,
-      "lastSeen": 1781616774964,
+      "joins": 8,
+      "jumps": 913,
+      "lastSeen": 1781700662881,
       "mobKills": 1,
       "name": "Maftyouth",
       "player": "Maftyouth",
       "playerKills": 2,
-      "quits": 6,
+      "quits": 8,
       "rank": "default",
-      "totalPlaytime": 971296,
+      "totalPlaytime": 1139007,
       "uuid": "e2f04975-0f54-3dc6-acc0-9a0d30bb8e3d"
     },
     "NahIamJohm": {
@@ -232,18 +235,18 @@
       "blocksPlaced": 275,
       "currentWorld": "world",
       "deaths": 14,
-      "distanceWalked": 8783.25,
+      "distanceWalked": 10309.8,
       "firstJoin": 1781269043032,
-      "joins": 21,
-      "jumps": 2088,
-      "lastSeen": 1781692680068,
-      "mobKills": 150,
+      "joins": 22,
+      "jumps": 2455,
+      "lastSeen": 1781700489395,
+      "mobKills": 251,
       "name": "Nigh1mare",
       "player": "Nigh1mare",
-      "playerKills": 2,
-      "quits": 21,
+      "playerKills": 3,
+      "quits": 22,
       "rank": "default",
-      "totalPlaytime": 9518372,
+      "totalPlaytime": 9574402,
       "uuid": "bc5f3f40-a0d0-33ad-b48c-fce210ebc1c1"
     },
     "VTXC9_24": {
@@ -251,19 +254,19 @@
       "blocksBroken": 58,
       "blocksPlaced": 11,
       "currentWorld": "world",
-      "deaths": 3,
-      "distanceWalked": 2333.51,
+      "deaths": 9,
+      "distanceWalked": 2923.03,
       "firstJoin": 1781269495274,
-      "joins": 2,
-      "jumps": 573,
-      "lastSeen": 1781443079652,
+      "joins": 4,
+      "jumps": 737,
+      "lastSeen": 1781700665478,
       "mobKills": 2,
       "name": "VTXC9_24",
       "player": "VTXC9_24",
       "playerKills": 5,
-      "quits": 2,
+      "quits": 4,
       "rank": "default",
-      "totalPlaytime": 795359,
+      "totalPlaytime": 1073949,
       "uuid": "46246c79-55ef-3c16-8ed2-dcaebdbbce14"
     }
   }
