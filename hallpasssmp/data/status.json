@@ -1,6 +1,10 @@
 {
-  "errors": [],
-  "generatedAt": "2026-06-18T14:12:39.629038+00:00",
+  "errors": [
+    "/api/balance/Asparta: timed out",
+    "/api/balance/Krxzy: timed out",
+    "/api/rank/VTXC9_24: timed out"
+  ],
+  "generatedAt": "2026-06-18T17:32:01.300639+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -11,14 +15,14 @@
   },
   "server": {
     "memory": {
-      "free": 443398888,
+      "free": 581855120,
       "max": 8174698496,
       "total": 1317011456
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 141664896,
+    "uptime": 153571074,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
