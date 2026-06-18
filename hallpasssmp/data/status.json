@@ -1,6 +1,8 @@
 {
-  "errors": [],
-  "generatedAt": "2026-06-18T06:29:57.864447+00:00",
+  "errors": [
+    "/api/rank/NahIamJohm: timed out"
+  ],
+  "generatedAt": "2026-06-18T10:57:36.487769+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -11,14 +13,14 @@
   },
   "server": {
     "memory": {
-      "free": 724206040,
+      "free": 179482064,
       "max": 8174698496,
       "total": 1317011456
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 113907578,
+    "uptime": 129942006,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
