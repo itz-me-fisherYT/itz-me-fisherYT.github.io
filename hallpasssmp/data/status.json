@@ -1,38 +1,18 @@
 {
-  "errors": [],
-  "generatedAt": "2026-06-19T07:33:26.969024+00:00",
+  "errors": [
+    "/api/server: timed out",
+    "/api/player/VTXC9_24: timed out"
+  ],
+  "generatedAt": "2026-06-19T11:52:18.410954+00:00",
   "health": {
     "database": true,
     "ok": true
   },
   "ok": true,
   "online": {
-    "players": [
-      {
-        "name": "ItzOnlyFisher",
-        "ping": 293,
-        "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "world": "world"
-      }
-    ]
+    "players": []
   },
-  "server": {
-    "memory": {
-      "free": 122287728,
-      "max": 8174698496,
-      "total": 868220928
-    },
-    "name": "Paper",
-    "onlinePlayers": 1,
-    "tps": 20.0,
-    "uptime": 2206719,
-    "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
-    "worlds": [
-      "world",
-      "world_nether",
-      "world_the_end"
-    ]
-  },
+  "server": {},
   "statsByName": {
     "Asparta": {
       "balance": 0.0,
@@ -76,42 +56,42 @@
     },
     "IAmSpxce": {
       "balance": 0.0,
-      "blocksBroken": 34,
-      "blocksPlaced": 85,
+      "blocksBroken": 42,
+      "blocksPlaced": 94,
       "currentWorld": "world",
       "deaths": 0,
-      "distanceWalked": 396.76,
+      "distanceWalked": 2172.89,
       "firstJoin": 1781321389727,
-      "joins": 3,
-      "jumps": 141,
-      "lastSeen": 1781395076319,
-      "mobKills": 10,
+      "joins": 4,
+      "jumps": 214,
+      "lastSeen": 1781860907289,
+      "mobKills": 12,
       "name": "IAmSpxce",
       "player": "IAmSpxce",
       "playerKills": 0,
-      "quits": 3,
+      "quits": 4,
       "rank": "default",
-      "totalPlaytime": 623686,
+      "totalPlaytime": 1144218,
       "uuid": "ddad3cfe-a0a2-3bcc-aecd-1ba68b7cdbea"
     },
     "ItzOnlyFisher": {
       "balance": 0.0,
-      "blocksBroken": 7358,
-      "blocksPlaced": 1998,
+      "blocksBroken": 7361,
+      "blocksPlaced": 2000,
       "currentWorld": "world",
       "deaths": 75,
-      "distanceWalked": 27611.82,
+      "distanceWalked": 27771.1,
       "firstJoin": 1781167266490,
-      "joins": 42,
-      "jumps": 2671,
-      "lastSeen": 1781854351721,
-      "mobKills": 239,
+      "joins": 50,
+      "jumps": 2697,
+      "lastSeen": 1781861051582,
+      "mobKills": 241,
       "name": "ItzOnlyFisher",
       "player": "ItzOnlyFisher",
       "playerKills": 3,
-      "quits": 32,
+      "quits": 33,
       "rank": "staff",
-      "totalPlaytime": 101930883,
+      "totalPlaytime": 103346540,
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
     },
     "ItzRealFisherYT": {
@@ -256,23 +236,9 @@
     },
     "VTXC9_24": {
       "balance": 0.0,
-      "blocksBroken": 58,
-      "blocksPlaced": 11,
-      "currentWorld": "world",
-      "deaths": 9,
-      "distanceWalked": 3435.24,
-      "firstJoin": 1781269495274,
-      "joins": 5,
-      "jumps": 914,
-      "lastSeen": 1781785075727,
-      "mobKills": 2,
       "name": "VTXC9_24",
       "player": "VTXC9_24",
-      "playerKills": 5,
-      "quits": 5,
-      "rank": "default",
-      "totalPlaytime": 1082988,
-      "uuid": "46246c79-55ef-3c16-8ed2-dcaebdbbce14"
+      "rank": "default"
     }
   }
 }
