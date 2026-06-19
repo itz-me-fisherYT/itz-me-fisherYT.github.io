@@ -1,11 +1,8 @@
 {
   "errors": [
-    "/api/balance/KingApple_III: timed out",
-    "/api/rank/KingApple_III: timed out",
-    "/api/player/Krxzy: timed out",
-    "/api/rank/Maftyouth: timed out"
+    "/api/balance/Ligxth: timed out"
   ],
-  "generatedAt": "2026-06-19T14:37:30.172849+00:00",
+  "generatedAt": "2026-06-19T17:02:42.196833+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -16,14 +13,14 @@
   },
   "server": {
     "memory": {
-      "free": 153978920,
+      "free": 519996968,
       "max": 8174698496,
       "total": 1191182336
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 20206634,
+    "uptime": 28977361,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -145,6 +142,7 @@
       "lastSeen": 1781270205401,
       "mobKills": 0,
       "name": "KingApple_III",
+      "player": "KingApple_III",
       "playerKills": 0,
       "quits": 1,
       "rank": "default",
@@ -153,9 +151,23 @@
     },
     "Krxzy": {
       "balance": 0.0,
+      "blocksBroken": 263,
+      "blocksPlaced": 29,
+      "currentWorld": "world",
+      "deaths": 4,
+      "distanceWalked": 4636.01,
+      "firstJoin": 1781269019193,
+      "joins": 9,
+      "jumps": 997,
+      "lastSeen": 1781700599635,
+      "mobKills": 10,
       "name": "Krxzy",
       "player": "Krxzy",
-      "rank": "default"
+      "playerKills": 1,
+      "quits": 9,
+      "rank": "default",
+      "totalPlaytime": 2211926,
+      "uuid": "bfa528cc-c67d-3d7b-9a13-47c905f99b64"
     },
     "Ligxth": {
       "balance": 0.0,
@@ -165,16 +177,16 @@
       "deaths": 15,
       "distanceWalked": 8187.33,
       "firstJoin": 1781275218674,
-      "joins": 14,
+      "joins": 15,
       "jumps": 1853,
-      "lastSeen": 1781427396433,
+      "lastSeen": 1781881309890,
       "mobKills": 50,
       "name": "Ligxth",
       "player": "Ligxth",
       "playerKills": 2,
-      "quits": 14,
+      "quits": 15,
       "rank": "default",
-      "totalPlaytime": 3594731,
+      "totalPlaytime": 3599024,
       "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb"
     },
     "Maftyouth": {
