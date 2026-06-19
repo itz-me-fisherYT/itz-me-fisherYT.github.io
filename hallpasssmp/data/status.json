@@ -1,9 +1,11 @@
 {
   "errors": [
-    "/api/server: timed out",
-    "/api/player/VTXC9_24: timed out"
+    "/api/balance/KingApple_III: timed out",
+    "/api/rank/KingApple_III: timed out",
+    "/api/player/Krxzy: timed out",
+    "/api/rank/Maftyouth: timed out"
   ],
-  "generatedAt": "2026-06-19T11:52:18.410954+00:00",
+  "generatedAt": "2026-06-19T14:37:30.172849+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -12,7 +14,23 @@
   "online": {
     "players": []
   },
-  "server": {},
+  "server": {
+    "memory": {
+      "free": 153978920,
+      "max": 8174698496,
+      "total": 1191182336
+    },
+    "name": "Paper",
+    "onlinePlayers": 0,
+    "tps": 20.0,
+    "uptime": 20206634,
+    "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
+    "worlds": [
+      "world",
+      "world_nether",
+      "world_the_end"
+    ]
+  },
   "statsByName": {
     "Asparta": {
       "balance": 0.0,
@@ -127,7 +145,6 @@
       "lastSeen": 1781270205401,
       "mobKills": 0,
       "name": "KingApple_III",
-      "player": "KingApple_III",
       "playerKills": 0,
       "quits": 1,
       "rank": "default",
@@ -136,23 +153,9 @@
     },
     "Krxzy": {
       "balance": 0.0,
-      "blocksBroken": 263,
-      "blocksPlaced": 29,
-      "currentWorld": "world",
-      "deaths": 4,
-      "distanceWalked": 4636.01,
-      "firstJoin": 1781269019193,
-      "joins": 9,
-      "jumps": 997,
-      "lastSeen": 1781700599635,
-      "mobKills": 10,
       "name": "Krxzy",
       "player": "Krxzy",
-      "playerKills": 1,
-      "quits": 9,
-      "rank": "default",
-      "totalPlaytime": 2211926,
-      "uuid": "bfa528cc-c67d-3d7b-9a13-47c905f99b64"
+      "rank": "default"
     },
     "Ligxth": {
       "balance": 0.0,
@@ -236,9 +239,23 @@
     },
     "VTXC9_24": {
       "balance": 0.0,
+      "blocksBroken": 58,
+      "blocksPlaced": 11,
+      "currentWorld": "world",
+      "deaths": 9,
+      "distanceWalked": 3435.24,
+      "firstJoin": 1781269495274,
+      "joins": 5,
+      "jumps": 914,
+      "lastSeen": 1781785075727,
+      "mobKills": 2,
       "name": "VTXC9_24",
       "player": "VTXC9_24",
-      "rank": "default"
+      "playerKills": 5,
+      "quits": 5,
+      "rank": "default",
+      "totalPlaytime": 1082988,
+      "uuid": "46246c79-55ef-3c16-8ed2-dcaebdbbce14"
     }
   }
 }
