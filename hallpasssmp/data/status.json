@@ -1,8 +1,6 @@
 {
-  "errors": [
-    "/api/balance/Ligxth: timed out"
-  ],
-  "generatedAt": "2026-06-19T17:02:42.196833+00:00",
+  "errors": [],
+  "generatedAt": "2026-06-19T19:05:00.858842+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -13,14 +11,14 @@
   },
   "server": {
     "memory": {
-      "free": 519996968,
+      "free": 173829952,
       "max": 8174698496,
       "total": 1191182336
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 28977361,
+    "uptime": 36336963,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
