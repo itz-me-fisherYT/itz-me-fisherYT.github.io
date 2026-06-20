@@ -1,24 +1,31 @@
 {
   "errors": [],
-  "generatedAt": "2026-06-19T23:50:21.874962+00:00",
+  "generatedAt": "2026-06-20T01:56:53.117038+00:00",
   "health": {
     "database": true,
     "ok": true
   },
   "ok": true,
   "online": {
-    "players": []
+    "players": [
+      {
+        "name": "Asparta",
+        "ping": 190,
+        "uuid": "9327d157-c06b-3eed-b5d7-26dbb6d60726",
+        "world": "world"
+      }
+    ]
   },
   "server": {
     "memory": {
-      "free": 395378912,
+      "free": 433992256,
       "max": 8174698496,
-      "total": 1191182336
+      "total": 1266679808
     },
     "name": "Paper",
-    "onlinePlayers": 0,
+    "onlinePlayers": 1,
     "tps": 20.0,
-    "uptime": 53457848,
+    "uptime": 61046302,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -29,16 +36,16 @@
   "statsByName": {
     "Asparta": {
       "balance": 0.0,
-      "blocksBroken": 12831,
-      "blocksPlaced": 7648,
+      "blocksBroken": 12980,
+      "blocksPlaced": 7736,
       "currentWorld": "world",
       "deaths": 5,
-      "distanceWalked": 121153.73,
+      "distanceWalked": 122272.54,
       "firstJoin": 1781268325463,
-      "joins": 23,
-      "jumps": 17008,
-      "lastSeen": 1781619792167,
-      "mobKills": 407,
+      "joins": 24,
+      "jumps": 17094,
+      "lastSeen": 1781920574219,
+      "mobKills": 423,
       "name": "Asparta",
       "player": "Asparta",
       "playerKills": 0,
@@ -169,22 +176,22 @@
     },
     "Ligxth": {
       "balance": 0.0,
-      "blocksBroken": 307,
-      "blocksPlaced": 126,
+      "blocksBroken": 329,
+      "blocksPlaced": 128,
       "currentWorld": "world",
       "deaths": 15,
       "distanceWalked": 8187.33,
       "firstJoin": 1781275218674,
-      "joins": 15,
+      "joins": 16,
       "jumps": 1853,
-      "lastSeen": 1781881309890,
+      "lastSeen": 1781917021143,
       "mobKills": 50,
       "name": "Ligxth",
       "player": "Ligxth",
       "playerKills": 2,
-      "quits": 15,
+      "quits": 16,
       "rank": "default",
-      "totalPlaytime": 3599024,
+      "totalPlaytime": 4015300,
       "uuid": "bb9e3e1c-33c5-31a7-9e0a-abdc8bc59ffb"
     },
     "Maftyouth": {
