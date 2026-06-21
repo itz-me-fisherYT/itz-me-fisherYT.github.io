@@ -41,32 +41,25 @@
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
     "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
   ],
-  "generatedAt": "2026-06-21T10:42:13.560224+00:00",
+  "generatedAt": "2026-06-21T12:30:54.759635+00:00",
   "health": {
     "database": true,
     "ok": true
   },
   "ok": true,
   "online": {
-    "players": [
-      {
-        "name": "ItzOnlyFisher",
-        "ping": 336,
-        "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
-        "world": "world"
-      }
-    ]
+    "players": []
   },
   "server": {
     "memory": {
-      "free": 359688072,
+      "free": 120382104,
       "max": 8174698496,
-      "total": 1207959552
+      "total": 914358272
     },
     "name": "Paper",
-    "onlinePlayers": 1,
+    "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 914099,
+    "uptime": 5306667,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -77,7 +70,7 @@
   "statsByName": {
     "ItzOnlyFisher": {
       "balance": 0.0,
-      "blocksBroken": 66,
+      "blocksBroken": 68,
       "blocksPlaced": 0,
       "currentWorld": "world",
       "deaths": 0,
@@ -85,7 +78,7 @@
       "firstJoin": 1782037685964,
       "joins": 1,
       "jumps": 0,
-      "lastSeen": 1782038508795,
+      "lastSeen": 1782039730061,
       "mobKills": 0,
       "name": "ItzOnlyFisher",
       "player": "ItzOnlyFisher",
