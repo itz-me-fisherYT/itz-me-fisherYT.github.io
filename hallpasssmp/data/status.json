@@ -1,26 +1,99 @@
 {
-  "errors": [],
-  "generatedAt": "2026-06-21T10:00:00.000000+00:00",
+  "errors": [
+    "/api/player/Asparta: HTTP Error 404: Not Found",
+    "/api/balance/Asparta: HTTP Error 404: Not Found",
+    "/api/rank/Asparta: HTTP Error 404: Not Found",
+    "/api/stats/Asparta: HTTP Error 404: Not Found",
+    "/api/player/C0mbat_Ace: HTTP Error 404: Not Found",
+    "/api/balance/C0mbat_Ace: HTTP Error 404: Not Found",
+    "/api/rank/C0mbat_Ace: HTTP Error 404: Not Found",
+    "/api/stats/C0mbat_Ace: HTTP Error 404: Not Found",
+    "/api/player/IAmSpxce: HTTP Error 404: Not Found",
+    "/api/balance/IAmSpxce: HTTP Error 404: Not Found",
+    "/api/rank/IAmSpxce: HTTP Error 404: Not Found",
+    "/api/stats/IAmSpxce: HTTP Error 404: Not Found",
+    "/api/player/KingApple_III: HTTP Error 404: Not Found",
+    "/api/balance/KingApple_III: HTTP Error 404: Not Found",
+    "/api/rank/KingApple_III: HTTP Error 404: Not Found",
+    "/api/stats/KingApple_III: HTTP Error 404: Not Found",
+    "/api/player/Krxzy: HTTP Error 404: Not Found",
+    "/api/balance/Krxzy: HTTP Error 404: Not Found",
+    "/api/rank/Krxzy: HTTP Error 404: Not Found",
+    "/api/stats/Krxzy: HTTP Error 404: Not Found",
+    "/api/player/Ligxth: HTTP Error 404: Not Found",
+    "/api/balance/Ligxth: HTTP Error 404: Not Found",
+    "/api/rank/Ligxth: HTTP Error 404: Not Found",
+    "/api/stats/Ligxth: HTTP Error 404: Not Found",
+    "/api/player/Maftyouth: HTTP Error 404: Not Found",
+    "/api/balance/Maftyouth: HTTP Error 404: Not Found",
+    "/api/rank/Maftyouth: HTTP Error 404: Not Found",
+    "/api/stats/Maftyouth: HTTP Error 404: Not Found",
+    "/api/player/NahIamJohm: HTTP Error 404: Not Found",
+    "/api/balance/NahIamJohm: HTTP Error 404: Not Found",
+    "/api/rank/NahIamJohm: HTTP Error 404: Not Found",
+    "/api/stats/NahIamJohm: HTTP Error 404: Not Found",
+    "/api/player/Nigh1mare: HTTP Error 404: Not Found",
+    "/api/balance/Nigh1mare: HTTP Error 404: Not Found",
+    "/api/rank/Nigh1mare: HTTP Error 404: Not Found",
+    "/api/stats/Nigh1mare: HTTP Error 404: Not Found",
+    "/api/player/VTXC9_24: HTTP Error 404: Not Found",
+    "/api/balance/VTXC9_24: HTTP Error 404: Not Found",
+    "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
+    "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
+  ],
+  "generatedAt": "2026-06-21T10:42:13.560224+00:00",
   "health": {
-    "database": false,
-    "ok": false
+    "database": true,
+    "ok": true
   },
-  "ok": false,
+  "ok": true,
   "online": {
-    "players": []
+    "players": [
+      {
+        "name": "ItzOnlyFisher",
+        "ping": 336,
+        "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c",
+        "world": "world"
+      }
+    ]
   },
   "server": {
     "memory": {
-      "free": 0,
-      "max": 0,
-      "total": 0
+      "free": 359688072,
+      "max": 8174698496,
+      "total": 1207959552
     },
     "name": "Paper",
-    "onlinePlayers": 0,
-    "tps": 0.0,
-    "uptime": 0,
-    "version": "1.21.11",
-    "worlds": []
+    "onlinePlayers": 1,
+    "tps": 20.0,
+    "uptime": 914099,
+    "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
+    "worlds": [
+      "world",
+      "world_nether",
+      "world_the_end"
+    ]
   },
-  "statsByName": {}
+  "statsByName": {
+    "ItzOnlyFisher": {
+      "balance": 0.0,
+      "blocksBroken": 66,
+      "blocksPlaced": 0,
+      "currentWorld": "world",
+      "deaths": 0,
+      "distanceWalked": 0.0,
+      "firstJoin": 1782037685964,
+      "joins": 1,
+      "jumps": 0,
+      "lastSeen": 1782038508795,
+      "mobKills": 0,
+      "name": "ItzOnlyFisher",
+      "player": "ItzOnlyFisher",
+      "playerKills": 0,
+      "quits": 0,
+      "rank": "staff",
+      "totalPlaytime": 0,
+      "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
+    }
+  }
 }
