@@ -1,0 +1,410 @@
+{
+  "generatedAt": "2026-06-21T10:42:19.757491Z",
+  "source": "HallPassEconomy",
+  "public": true,
+  "ok": true,
+  "currency": {
+    "symbol": "$",
+    "singular": "dollar",
+    "plural": "dollars",
+    "decimalPlaces": 2
+  },
+  "startingBalance": 0.0,
+  "balances": {},
+  "sellPrices": {
+    "SUGAR_CANE": 2.0,
+    "BAMBOO": 0.15,
+    "WHEAT": 0.45,
+    "CARROT": 0.4,
+    "POTATO": 0.4,
+    "BEETROOT": 0.5,
+    "SWEET_BERRIES": 0.5,
+    "KELP": 0.15,
+    "CACTUS": 0.3,
+    "NETHER_WART": 0.75,
+    "PUMPKIN": 1.5,
+    "MELON_SLICE": 0.2,
+    "REDSTONE": 0.5,
+    "REDSTONE_BLOCK": 4.5,
+    "GLOWSTONE_DUST": 0.4,
+    "GLOWSTONE": 3.5,
+    "QUARTZ": 0.6,
+    "QUARTZ_BLOCK": 5.0
+  },
+  "shop": {
+    "title": "HallPass Shop",
+    "items": [
+      {
+        "id": "sethome-3",
+        "slot": 10,
+        "material": "RED_BED",
+        "amount": 1,
+        "name": "Sethome Upgrade: 3 Homes",
+        "price": 5000.0,
+        "formatted": "$5,000.00",
+        "short": "$5k",
+        "lore": [
+          "Upgrade from 2 homes to 3 homes.",
+          "Price: $5,000.00"
+        ]
+      },
+      {
+        "id": "sethome-4",
+        "slot": 11,
+        "material": "ORANGE_BED",
+        "amount": 1,
+        "name": "Sethome Upgrade: 4 Homes",
+        "price": 15000.0,
+        "formatted": "$15,000.00",
+        "short": "$15k",
+        "lore": [
+          "Upgrade from 3 homes to 4 homes.",
+          "Price: $15,000.00"
+        ]
+      },
+      {
+        "id": "sethome-5",
+        "slot": 12,
+        "material": "YELLOW_BED",
+        "amount": 1,
+        "name": "Sethome Upgrade: 5 Homes",
+        "price": 40000.0,
+        "formatted": "$40,000.00",
+        "short": "$40k",
+        "lore": [
+          "Upgrade from 4 homes to 5 homes.",
+          "Price: $40,000.00"
+        ]
+      },
+      {
+        "id": "cow-egg",
+        "slot": 19,
+        "material": "COW_SPAWN_EGG",
+        "amount": 1,
+        "name": "Cow Spawn Egg",
+        "price": 2500.0,
+        "formatted": "$2,500.00",
+        "short": "$2.5k",
+        "lore": [
+          "Costs money and removes 50% of your XP levels.",
+          "Price: $2,500.00"
+        ],
+        "xpPercent": 50
+      },
+      {
+        "id": "sheep-egg",
+        "slot": 20,
+        "material": "SHEEP_SPAWN_EGG",
+        "amount": 1,
+        "name": "Sheep Spawn Egg",
+        "price": 2500.0,
+        "formatted": "$2,500.00",
+        "short": "$2.5k",
+        "lore": [
+          "Costs money and removes 50% of your XP levels.",
+          "Price: $2,500.00"
+        ],
+        "xpPercent": 50
+      },
+      {
+        "id": "pig-egg",
+        "slot": 21,
+        "material": "PIG_SPAWN_EGG",
+        "amount": 1,
+        "name": "Pig Spawn Egg",
+        "price": 2500.0,
+        "formatted": "$2,500.00",
+        "short": "$2.5k",
+        "lore": [
+          "Costs money and removes 50% of your XP levels.",
+          "Price: $2,500.00"
+        ],
+        "xpPercent": 50
+      },
+      {
+        "id": "chicken-egg",
+        "slot": 22,
+        "material": "CHICKEN_SPAWN_EGG",
+        "amount": 1,
+        "name": "Chicken Spawn Egg",
+        "price": 2500.0,
+        "formatted": "$2,500.00",
+        "short": "$2.5k",
+        "lore": [
+          "Costs money and removes 50% of your XP levels.",
+          "Price: $2,500.00"
+        ],
+        "xpPercent": 50
+      },
+      {
+        "id": "horse-egg",
+        "slot": 23,
+        "material": "HORSE_SPAWN_EGG",
+        "amount": 1,
+        "name": "Horse Spawn Egg",
+        "price": 10000.0,
+        "formatted": "$10,000.00",
+        "short": "$10k",
+        "lore": [
+          "Requires 10 XP levels.",
+          "Removes 50% of your current XP levels.",
+          "Price: $10,000.00"
+        ],
+        "xpLevels": 10,
+        "xpPercent": 50
+      },
+      {
+        "id": "villager-egg",
+        "slot": 24,
+        "material": "VILLAGER_SPAWN_EGG",
+        "amount": 1,
+        "name": "Villager Spawn Egg",
+        "price": 25000.0,
+        "formatted": "$25,000.00",
+        "short": "$25k",
+        "lore": [
+          "Requires 30 XP levels.",
+          "Removes 50% of your current XP levels.",
+          "Price: $25,000.00"
+        ],
+        "xpLevels": 30,
+        "xpPercent": 50
+      },
+      {
+        "id": "mooshroom-egg",
+        "slot": 25,
+        "material": "MOOSHROOM_SPAWN_EGG",
+        "amount": 1,
+        "name": "Mooshroom Spawn Egg",
+        "price": 50000.0,
+        "formatted": "$50,000.00",
+        "short": "$50k",
+        "lore": [
+          "Requires 40 XP levels.",
+          "Removes 50% of your current XP levels.",
+          "Price: $50,000.00"
+        ],
+        "xpLevels": 40,
+        "xpPercent": 50
+      },
+      {
+        "id": "allay-egg",
+        "slot": 28,
+        "material": "ALLAY_SPAWN_EGG",
+        "amount": 1,
+        "name": "Allay Spawn Egg",
+        "price": 100000.0,
+        "formatted": "$100,000.00",
+        "short": "$100k",
+        "lore": [
+          "Requires 50 XP levels.",
+          "Removes 50% of your current XP levels.",
+          "Price: $100,000.00"
+        ],
+        "xpLevels": 50,
+        "xpPercent": 50
+      },
+      {
+        "id": "lead",
+        "slot": 30,
+        "material": "LEAD",
+        "amount": 1,
+        "name": "Lead",
+        "price": 1500.0,
+        "formatted": "$1,500.00",
+        "short": "$1.5k",
+        "lore": [
+          "Price: $1,500.00"
+        ]
+      },
+      {
+        "id": "name-tag",
+        "slot": 31,
+        "material": "NAME_TAG",
+        "amount": 1,
+        "name": "Name Tag",
+        "price": 3500.0,
+        "formatted": "$3,500.00",
+        "short": "$3.5k",
+        "lore": [
+          "Price: $3,500.00"
+        ]
+      },
+      {
+        "id": "saddle",
+        "slot": 32,
+        "material": "SADDLE",
+        "amount": 1,
+        "name": "Saddle",
+        "price": 7500.0,
+        "formatted": "$7,500.00",
+        "short": "$7.5k",
+        "lore": [
+          "Price: $7,500.00"
+        ]
+      },
+      {
+        "id": "bundle",
+        "slot": 33,
+        "material": "BUNDLE",
+        "amount": 1,
+        "name": "Bundle",
+        "price": 5000.0,
+        "formatted": "$5,000.00",
+        "short": "$5k",
+        "lore": [
+          "Price: $5,000.00"
+        ]
+      },
+      {
+        "id": "piston",
+        "slot": 37,
+        "material": "PISTON",
+        "amount": 1,
+        "name": "Piston",
+        "price": 300.0,
+        "formatted": "$300.00",
+        "short": "$300.00",
+        "lore": [
+          "Price: $300.00"
+        ]
+      },
+      {
+        "id": "sticky-piston",
+        "slot": 38,
+        "material": "STICKY_PISTON",
+        "amount": 1,
+        "name": "Sticky Piston",
+        "price": 600.0,
+        "formatted": "$600.00",
+        "short": "$600.00",
+        "lore": [
+          "Price: $600.00"
+        ]
+      },
+      {
+        "id": "observer",
+        "slot": 39,
+        "material": "OBSERVER",
+        "amount": 1,
+        "name": "Observer",
+        "price": 500.0,
+        "formatted": "$500.00",
+        "short": "$500.00",
+        "lore": [
+          "Price: $500.00"
+        ]
+      },
+      {
+        "id": "dispenser",
+        "slot": 40,
+        "material": "DISPENSER",
+        "amount": 1,
+        "name": "Dispenser",
+        "price": 350.0,
+        "formatted": "$350.00",
+        "short": "$350.00",
+        "lore": [
+          "Price: $350.00"
+        ]
+      },
+      {
+        "id": "dropper",
+        "slot": 41,
+        "material": "DROPPER",
+        "amount": 1,
+        "name": "Dropper",
+        "price": 250.0,
+        "formatted": "$250.00",
+        "short": "$250.00",
+        "lore": [
+          "Price: $250.00"
+        ]
+      },
+      {
+        "id": "repeater",
+        "slot": 42,
+        "material": "REPEATER",
+        "amount": 1,
+        "name": "Repeater",
+        "price": 250.0,
+        "formatted": "$250.00",
+        "short": "$250.00",
+        "lore": [
+          "Price: $250.00"
+        ]
+      },
+      {
+        "id": "comparator",
+        "slot": 43,
+        "material": "COMPARATOR",
+        "amount": 1,
+        "name": "Comparator",
+        "price": 450.0,
+        "formatted": "$450.00",
+        "short": "$450.00",
+        "lore": [
+          "Price: $450.00"
+        ]
+      },
+      {
+        "id": "redstone-lamp",
+        "slot": 46,
+        "material": "REDSTONE_LAMP",
+        "amount": 1,
+        "name": "Redstone Lamp",
+        "price": 250.0,
+        "formatted": "$250.00",
+        "short": "$250.00",
+        "lore": [
+          "Price: $250.00"
+        ]
+      },
+      {
+        "id": "daylight-sensor",
+        "slot": 47,
+        "material": "DAYLIGHT_DETECTOR",
+        "amount": 1,
+        "name": "Daylight Sensor",
+        "price": 400.0,
+        "formatted": "$400.00",
+        "short": "$400.00",
+        "lore": [
+          "Price: $400.00"
+        ]
+      },
+      {
+        "id": "target-block",
+        "slot": 48,
+        "material": "TARGET",
+        "amount": 1,
+        "name": "Target Block",
+        "price": 300.0,
+        "formatted": "$300.00",
+        "short": "$300.00",
+        "lore": [
+          "Price: $300.00"
+        ]
+      },
+      {
+        "id": "sculk-sensor",
+        "slot": 49,
+        "material": "SCULK_SENSOR",
+        "amount": 1,
+        "name": "Sculk Sensor",
+        "price": 5000.0,
+        "formatted": "$5,000.00",
+        "short": "$5k",
+        "lore": [
+          "Price: $5,000.00"
+        ]
+      }
+    ]
+  },
+  "rules": [
+    "Spawn eggs with XP requirements remove 50% of your current XP levels when purchased.",
+    "No gear, armor, tools, weapons, diamonds, netherite, emeralds, elytras, shulkers, beacons, or spawners are sold.",
+    "Economy is designed to reward farming and playing, not grinding money too quickly.",
+    "Prices may be adjusted during testing and future updates."
+  ]
+}
