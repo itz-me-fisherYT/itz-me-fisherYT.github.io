@@ -41,7 +41,7 @@
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
     "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
   ],
-  "generatedAt": "2026-06-23T08:07:42.325780+00:00",
+  "generatedAt": "2026-06-23T11:29:40.414987+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -52,14 +52,14 @@
   },
   "server": {
     "memory": {
-      "free": 289111104,
+      "free": 100693464,
       "max": 8174698496,
-      "total": 914358272
+      "total": 964689920
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 162309051,
+    "uptime": 174431329,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
@@ -74,18 +74,18 @@
       "blocksPlaced": 0,
       "currentWorld": "world",
       "deaths": 0,
-      "distanceWalked": 0.0,
+      "distanceWalked": 43.66,
       "firstJoin": 1782037685964,
-      "joins": 1,
-      "jumps": 0,
-      "lastSeen": 1782039730061,
+      "joins": 2,
+      "jumps": 1,
+      "lastSeen": 1782208537244,
       "mobKills": 0,
       "name": "ItzOnlyFisher",
       "player": "ItzOnlyFisher",
       "playerKills": 0,
-      "quits": 0,
+      "quits": 1,
       "rank": "staff",
-      "totalPlaytime": 0,
+      "totalPlaytime": 34885,
       "uuid": "2c9c52b3-14be-3a02-b6bc-6188a1786e6c"
     }
   }
