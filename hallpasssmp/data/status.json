@@ -8,7 +8,7 @@
     "/api/balance/C0mbat_Ace: HTTP Error 404: Not Found",
     "/api/rank/C0mbat_Ace: HTTP Error 404: Not Found",
     "/api/stats/C0mbat_Ace: HTTP Error 404: Not Found",
-    "/api/player/IAmSpxce: HTTP Error 404: Not Found",
+    "/api/player/IAmSpxce: timed out",
     "/api/balance/IAmSpxce: HTTP Error 404: Not Found",
     "/api/rank/IAmSpxce: HTTP Error 404: Not Found",
     "/api/stats/IAmSpxce: HTTP Error 404: Not Found",
@@ -41,7 +41,7 @@
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
     "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
   ],
-  "generatedAt": "2026-06-25T19:27:03.100965+00:00",
+  "generatedAt": "2026-06-25T21:12:53.138515+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -52,14 +52,14 @@
   },
   "server": {
     "memory": {
-      "free": 101219104,
+      "free": 399493184,
       "max": 8174698496,
       "total": 964689920
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 375869839,
+    "uptime": 382204111,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
