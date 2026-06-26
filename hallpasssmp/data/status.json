@@ -39,9 +39,9 @@
     "/api/player/VTXC9_24: HTTP Error 404: Not Found",
     "/api/balance/VTXC9_24: HTTP Error 404: Not Found",
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
-    "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
+    "/api/stats/VTXC9_24: timed out"
   ],
-  "generatedAt": "2026-06-26T08:07:23.544685+00:00",
+  "generatedAt": "2026-06-26T11:13:31.643708+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -52,14 +52,14 @@
   },
   "server": {
     "memory": {
-      "free": 433748976,
+      "free": 226588200,
       "max": 8174698496,
       "total": 964689920
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 421490484,
+    "uptime": 432643668,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
