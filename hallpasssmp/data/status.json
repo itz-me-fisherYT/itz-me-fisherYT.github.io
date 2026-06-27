@@ -1,19 +1,16 @@
 {
   "errors": [
-    "/api/health: timed out",
-    "/api/server: timed out",
-    "/api/online: timed out",
     "/api/player/Asparta: HTTP Error 404: Not Found",
     "/api/balance/Asparta: HTTP Error 404: Not Found",
     "/api/rank/Asparta: HTTP Error 404: Not Found",
     "/api/stats/Asparta: HTTP Error 404: Not Found",
-    "/api/player/C0mbat_Ace: timed out",
+    "/api/player/C0mbat_Ace: HTTP Error 404: Not Found",
     "/api/balance/C0mbat_Ace: HTTP Error 404: Not Found",
-    "/api/rank/C0mbat_Ace: timed out",
-    "/api/stats/C0mbat_Ace: timed out",
-    "/api/player/IAmSpxce: timed out",
+    "/api/rank/C0mbat_Ace: HTTP Error 404: Not Found",
+    "/api/stats/C0mbat_Ace: HTTP Error 404: Not Found",
+    "/api/player/IAmSpxce: HTTP Error 404: Not Found",
     "/api/balance/IAmSpxce: HTTP Error 404: Not Found",
-    "/api/rank/IAmSpxce: timed out",
+    "/api/rank/IAmSpxce: HTTP Error 404: Not Found",
     "/api/stats/IAmSpxce: HTTP Error 404: Not Found",
     "/api/player/KingApple_III: HTTP Error 404: Not Found",
     "/api/balance/KingApple_III: HTTP Error 404: Not Found",
@@ -44,11 +41,32 @@
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
     "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
   ],
-  "generatedAt": "2026-06-27T21:07:35.507167+00:00",
-  "health": {},
-  "ok": false,
-  "online": {},
-  "server": {},
+  "generatedAt": "2026-06-27T22:13:57.314234+00:00",
+  "health": {
+    "database": true,
+    "ok": true
+  },
+  "ok": true,
+  "online": {
+    "players": []
+  },
+  "server": {
+    "memory": {
+      "free": 412461184,
+      "max": 8174698496,
+      "total": 964689920
+    },
+    "name": "Paper",
+    "onlinePlayers": 0,
+    "tps": 20.0,
+    "uptime": 558688229,
+    "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
+    "worlds": [
+      "world",
+      "world_nether",
+      "world_the_end"
+    ]
+  },
   "statsByName": {
     "ItzOnlyFisher": {
       "balance": 0.0,
