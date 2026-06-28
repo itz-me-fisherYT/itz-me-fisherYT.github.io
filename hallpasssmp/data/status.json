@@ -10,7 +10,7 @@
     "/api/stats/C0mbat_Ace: HTTP Error 404: Not Found",
     "/api/player/IAmSpxce: HTTP Error 404: Not Found",
     "/api/balance/IAmSpxce: HTTP Error 404: Not Found",
-    "/api/rank/IAmSpxce: HTTP Error 404: Not Found",
+    "/api/rank/IAmSpxce: timed out",
     "/api/stats/IAmSpxce: HTTP Error 404: Not Found",
     "/api/player/KingApple_III: HTTP Error 404: Not Found",
     "/api/balance/KingApple_III: HTTP Error 404: Not Found",
@@ -20,7 +20,7 @@
     "/api/balance/Krxzy: HTTP Error 404: Not Found",
     "/api/rank/Krxzy: HTTP Error 404: Not Found",
     "/api/stats/Krxzy: HTTP Error 404: Not Found",
-    "/api/player/Ligxth: HTTP Error 404: Not Found",
+    "/api/player/Ligxth: timed out",
     "/api/balance/Ligxth: HTTP Error 404: Not Found",
     "/api/rank/Ligxth: HTTP Error 404: Not Found",
     "/api/stats/Ligxth: HTTP Error 404: Not Found",
@@ -29,7 +29,7 @@
     "/api/rank/Maftyouth: HTTP Error 404: Not Found",
     "/api/stats/Maftyouth: HTTP Error 404: Not Found",
     "/api/player/NahIamJohm: HTTP Error 404: Not Found",
-    "/api/balance/NahIamJohm: timed out",
+    "/api/balance/NahIamJohm: HTTP Error 404: Not Found",
     "/api/rank/NahIamJohm: HTTP Error 404: Not Found",
     "/api/stats/NahIamJohm: HTTP Error 404: Not Found",
     "/api/player/Nigh1mare: HTTP Error 404: Not Found",
@@ -41,7 +41,7 @@
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
     "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
   ],
-  "generatedAt": "2026-06-28T15:52:13.695909+00:00",
+  "generatedAt": "2026-06-28T16:56:47.848212+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -52,14 +52,14 @@
   },
   "server": {
     "memory": {
-      "free": 141116752,
+      "free": 174324216,
       "max": 8174698496,
       "total": 964689920
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 622164353,
+    "uptime": 626020383,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
