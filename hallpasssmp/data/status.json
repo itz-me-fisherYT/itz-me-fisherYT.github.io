@@ -18,7 +18,7 @@
     "/api/stats/KingApple_III: HTTP Error 404: Not Found",
     "/api/player/Krxzy: HTTP Error 404: Not Found",
     "/api/balance/Krxzy: HTTP Error 404: Not Found",
-    "/api/rank/Krxzy: HTTP Error 404: Not Found",
+    "/api/rank/Krxzy: timed out",
     "/api/stats/Krxzy: HTTP Error 404: Not Found",
     "/api/player/Ligxth: HTTP Error 404: Not Found",
     "/api/balance/Ligxth: HTTP Error 404: Not Found",
@@ -41,7 +41,7 @@
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
     "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
   ],
-  "generatedAt": "2026-06-28T01:30:59.034348+00:00",
+  "generatedAt": "2026-06-28T05:58:10.047555+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -52,14 +52,14 @@
   },
   "server": {
     "memory": {
-      "free": 378121472,
+      "free": 197149536,
       "max": 8174698496,
       "total": 964689920
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 570511024,
+    "uptime": 586522559,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
