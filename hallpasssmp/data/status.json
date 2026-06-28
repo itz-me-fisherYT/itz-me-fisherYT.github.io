@@ -1,7 +1,7 @@
 {
   "errors": [
-    "/api/player/Asparta: HTTP Error 404: Not Found",
-    "/api/balance/Asparta: HTTP Error 404: Not Found",
+    "/api/player/Asparta: timed out",
+    "/api/balance/Asparta: timed out",
     "/api/rank/Asparta: HTTP Error 404: Not Found",
     "/api/stats/Asparta: HTTP Error 404: Not Found",
     "/api/player/C0mbat_Ace: HTTP Error 404: Not Found",
@@ -12,13 +12,14 @@
     "/api/balance/IAmSpxce: HTTP Error 404: Not Found",
     "/api/rank/IAmSpxce: HTTP Error 404: Not Found",
     "/api/stats/IAmSpxce: HTTP Error 404: Not Found",
+    "/api/rank/ItzOnlyFisher: timed out",
     "/api/player/KingApple_III: HTTP Error 404: Not Found",
     "/api/balance/KingApple_III: HTTP Error 404: Not Found",
     "/api/rank/KingApple_III: HTTP Error 404: Not Found",
     "/api/stats/KingApple_III: HTTP Error 404: Not Found",
     "/api/player/Krxzy: HTTP Error 404: Not Found",
     "/api/balance/Krxzy: HTTP Error 404: Not Found",
-    "/api/rank/Krxzy: timed out",
+    "/api/rank/Krxzy: HTTP Error 404: Not Found",
     "/api/stats/Krxzy: HTTP Error 404: Not Found",
     "/api/player/Ligxth: HTTP Error 404: Not Found",
     "/api/balance/Ligxth: HTTP Error 404: Not Found",
@@ -41,7 +42,7 @@
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
     "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
   ],
-  "generatedAt": "2026-06-28T05:58:10.047555+00:00",
+  "generatedAt": "2026-06-28T09:18:41.615866+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -52,14 +53,14 @@
   },
   "server": {
     "memory": {
-      "free": 197149536,
+      "free": 158370664,
       "max": 8174698496,
       "total": 964689920
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 586522559,
+    "uptime": 598503688,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
