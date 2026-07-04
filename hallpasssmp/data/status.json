@@ -24,7 +24,7 @@
     "/api/balance/Ligxth: HTTP Error 404: Not Found",
     "/api/rank/Ligxth: HTTP Error 404: Not Found",
     "/api/stats/Ligxth: HTTP Error 404: Not Found",
-    "/api/player/Maftyouth: HTTP Error 404: Not Found",
+    "/api/player/Maftyouth: timed out",
     "/api/balance/Maftyouth: HTTP Error 404: Not Found",
     "/api/rank/Maftyouth: HTTP Error 404: Not Found",
     "/api/stats/Maftyouth: HTTP Error 404: Not Found",
@@ -39,9 +39,9 @@
     "/api/player/VTXC9_24: HTTP Error 404: Not Found",
     "/api/balance/VTXC9_24: HTTP Error 404: Not Found",
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
-    "/api/stats/VTXC9_24: timed out"
+    "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
   ],
-  "generatedAt": "2026-07-04T07:52:20.270249+00:00",
+  "generatedAt": "2026-07-04T09:58:32.640217+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -52,14 +52,14 @@
   },
   "server": {
     "memory": {
-      "free": 469423544,
+      "free": 248920432,
       "max": 8174698496,
       "total": 1027604480
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 447433082,
+    "uptime": 455005459,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
