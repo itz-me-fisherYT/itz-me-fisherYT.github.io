@@ -1,7 +1,7 @@
 {
   "errors": [
     "/api/player/Asparta: HTTP Error 404: Not Found",
-    "/api/balance/Asparta: HTTP Error 404: Not Found",
+    "/api/balance/Asparta: timed out",
     "/api/rank/Asparta: HTTP Error 404: Not Found",
     "/api/stats/Asparta: HTTP Error 404: Not Found",
     "/api/player/C0mbat_Ace: HTTP Error 404: Not Found",
@@ -41,7 +41,7 @@
     "/api/rank/VTXC9_24: HTTP Error 404: Not Found",
     "/api/stats/VTXC9_24: HTTP Error 404: Not Found"
   ],
-  "generatedAt": "2026-07-08T18:38:45.233065+00:00",
+  "generatedAt": "2026-07-08T20:08:17.025906+00:00",
   "health": {
     "database": true,
     "ok": true
@@ -52,14 +52,14 @@
   },
   "server": {
     "memory": {
-      "free": 157784560,
+      "free": 373535872,
       "max": 8174698496,
       "total": 1056964608
     },
     "name": "Paper",
     "onlinePlayers": 0,
     "tps": 20.0,
-    "uptime": 831832026,
+    "uptime": 837188881,
     "version": "1.21.11-132-c5eb079 (MC: 1.21.11)",
     "worlds": [
       "world",
