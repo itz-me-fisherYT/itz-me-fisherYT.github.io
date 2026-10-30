@@ -1,0 +1,53 @@
+export const skillGroups = [
+  {
+    name: "Languages",
+    note: "Languages used across my projects",
+    icon: "code",
+    items: ["JavaScript", "HTML", "CSS", "Java", "Lua / Luau", "PowerShell"],
+  },
+  {
+    name: "Frameworks & tools",
+    note: "Building bots, plugins and websites",
+    icon: "terminal",
+    items: [
+      "Node.js",
+      "Discord.js",
+      "Gradle",
+      "Git",
+      "GitHub",
+      "Visual Studio Code",
+    ],
+  },
+  {
+    name: "Hosting & infrastructure",
+    note: "Servers, connections and the web",
+    icon: "server",
+    items: [
+      "Cloudflare",
+      "Cloudflare Workers",
+      "GitHub Pages",
+      "DNS configuration",
+      "SSH",
+      "SFTP",
+      "Windows administration",
+      "Minecraft hosting",
+      "API integrations",
+    ],
+  },
+  {
+    name: "Exploring & learning",
+    note: "Developing familiarity; no proficiency claims",
+    icon: "sparkles",
+    items: [
+      "TypeScript",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "OpenAI Codex",
+      "GitHub Copilot",
+      "Ollama",
+      "OpenRouter",
+      "Cloudflare Workers AI",
+    ],
+  },
+];

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">ItzFisher.org project profile picture</title>
+  <desc id="desc">A custom website project icon with IF lettering and browser shapes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102015"/>
+      <stop offset="0.55" stop-color="#173029"/>
+      <stop offset="1" stop-color="#26351d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="42" fill="url(#bg)"/>
+  <rect x="210" y="130" width="780" height="430" rx="28" fill="#f2f5ef" opacity=".08" stroke="#5fe08f" stroke-width="6"/>
+  <circle cx="250" cy="172" r="12" fill="#ff6f61"/>
+  <circle cx="286" cy="172" r="12" fill="#f3c95b"/>
+  <circle cx="322" cy="172" r="12" fill="#5fe08f"/>
+  <rect x="320" y="238" width="560" height="84" rx="12" fill="#53d7e8" opacity=".22"/>
+  <rect x="360" y="360" width="240" height="26" rx="8" fill="#5fe08f"/>
+  <rect x="360" y="412" width="410" height="26" rx="8" fill="#f2f5ef" opacity=".28"/>
+  <text x="600" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="104" font-weight="900" fill="#f2f5ef">IF</text>
+</svg>

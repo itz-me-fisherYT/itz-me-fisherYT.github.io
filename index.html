@@ -1,417 +1,81 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ItzRealFisher | Minecraft, Bots, and Web Projects</title>
-  <meta name="description" content="ItzRealFisher builds Minecraft projects, Discord bots, and custom websites for communities.">
-  <meta name="theme-color" content="#101312">
-  <meta property="og:title" content="ItzRealFisher">
-  <meta property="og:description" content="Minecraft projects, Discord bots, and web builds by Fisher.">
-  <meta property="og:image" content="https://images.guns.lol/N9Fpe.png">
-  <meta property="og:url" content="https://www.itzfisher.org/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header" aria-label="Main navigation">
-    <a class="brand" href="#top" aria-label="ItzRealFisher home">
-      <span class="brand-mark">IF</span>
-      <span>ItzRealFisher</span>
-    </a>
-    <nav class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-art" src="https://images.guns.lol/N9Fpe.png" alt="ItzRealFisher banner art">
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Minecraft builds / Discord bots / websites</p>
-        <h1 id="hero-title">I build useful stuff for online communities.</h1>
-        <p class="hero-copy">
-          I'm Fisher. I make Minecraft-related projects, Discord tools, and custom sites that help servers look sharper and run smoother.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#work">See the builds</a>
-          <a class="button secondary external-link" href="https://github.com/itz-me-fisherYT" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="quick-strip" aria-label="Highlights">
-      <div>
-        <span class="stat">6</span>
-        <span>Featured public projects</span>
-      </div>
-      <div>
-        <span class="stat">24/7</span>
-        <span>Discord-first support tools</span>
-      </div>
-      <div>
-        <span class="stat">Custom</span>
-        <span>Websites for creators and servers</span>
-      </div>
-    </section>
-
-    <section class="discord-strip" aria-label="Live Discord profile and local time">
-      <aside class="live-status-card">
-        <div class="live-status-avatar-wrap">
-          <img id="discord-avatar" src="https://cdn.discordapp.com/avatars/1319567972335091773/581ed1ed260ef3dffda80a80ba279eb4.png?size=256" alt="Discord avatar">
-          <span class="discord-dot is-dnd" id="discord-dot"></span>
-        </div>
-        <div class="live-status-copy">
-          <span class="live-status-label">Live Discord API</span>
-          <strong id="discord-display">ItzOnlyFisher (Fisher)</strong>
-          <span><b>username:</b> <span id="discord-username">lycan.fish.er</span></span>
-          <span><b>status:</b> <span id="discord-status">dnd</span></span>
-          <span><b>activity:</b> <span id="discord-activity">Custom: new phone lets goo</span></span>
-          <span><b>updated:</b> <span id="discord-updated">loading...</span></span>
-          <span><b>Local time:</b> <span id="gumlu-time">--:-- --</span></span>
-        </div>
-      </aside>
-      <div class="top-social-row" aria-label="Top social links">
-        <a class="external-link" href="https://snapchat.com/add/lfish94ll" target="_blank" rel="noopener" data-label="Snapchat">Snapchat</a>
-        <a class="external-link" href="https://discord.com/users/1319567972335091773" target="_blank" rel="noopener" data-label="Discord">Discord</a>
-        <a class="external-link" href="https://tiktok.com/@itzrealfisher" target="_blank" rel="noopener" data-label="TikTok">TikTok</a>
-        <a class="external-link" href="https://youtube.com/@ItzRealFisherYT" target="_blank" rel="noopener" data-label="YouTube">YouTube</a>
-        <a class="external-link" href="https://github.com/itz-me-fisherYT" target="_blank" rel="noopener" data-label="GitHub">GitHub</a>
-        <a class="external-link" href="https://guns.lol/itzrealfisher" target="_blank" rel="noopener" data-label="Guns.lol">Guns.lol</a>
-      </div>
-    </section>
-
-    <section class="section intro" aria-labelledby="about-title">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2 id="about-title">Clean pages, useful bots, and community tools with personality.</h2>
-      </div>
-      <div class="intro-copy">
-        <p>
-          I like making projects that feel simple for the people using them: ticket systems, Discord utilities, Minecraft server tools, and profile sites that get straight to the point.
-        </p>
-        <div class="skill-list" aria-label="Top skills">
-          <span>Minecraft</span>
-          <span>Node.js</span>
-          <span>Discord bots</span>
-          <span>Web dev</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="work" class="section work" aria-labelledby="work-title">
-      <div class="section-heading">
-        <p class="eyebrow">Featured Work</p>
-        <h2 id="work-title">My GitHub projects, explained here.</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-placeholder">BB</div>
-          <div class="project-body">
-            <p class="project-kicker">Minecraft launcher</p>
-            <h3>BlockBase Launcher</h3>
-            <p>
-              A custom Minecraft Java launcher with profiles, Microsoft login, modpack imports, Modrinth/CurseForge browsing, running instance controls, and GitHub release updates.
-            </p>
-            <div class="project-tags" aria-label="BlockBase Launcher tags">
-              <span>Electron</span>
-              <span>Minecraft Java</span>
-              <span>Launcher</span>
-            </div>
-            <a class="text-link external-link" href="https://github.com/itz-me-fisherYT/BlockBase-Launcher" target="_blank" rel="noopener" data-label="BlockBase Launcher repo">View the repo</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img class="project-image" src="assets/project-minecord.svg" alt="MineCord project profile picture">
-          <div class="project-body">
-            <p class="project-kicker">Minecraft + Discord</p>
-            <h3>MineCord</h3>
-            <p>
-              A Discord and Minecraft project focused on connecting community chat, Minecraft sessions, and server tools in one workspace.
-            </p>
-            <div class="project-tags" aria-label="MineCord tags">
-              <span>Node.js</span>
-              <span>Discord</span>
-              <span>Minecraft</span>
-            </div>
-            <a class="text-link external-link" href="https://github.com/itz-me-fisherYT/MineCord" target="_blank" rel="noopener" data-label="MineCord repo">View the repo</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img class="project-image" src="assets/project-itzfisher.svg" alt="ItzFisher.org project profile picture">
-          <div class="project-body">
-            <p class="project-kicker">Website</p>
-            <h3>itz-me-fisherYT.github.io</h3>
-            <p>
-              The source for this portfolio website at itzfisher.org, built as a static GitHub Pages site for projects, socials, and contact links.
-            </p>
-            <div class="project-tags" aria-label="itz-me-fisherYT.github.io tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>GitHub Pages</span>
-            </div>
-            <a class="text-link external-link" href="https://github.com/itz-me-fisherYT/itz-me-fisherYT.github.io" target="_blank" rel="noopener" data-label="ItzFisher website repo">View the repo</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img class="project-image" src="assets/project-sentra.svg" alt="Sentra project profile picture">
-          <div class="project-body">
-            <p class="project-kicker">Discord bot + website</p>
-            <h3>Sentra</h3>
-            <p>
-              A split workspace for a Sentra website and Discord bot. The site can be deployed to GitHub Pages, while the bot can run separately.
-            </p>
-            <div class="project-tags" aria-label="Sentra tags">
-              <span>Website</span>
-              <span>Discord bot</span>
-              <span>Deployment</span>
-            </div>
-            <a class="text-link external-link" href="https://github.com/itz-me-fisherYT/Sentra" target="_blank" rel="noopener" data-label="Sentra repo">View the repo</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img class="project-image" src="assets/project-profile.svg" alt="Profile README project profile picture">
-          <div class="project-body">
-            <p class="project-kicker">GitHub profile</p>
-            <h3>itz-me-fisherYT profile README</h3>
-            <p>
-              The README that powers my GitHub profile, highlighting my main public projects, current focus, and links.
-            </p>
-            <div class="project-tags" aria-label="Profile README tags">
-              <span>Markdown</span>
-              <span>GitHub profile</span>
-              <span>Links</span>
-            </div>
-            <a class="text-link external-link" href="https://github.com/itz-me-fisherYT/itz-me-fisherYT" target="_blank" rel="noopener" data-label="Profile README repo">View the repo</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-placeholder">BA</div>
-          <div class="project-body">
-            <p class="project-kicker">BlockBase website</p>
-            <h3>BlockBaseApp.github.io</h3>
-            <p>
-              The public GitHub Pages website for BlockBaseMC, including feature pages, roadmap, update history, credits, and download links.
-            </p>
-            <div class="project-tags" aria-label="BlockBaseApp.github.io tags">
-              <span>GitHub Pages</span>
-              <span>Docs</span>
-              <span>Launcher site</span>
-            </div>
-            <a class="text-link external-link" href="https://github.com/BlockBaseApp/BlockBaseApp.github.io" target="_blank" rel="noopener" data-label="BlockBaseApp website repo">View the repo</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="services" class="section services" aria-labelledby="services-title">
-      <div class="section-heading">
-        <p class="eyebrow">Services</p>
-        <h2 id="services-title">Need your own site or bot?</h2>
-      </div>
-      <div class="service-grid">
-        <article>
-          <h3>Creator sites</h3>
-          <p>Fast personal sites for creators, gamers, and small communities.</p>
-        </article>
-        <article>
-          <h3>Discord tools</h3>
-          <p>Ticket bots, moderation helpers, logging, and server utility systems.</p>
-        </article>
-        <article>
-          <h3>Minecraft communities</h3>
-          <p>Pages and tools that make servers easier to promote and manage.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact" aria-labelledby="contact-title">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Reach Fisher.</h2>
-        <p class="contact-copy">Email me or add my Discord if you want a website, bot, or community tool built.</p>
-      </div>
-
-      <div class="contact-panel">
-        <a href="mailto:Lfish94ll@gmail.com">Lfish94ll@gmail.com</a>
-        <a href="mailto:Lifedupey@gmail.com">Lifedupey@gmail.com</a>
-        <a href="mailto:Itz.me.fisherYT@gmail.com">Itz.me.fisherYT@gmail.com</a>
-        <span>Discord: Lycan.fish.er</span>
-      </div>
-
-      <div class="social-row" aria-label="Social links">
-        <a class="external-link" href="https://youtube.com/@ItzRealFisherYT" target="_blank" rel="noopener" aria-label="YouTube" data-label="YouTube">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="">
-        </a>
-        <a class="external-link" href="https://tiktok.com/@itzrealfisher" target="_blank" rel="noopener" aria-label="TikTok" data-label="TikTok">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="">
-        </a>
-        <a class="external-link" href="https://snapchat.com/add/lfish94ll" target="_blank" rel="noopener" aria-label="Snapchat" data-label="Snapchat">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/snapchat.svg" alt="">
-        </a>
-        <a class="external-link" href="https://ko-fi.com/itzrealfisheryt" target="_blank" rel="noopener" aria-label="Ko-fi" data-label="Ko-fi">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kofi.svg" alt="">
-        </a>
-        <a class="external-link" href="https://github.com/itz-me-fisherYT" target="_blank" rel="noopener" aria-label="GitHub" data-label="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="">
-        </a>
-        <a class="external-link" href="https://guns.lol/itzrealfisher" target="_blank" rel="noopener" aria-label="Guns.lol" data-label="Guns.lol">
-          <img src="https://images.guns.lol/nSOvz.png" alt="">
-        </a>
-        <a class="external-link" href="https://slat.cc/ItzRealFisher" target="_blank" rel="noopener" aria-label="Slat.cc" data-label="Slat.cc">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linktree.svg" alt="">
-        </a>
-        <a class="external-link" href="https://feds.lol/ItzRealFisher" target="_blank" rel="noopener" aria-label="Feds.lol" data-label="Feds.lol">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linktree.svg" alt="">
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <span>ItzFisher.org</span>
-    <span>Made by ItzRealFisher</span>
-    <span id="year"></span>
-  </footer>
-
-  <div class="cursor-orb" id="cursor-orb" aria-hidden="true"></div>
-
-  <dialog id="exit-dialog" aria-labelledby="exit-title">
-    <form method="dialog">
-      <h2 id="exit-title">Leaving ItzFisher.org</h2>
-      <p id="exit-copy">You are opening another website.</p>
-      <div class="dialog-actions">
-        <button value="cancel" class="button secondary" type="submit">Stay here</button>
-        <button id="continue-link" value="continue" class="button primary" type="submit">Continue</button>
-      </div>
-    </form>
-  </dialog>
-
-  <script>
-    const year = document.querySelector("#year");
-    const dialog = document.querySelector("#exit-dialog");
-    const exitCopy = document.querySelector("#exit-copy");
-    const continueLink = document.querySelector("#continue-link");
-    const cursorOrb = document.querySelector("#cursor-orb");
-    const gumluTime = document.querySelector("#gumlu-time");
-    const discordAvatar = document.querySelector("#discord-avatar");
-    const discordDot = document.querySelector("#discord-dot");
-    const discordDisplay = document.querySelector("#discord-display");
-    const discordUsername = document.querySelector("#discord-username");
-    const discordStatus = document.querySelector("#discord-status");
-    const discordActivity = document.querySelector("#discord-activity");
-    const discordUpdated = document.querySelector("#discord-updated");
-    let pendingUrl = "";
-    let cursorX = window.innerWidth / 2;
-    let cursorY = window.innerHeight / 2;
-    let orbX = cursorX;
-    let orbY = cursorY;
-
-    year.textContent = new Date().getFullYear();
-
-    function updateGumluTime() {
-      gumluTime.textContent = new Intl.DateTimeFormat("en-AU", {
-        timeZone: "Australia/Brisbane",
-        hour: "numeric",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: true,
-      }).format(new Date());
-    }
-
-    function setDiscordStatus(status = "offline") {
-      discordDot.className = `discord-dot is-${status}`;
-    }
-
-    async function loadDiscordProfile() {
-      try {
-        const response = await fetch("https://discord-profile-api-v2.bonto.run/profile.json", {
-          cache: "no-store",
-        });
-        if (!response.ok) throw new Error(`Discord API ${response.status}`);
-        const data = await response.json();
-        const status = data.status || "offline";
-
-        if (data.avatar) discordAvatar.src = data.avatar;
-        discordAvatar.alt = `${data.displayName || data.username || "Discord"} avatar`;
-        discordDisplay.textContent = data.displayName || data.username || "ItzOnlyFisher (Fisher)";
-        discordUsername.textContent = data.username || "lycan.fish.er";
-        discordStatus.textContent = status;
-        discordActivity.textContent = data.activity || "None";
-        discordUpdated.textContent = data.updated
-          ? new Date(data.updated).toLocaleString("en-AU", { timeZone: "Australia/Brisbane" })
-          : "Unknown";
-        setDiscordStatus(status);
-      } catch (error) {
-        discordDisplay.textContent = "ItzOnlyFisher (Fisher)";
-        discordUsername.textContent = "lycan.fish.er";
-        discordStatus.textContent = "dnd";
-        discordActivity.textContent = "Custom: new phone lets goo";
-        discordUpdated.textContent = "API sleeping";
-        setDiscordStatus("dnd");
+﻿<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070912" />
+    <title>ItzRealFisher | Developer, Gamer &amp; Creator</title>
+    <meta
+      name="description"
+      content="Explore the projects, Discord bots, Minecraft plugins, websites and gaming communities created by Luke Fisher, also known as ItzRealFisher, from North Queensland, Australia."
+    />
+    <link rel="canonical" href="https://itzfisher.org/" />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_AU" />
+    <meta
+      property="og:title"
+      content="ItzRealFisher | Developer, Gamer &amp; Creator"
+    />
+    <meta
+      property="og:description"
+      content="Bots, blocks, websites and a little bit of everything. The online world of Luke Fisher, a developer and gamer from North Queensland."
+    />
+    <meta property="og:url" content="https://itzfisher.org/" />
+    <meta
+      property="og:image"
+      content="https://itzfisher.org/images/social-preview.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="ItzRealFisher — Developer. Gamer. Creator. North Queensland, Australia."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ItzRealFisher | Developer, Gamer &amp; Creator"
+    />
+    <meta
+      name="twitter:description"
+      content="The projects, communities and online world of Luke Fisher."
+    />
+    <meta
+      name="twitter:image"
+      content="https://itzfisher.org/images/social-preview.png"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://itzfisher.org/",
+        "name": "ItzRealFisher | Developer, Gamer & Creator",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Luke Fisher",
+          "alternateName": "ItzRealFisher",
+          "url": "https://itzfisher.org/",
+          "homeLocation": {
+            "@type": "Place",
+            "name": "North Queensland, Australia"
+          },
+          "sameAs": [
+            "https://github.com/itz-me-fisherYT",
+            "https://youtube.com/@ItzRealFisherYT",
+            "https://www.roblox.com/users/8942431123/profile"
+          ]
+        }
       }
-    }
-
-    function moveCursorFollower(event) {
-      cursorX = event.clientX;
-      cursorY = event.clientY;
-      cursorOrb.classList.add("is-active");
-    }
-
-    function animateCursorFollower() {
-      orbX += (cursorX - orbX) * 0.18;
-      orbY += (cursorY - orbY) * 0.18;
-      cursorOrb.style.transform = `translate3d(${orbX}px, ${orbY}px, 0)`;
-      requestAnimationFrame(animateCursorFollower);
-    }
-
-    updateGumluTime();
-    loadDiscordProfile();
-    setInterval(updateGumluTime, 1000);
-    setInterval(loadDiscordProfile, 10000);
-
-    if (window.matchMedia("(pointer: fine)").matches) {
-      window.addEventListener("pointermove", moveCursorFollower);
-      animateCursorFollower();
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach((link) => {
-      link.addEventListener("click", (event) => {
-        const target = document.querySelector(link.getAttribute("href"));
-        if (!target) return;
-        event.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    });
-
-    document.querySelectorAll(".external-link").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        pendingUrl = link.href;
-        exitCopy.textContent = `Open ${link.dataset.label || pendingUrl}?`;
-        dialog.showModal();
-      });
-    });
-
-    continueLink.addEventListener("click", () => {
-      if (pendingUrl) window.open(pendingUrl, "_blank", "noopener");
-      pendingUrl = "";
-    });
-
-    dialog.addEventListener("close", () => {
-      if (dialog.returnValue !== "continue") pendingUrl = "";
-    });
-  </script>
-</body>
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript
+      >This portfolio uses JavaScript. Find Fisher at
+      <a href="https://github.com/itz-me-fisherYT">GitHub</a>, or add
+      ItzOnlyFisher on Discord.</noscript
+    >
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

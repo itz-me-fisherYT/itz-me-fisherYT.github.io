@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Goose Discord Bot project profile picture</title>
+  <desc id="desc">A goose bot icon with moderation tools.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151917"/>
+      <stop offset=".56" stop-color="#253126"/>
+      <stop offset="1" stop-color="#293225"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="42" fill="url(#bg)"/>
+  <ellipse cx="575" cy="390" rx="165" ry="118" fill="#f2f5ef"/>
+  <path d="M642 308c12-80 94-116 148-76 45 34 38 96-14 124l-88 48c-30 16-58-12-46-44z" fill="#f2f5ef"/>
+  <path d="M792 277l80 28-76 36z" fill="#f3c95b"/>
+  <circle cx="742" cy="272" r="13" fill="#101312"/>
+  <rect x="325" y="250" width="130" height="180" rx="22" fill="#53d7e8" opacity=".9"/>
+  <path d="M355 338h70M390 303v70" stroke="#101312" stroke-width="18" stroke-linecap="round"/>
+  <text x="600" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#f2f5ef">GOOSE BOT</text>
+</svg>
